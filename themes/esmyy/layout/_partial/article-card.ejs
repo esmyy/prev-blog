@@ -1,0 +1,32 @@
+<%
+var summary = post.excerpt || post.content.replace(/<[^>]*>/ig, ' ').slice(0, 80)
+var categories = post.categories.slice(0, 2)
+%>
+<div class="article-card">
+    <div class="title-box">
+        <iconpark-icon name="doc-detail"></iconpark-icon>
+        <a class="title" href=""><%= post.title %></a>
+    </div>
+    <p class="summary"><%= summary %></p>
+    <div class="footer">
+        <div class="item date-box">
+            <iconpark-icon name="calendar"></iconpark-icon>
+            <span class="value"><%= date(post.date, 'YYYY-MM-DD') %></span>
+        </div>
+        <div class="item">
+            <iconpark-icon name="folder-open-70fn6ne7"></iconpark-icon>
+            <span class="value">
+                <%- list_categories(post.categories, {
+                    show_count: false,
+                    class: 'article-category',
+                    style: 'none',
+                    separator: ', '
+                }) %>
+            </span>
+        </div>
+        <div class="item">
+            <iconpark-icon name="tag-one"></iconpark-icon>
+            <span class="value">Tag</span>
+        </div>
+    </div>
+</div>

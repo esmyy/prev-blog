@@ -1,0 +1,25 @@
+.header-wrapper
+  height 72px
+  border-bottom 1px solid --border-color
+  .menus
+    height 100%
+    display flex
+    align-items flex-end
+    margin-left --sidebar-width
+    list-style none
+    font-size 16px
+    padding-left: 24px;
+    li
+      margin 0 16px
+      a
+        display flex
+        align-items center
+        padding 0 8px
+        padding-bottom: 8px;
+        color --default-color
+        text-decoration none;
+        iconpark-icon
+          margin-right: 8px;
+      &.selected
+        border-bottom 2px solid orange
+        margin-bottom -1px
