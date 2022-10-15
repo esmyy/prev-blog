@@ -1,0 +1,23 @@
+<%
+var posts = page.posts.data;
+var recentPosts = page.posts.data.slice(0, 6);
+%>
+
+<%- partial('_partial/header') %>
+<main class="main-content">
+  <%- partial('_partial/sidebar') %>
+  <div class="right-content">
+    <div class="article-list">
+      <% recentPosts.forEach(function(post){ %>
+          <%- include('_partial/article-card', {post: post}) %>
+      <% }); %>
+      <% recentPosts.forEach(function(post){ %>
+        <%- include('_partial/article-card', {post: post}) %>
+      <% }); %>
+        <% recentPosts.forEach(function(post){ %>
+          <%- include('_partial/article-card', {post: post}) %>
+        <% }); %>
+    </div>
+    <%- partial('_partial/calendar') %>
+  </div>
+</main>

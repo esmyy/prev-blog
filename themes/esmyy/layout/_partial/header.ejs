@@ -1,0 +1,37 @@
+<%
+var pathname = page.path
+var archivesActive = /archives/.test(pathname)
+var tagsActive = /tags/.test(pathname)
+var categoriesActive = /categories/.test(pathname)
+var postsActive = !(archivesActive||tagsActive||categoriesActive)
+%>
+<header class="header-wrapper">
+    <div class="main-content h-100">
+        <ul class="menus">
+            <li class="<%= postsActive ? 'selected' : '' %>">
+                <a href="<%= url_for(config.root) %>">
+                    <iconpark-icon name="book-open"></iconpark-icon>
+                    <span>Overview</span>
+                </a>
+            </li>
+            <li class="<%= archivesActive ? 'selected' : '' %>">
+                <a href="<%= url_for(config.archive_dir) %>">
+                    <iconpark-icon name="document-folder"></iconpark-icon>
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li class="<%= categoriesActive ? 'selected' : '' %>">
+                <a href="<%= url_for(config.category_dir)%>">
+                    <iconpark-icon name="folder-open-70fn6ne7"></iconpark-icon>
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li class="<%= tagsActive ? 'selected' : '' %>">
+                <a href="<%= url_for(config.tag_dir)%>">
+                    <iconpark-icon name="tag-one"></iconpark-icon>
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
