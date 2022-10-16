@@ -1,87 +1,127 @@
 <%
 var postsArr = [];
-var oneYearAgo = moment().subtract(1, 'year')
+var oneYearAgo = moment().subtract(1, 'year').add(1, 'day')
 var weekArr = [];
 var posts = site.posts.filter(function (post) {
     return post.date.isAfter(oneYearAgo)
 });
+console.log(site.posts.map((d) => d.date))
 function getCountOfDay(date) {
-    return site.posts.filter(d => moment(d).isSame(date, 'day'))
+    return site.posts.filter(d => d.date.isSame(date, 'day')).length
 }
 
+const LEVEL_ARR = [
+    {
+      max: 0,
+      level: 0,
+      color: '#ebedf0'
+    },
+    {
+      max: 2,
+        level: 1,
+        color: '#9be9a8'
+    },
+    {
+      max: 4,
+        level: 2,
+        color: '#40c463'
+    },
+    {
+      max: 6,
+        level: 3,
+        color: '#30a14e'
+    },
+    {
+        max: 100,
+        level: 4,
+        color: '#216e39'
+    }
+]
+
 function getCountLevel(count) {
-    if (count === 0) {
-      return 0;
-    }
+    const match = LEVEL_ARR.find(l => {
+      return l.max >= count
+    })
 
-    if (count < 2) {
-      return 1;
-    }
-
-    if (count < 4) {
-        return 2;
-    }
-
-    if (count < 6) {
-      return 3;
-    }
-
-    return 4;
+    return match.level;
 }
 
 let start = oneYearAgo.startOf('week');
-let end = moment().endOf('week');
-while (start < end) {
+let end = moment().endOf('day');
+while (start <= end) {
   const oneWeek = []
+  const month = start.format('MMM')
   for (let i = 0; i < 7; i++) {
-    start = start.add(1, 'day')
     let count = getCountOfDay(start);
-    oneWeek.push({
-        x: 1 - weekArr.length,
-        y: 13 * i,
-        count: count,
-        level: getCountLevel(count),
-        date: start.format('YYYY-MM-DD'),
-    })
+        oneWeek.push({
+            x: 14 - weekArr.length,
+            y: 13 * i,
+            count: count,
+            level: getCountLevel(count),
+            date: start.format('YYYY-MM-DD'),
+        })
+    start = start.add(1, 'day')
+      if (start.isSameOrAfter(end)) {
+        break;
+      }
   }
 
-  weekArr.push(oneWeek)
+  weekArr.push({
+      month: month,
+      days: oneWeek
+  })
 }
+
+let monthArr = [];
+start = oneYearAgo.startOf('week')
+let startMonth = oneYearAgo.startOf('week').format('MMM');
+weekArr.forEach((week, weekNum) => {
+  if (weekNum === 0 || startMonth !== week.month) {
+    monthArr.push({
+        month: week.month,
+        x: 14 + weekNum * 13
+    })
+
+      startMonth = week.month
+  }
+})
 %>
 <div class="calendar-wrapper">
     <div class="summary">
         <%= posts.length %> contributions in the last year
     </div>
-    <svg width="717" height="112" class="js-calendar-graph-svg">
-        <g transform="translate(15, 20)">
-            <% weekArr.forEach(function (week, index) {%>
-                <g transform="translate(<%= index * 14 %>, 0)">
-                    <% week.forEach(function (day) {%>
-                        <rect width="10" height="10" x="<%= day.x %>" y="<%= day.y %>"  rx="2" ry="2" data-count="<%= day.count %>" data-date="<%= day.date %>" data-level="<%= day.level %>"></rect>
-                    <%})%>
-                </g>
-            <%})%>
+    <div class="contribution-box border radius">
+        <svg width="717" height="112" class="js-calendar-graph-svg">
+            <g transform="translate(15, 20)">
+                <% weekArr.forEach(function (week, index) {%>
+                    <g transform="translate(<%= index * 14 %>, 0)">
+                        <% week.days.forEach(function (day) {%>
+                            <rect class="ContributionCalendar-day" width="10" height="10" x="<%= day.x %>" y="<%= day.y %>"  rx="2" ry="2" data-count="<%= day.count %>" data-date="<%= day.date %>" data-level="<%= day.level %>"></rect>
+                        <%})%>
+                    </g>
+                <%})%>
 
-            <text x="14" y="-7" class="ContributionCalendar-label">Oct</text>
-            <text x="66" y="-7" class="ContributionCalendar-label">Nov</text>
-            <text x="118" y="-7" class="ContributionCalendar-label">Dec</text>
-            <text x="170" y="-7" class="ContributionCalendar-label">Jan</text>
-            <text x="235" y="-7" class="ContributionCalendar-label">Feb</text>
-            <text x="287" y="-7" class="ContributionCalendar-label">Mar</text>
-            <text x="339" y="-7" class="ContributionCalendar-label">Apr</text>
-            <text x="391" y="-7" class="ContributionCalendar-label">May</text>
-            <text x="456" y="-7" class="ContributionCalendar-label">Jun</text>
-            <text x="508" y="-7" class="ContributionCalendar-label">Jul</text>
-            <text x="573" y="-7" class="ContributionCalendar-label">Aug</text>
-            <text x="625" y="-7" class="ContributionCalendar-label">Sep</text>
-            <text x="677" y="-7" class="ContributionCalendar-label">Oct</text>
-            <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="8" style="display: none;">Sun</text>
-            <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="22">Mon</text>
-            <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="32" style="display: none;">Tue</text>
-            <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="48">Wed</text>
-            <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="57" style="display: none;">Thu</text>
-            <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="73">Fri</text>
-            <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="81" style="display: none;">Sat</text>
-        </g>
-    </svg>
+                <% monthArr.forEach(function (month) {%>
+                    <text x="<%= month.x %>" y="-7" class="ContributionCalendar-label"><%= month.month %></text>
+                <%})%>
+
+                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="8" style="display: none;">Sun</text>
+                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="22">Mon</text>
+                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="32" style="display: none;">Tue</text>
+                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="48">Wed</text>
+                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="57" style="display: none;">Thu</text>
+                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="73">Fri</text>
+                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="81" style="display: none;">Sat</text>
+            </g>
+        </svg>
+        <div class="level-box">
+            <span class="text">Less</span>
+            <% LEVEL_ARR.forEach(function (l) { %>
+                <svg  class="js-calendar-graph-svg" width="10" height="10">
+                    <rect class="ContributionCalendar-day" width="10" height="10" rx="2" ry="2" data-count="<%= l.count %>" data-date="<%= l.date %>" data-level="<%= l.level %>"></rect>
+                </svg>
+            <% }) %>
+            <span class="text">More</span>
+        </div>
+    </div>
 </div>
