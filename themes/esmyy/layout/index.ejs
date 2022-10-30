@@ -3,19 +3,41 @@ var posts = page.posts.data;
 var recentPosts = page.posts.data.slice(0, 6);
 %>
 
-<main class="mainContent">
-    <%- partial('_partial/readme') %>
-    <div class="right-content">
-        <div class="article-list">
-          <% recentPosts.forEach(function(post){ %>
-              <%- include('_partial/article-card', {post: post}) %>
-          <% }); %>
-          <% recentPosts.forEach(function(post){ %>
-            <%- include('_partial/article-card', {post: post}) %>
-          <% }); %>
-            <% recentPosts.forEach(function(post){ %>
-              <%- include('_partial/article-card', {post: post}) %>
-            <% }); %>
-        </div>
+<main class="mainContent homePageMainContent">
+    <div class="recentList">
+            <div class="recentCard card">
+                <p>^_^</p>
+                <p class="mt-16">喜怒哀乐，柴米油盐</p>
+            </div>
+            <div class="recentCard card">
+                <p>阅读中...</p>
+                <p class="mt-16">《平凡的世界》</p>
+            </div>
+            <div class="recentCard recentPictureSlider">
+                <div>
+                    <img data-lazy="https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"/>
+                </div>
+                <div>
+                    <img data-lazy="https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"/>
+                </div>
+                <div>                <img data-lazy="https://cdn.pixabay.com/photo/2022/08/31/09/06/pumpkin-7422802_960_720.jpg"/>
+                </div>
+                <div>
+                    <img data-lazy="https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"/>
+
+                </div>
+            </div>
     </div>
+    <div class="articleList">
+        <% recentPosts.forEach(function(post){ %>
+            <%- include('_partial/article-card', {post: post}) %>
+        <% }); %>
+        <% recentPosts.forEach(function(post){ %>
+            <%- include('_partial/article-card', {post: post}) %>
+        <% }); %>
+        <% recentPosts.forEach(function(post){ %>
+            <%- include('_partial/article-card', {post: post}) %>
+        <% }); %>
+    </div>
+
 </main>

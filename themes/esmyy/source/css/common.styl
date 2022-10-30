@@ -1,12 +1,31 @@
-.p-6
-  padding 6px
-.p-12
-  padding 12px
-.p-16
-  padding 16px
-.p-20
-  padding 20px
-.p-24
-  padding 24px
-.p-32
-  padding 32px
+
+// home
+.homePageMainContent
+  //display grid
+  //grid-template-columns: repeat(2, 50%)
+  //grid-column-gap: 16px
+  //grid-row-gap: 16px
+  .articleList
+    margin-top: 20px;
+    display grid
+    grid-template-columns: repeat(2, 50%)
+    grid-column-gap: 16px
+    grid-row-gap: 16px
+  .recentList
+    margin-left: -20px;
+    display flex
+    .recentCard
+      margin 20px 0
+      margin-left: 20px;
+      height 100px
+    .recentPictureSlider
+      width 360px
+      overflow: hidden;
+      border-radius 6px
+      img
+        width 120px
+
+// recent talk
+.recentTalkWrapper
+  height 180px
+  margin 20px 0
