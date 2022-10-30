@@ -1,32 +1,45 @@
 .article-card
   min-width 320px
-  min-height: 120px;
+  height 150px
   padding 16px
+  padding-bottom: 12px;
   border 1px solid --border-color
   border-radius 6px
-  .title-box
+  box-sizing border-box
+  display flex
+  position: relative;
+  .picture
+    width 120px
+    height 120px
+    border-radius 4px
+  .articleDetail
+    margin-left: 20px;
+    height 120px
     display flex
-    align-items center
-    font-width: 600;
-    .title
-      cursor: pointer;
-      color --color-primary
-      margin-left: 6px;
-  .summary
-    font-size --text-small
-    margin-top: 8px;
-    color #57606a;
-    padding-left: 2px;
-  .footer
-    display flex
-    margin-top: 10px;
-    .item
+    flex-direction column
+    justify-content space-between
+    .title-box
+      font-width: 600;
+      .title
+        cursor: pointer;
+        color --color-primary
+    .summary
+      font-size --text-small
+      height 64px
+      line-height 22px
+      margin-top: 4px;
+      color #57606a;
+      overflow hidden
+    .footer
       display flex
-      align-items center
-      padding-right: 12px;
-      .value
-        padding-left: 4px;
-        a
-          color --default-color
-      .date-box
-        float right
+      margin-top: 12px;
+      .item
+        display flex
+        align-items center
+        padding-right: 12px;
+        .value
+          padding-left: 4px;
+          a
+            color --default-color
+        .date-box
+          float right

@@ -1,37 +1,50 @@
 <%
 var pathname = page.path
-var archivesActive = /archives/.test(pathname)
-var tagsActive = /tags/.test(pathname)
-var categoriesActive = /categories/.test(pathname)
-var postsActive = !(archivesActive||tagsActive||categoriesActive)
+var pictureActive = /picture/.test(pathname)
+var talkActive = /talk/.test(pathname)
+var readingActive = /reading/.test(pathname)
+var timelineActive = /timeline/.test(pathname)
+var homeActive = !(pictureActive||talkActive||readingActive||timelineActive)
 %>
-<header class="header-wrapper">
-    <div class="main-content h-100">
+<header>
+    <div class="mainContent headerContent">
         <ul class="menus">
-            <li class="<%= postsActive ? 'selected' : '' %>">
-                <a href="<%= url_for(config.root) %>">
+            <li class="<%= homeActive ? 'selected' : '' %>">
+                <a href="/">
                     <iconpark-icon name="book-open"></iconpark-icon>
-                    <span>Overview</span>
+                    <span>首页</span>
                 </a>
             </li>
-            <li class="<%= archivesActive ? 'selected' : '' %>">
-                <a href="<%= url_for(config.archive_dir) %>">
-                    <iconpark-icon name="document-folder"></iconpark-icon>
-                    <span>Archives</span>
+            <li class="<%= readingActive ? 'selected' : '' %>">
+                <a href="/reading">
+                    <iconpark-icon name="read-book"></iconpark-icon>
+                    <span>读书</span>
                 </a>
             </li>
-            <li class="<%= categoriesActive ? 'selected' : '' %>">
-                <a href="<%= url_for(config.category_dir)%>">
-                    <iconpark-icon name="folder-open-70fn6ne7"></iconpark-icon>
-                    <span>Categories</span>
+            <li class="<%= pictureActive ? 'selected' : '' %>">
+                <a href="/pictures">
+                    <iconpark-icon name="camera"></iconpark-icon>
+                    <span>相册</span>
                 </a>
             </li>
-            <li class="<%= tagsActive ? 'selected' : '' %>">
-                <a href="<%= url_for(config.tag_dir)%>">
-                    <iconpark-icon name="tag-one"></iconpark-icon>
-                    <span>Tags</span>
+            <li class="<%= talkActive ? 'selected' : '' %>">
+                <a href="/talk">
+                    <iconpark-icon name="message-emoji"></iconpark-icon>
+                    <span>随笔</span>
+                </a>
+            </li>
+            <li class="<%= timelineActive ? 'selected' : '' %>">
+                <a href="/timeline">
+                    <iconpark-icon name="calendar-thirty-two"></iconpark-icon>
+                    <span>时间轴</span>
                 </a>
             </li>
         </ul>
     </div>
+
+    <!--  avatar  -->
+    <a class="avatar-box" href="https://github.com/esmyy">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/20430185?v=4" alt="马月月头像">
+        <div class="status-box"></div>
+    </a>
 </header>

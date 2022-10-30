@@ -1,0 +1,40 @@
+.sidebar-wrapper-fixed
+  position: absolute;
+  top: 0
+  right  0
+  width 296px
+  .avatar-box
+    //margin-top: -30px;
+    position: relative;
+    .avatar
+      width 80px
+      height 80px
+      border-radius 50%
+      cursor pointer
+      &:hover
+        box-shadow 0 0 8px #6192de
+    .status-box
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        z-index: 2;
+        width: 38px;
+        height: 38px;
+        margin-bottom: 32px;
+        margin-left: -40px;
+        border 1px solid --border-color
+        border-radius 50%
+  .name-box
+    margin-top: 20px;
+    .name
+      font-size 24px
+      font-width: 600;
+    .alias
+      font-size 20px
+      color #57606a;
+  .summary-box
+    display flex
+    margin: 10px 0;
+    align-items center
+  .info-box
+    margin: 10px 0;
