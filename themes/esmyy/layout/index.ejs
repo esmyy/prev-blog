@@ -5,13 +5,19 @@ var recentPosts = page.posts.data.slice(0, 6);
 
 <main class="mainContent homePageMainContent">
     <div class="recentList">
-            <div class="recentCard card">
-                <p>^_^</p>
+        <div class="recentLeft">
+            <div class="recentCard card lifeCard">
+                <p class="cardTitle">^_^</p>
                 <p class="mt-16">喜怒哀乐，柴米油盐</p>
             </div>
-            <div class="recentCard card">
-                <p>阅读中...</p>
-                <p class="mt-16">《平凡的世界》</p>
+            <div class="recentCard card readingCard ">
+                <p class="cardTitle bookName">《平凡的世界》...</p>
+                <p class="readingCardContent mt-4">1975年初农民子弟孙少平到原西县高中读书，他贫困，自卑；后对处境相同的地主家庭出身的郝红梅产生情愫，在被同班同学侯玉英发现并当众说破后，与郝红梅关系渐变恶劣，后来郝红梅却与家境优越的顾养民恋爱。少平高中毕业，回到家乡做了一名教师。</p>
+            </div>
+        </div>
+        <div class="recentRight">
+            <div class="recentCard talkCard card">
+                <p class="talkCardContent">我们都是平凡的人，在平凡的世界里或者</p>
             </div>
             <div class="recentCard recentPictureSlider">
                 <div>
@@ -27,6 +33,7 @@ var recentPosts = page.posts.data.slice(0, 6);
 
                 </div>
             </div>
+        </div>
     </div>
     <div class="articleList">
         <% recentPosts.forEach(function(post){ %>
@@ -39,5 +46,4 @@ var recentPosts = page.posts.data.slice(0, 6);
             <%- include('_partial/article-card', {post: post}) %>
         <% }); %>
     </div>
-
 </main>
