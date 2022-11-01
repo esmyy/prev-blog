@@ -1,0 +1,35 @@
+<main class="mainContent">
+    <div class="pictureSlider">
+        <div>
+            <img data-lazy="https://cdn.pixabay.com/photo/2016/11/18/16/19/flowers-1835619_960_720.jpg"/>
+        </div>
+        <div>
+            <img data-lazy="https://cdn.pixabay.com/photo/2021/05/28/22/54/carnations-6292136_960_720.jpg"/>
+        </div>
+        <div>
+          <img data-lazy="https://cdn.pixabay.com/photo/2022/08/31/09/06/pumpkin-7422802_960_720.jpg"/>
+        </div>
+        <div>
+            <img data-lazy="https://cdn.pixabay.com/photo/2022/10/03/23/41/house-7497001__340.png"/>
+        </div>
+    </div>
+</div>
+</main>
+<script>
+  $(".pictureSlider").slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 1,
+    dots: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    infinite: true,
+    arrows: true,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '<button type="button" class="slick-prev"><iconpark-icon size="48" color="#fff" name="left"></iconpark-icon></button>',
+    nextArrow: '<button type="button" class="slick-next"><iconpark-icon size="48" color="#fff" name="right"></iconpark-icon></button>',
+  });
+  </script>

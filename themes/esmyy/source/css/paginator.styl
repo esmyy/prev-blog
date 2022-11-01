@@ -1,0 +1,29 @@
+.paginatorWrapper
+  display flex
+  justify-content center
+  align-items center
+  margin-top: 20px;
+  //margin-left: -20px;
+  .space,
+  .next,
+  .pageNum
+    width 30px
+    height 30px
+    border-radius 8px
+    text-align center
+    border 1px solid gray
+    display flex
+    align-items center
+    justify-content center
+    margin: 20px 12px;
+    color black
+    position: relative;
+    &.current
+      background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  .next
+    &::after
+      content ">"
+      position: absolute;
+  .space
+    border none
+    padding-bottom 4px

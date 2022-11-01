@@ -1,8 +1,8 @@
 <%
 var posts = page.posts.data;
 var recentPosts = page.posts.data.slice(0, 6);
+var currentPage = 1;
 %>
-
 <main class="mainContent homePageMainContent">
     <div class="recentList">
         <div class="recentLeft">
@@ -45,5 +45,25 @@ var recentPosts = page.posts.data.slice(0, 6);
         <% recentPosts.forEach(function(post){ %>
             <%- include('_partial/article-card', {post: post}) %>
         <% }); %>
+
+    </div>
+    <div class="paginatorWrapper">
+        <%- paginator({
+            base: '/',
+            current: 1,
+            total: 100,
+            prev_next: true,
+            page_class: 'pageNum',
+            next_text: '',
+            prev_text: '上一页'
+        }) %>
     </div>
 </main>
+<script>
+    $(".recentPictureSlider").slick({
+      lazyLoad: 'ondemand',
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true
+    });
+    </script>

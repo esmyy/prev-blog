@@ -1,19 +1,14 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
 # Site
 title: esmyy
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: Esmyy
 language: en
 timezone: ''
 
-# URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://mayueyue.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -64,6 +59,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+  pagination_dir: 'page'
 
 # Category & Tag
 default_category: uncategorized
