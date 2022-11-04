@@ -3,6 +3,8 @@ var posts = page.posts.data;
 var recentPosts = page.posts.data.slice(0, 6);
 var currentPage = 1;
 %>
+<%- partial('_partial/first-screen.ejs') %>
+<%- partial('_partial/header.ejs') %>
 <main class="mainContent homePageMainContent">
     <div class="recentList">
         <div class="recentLeft">

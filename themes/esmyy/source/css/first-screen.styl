@@ -1,0 +1,29 @@
+.firstScreen
+  position relative
+  width: 100vw
+  height: 100vh
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  // background-image: url('https://cdn.pixabay.com/photo/2022/10/28/18/12/lake-7553642_960_720.jpg')
+  background-size: cover
+  &.hidden
+    display: none;
+    opacity 0;
+    transition: opacity 1s ease;
+  .lifeCard
+    position absolute
+    left: 50%
+    top: 40%
+    transform: translateX(-50%)
+    background-color: rgba(0,0,0,0.2)
+    border-radius: 4px
+    color: #fff
+    padding: 20px
+    text-align: center
+    line-height: 30px
+  .author
+    text-align: right
+  .pictureIntroduction
+    padding: 20px;
+    position absolute
+    bottom: 20px
+    right: 20px
