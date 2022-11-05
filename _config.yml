@@ -69,11 +69,12 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ""
+  tab_replace: 2
   wrap: true
-  hljs: false
+  hljs: true
+  engine: highlight
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ""
@@ -120,6 +121,22 @@ include:
 exclude:
 ignore:
 
+# 压缩
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - "*.min.css"
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - "*.min.js"
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -129,3 +146,26 @@ theme: esmyy
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
+
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  rel: false
+  tags: true
+  categories: true
+
+# tag generator
+tag_generator:
+  per_page: 10
+  order_by: -date
+
+toc:
+  maxdepth: 3
+  class: toc
+  slugify: transliteration
+  decodeEntities: false
+  anchor:
+    position: after
+    symbol: "#"
+    style: header-anchor

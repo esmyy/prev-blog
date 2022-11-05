@@ -4,7 +4,7 @@ var pictureActive = /picture/.test(pathname)
 var talkActive = /talk/.test(pathname)
 var readingActive = /reading/.test(pathname)
 var timelineActive = /timeline/.test(pathname)
-var homeActive = !(pictureActive||talkActive||readingActive||timelineActive)
+var homeActive = /^\/?$/.test(pathname)
 %>
 <header>
   <div class="mainContent headerContent">
