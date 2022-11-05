@@ -5,6 +5,7 @@
   margin-top: 20px;
   //margin-left: -20px;
   .space,
+  .prev,
   .next,
   .pageNum
     width 30px
@@ -20,6 +21,10 @@
     position: relative;
     &.current
       background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  .prev
+    &::after
+      content "<"
+      position: absolute;
   .next
     &::after
       content ">"

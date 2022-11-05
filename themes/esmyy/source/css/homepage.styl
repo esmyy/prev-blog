@@ -1,49 +1,53 @@
-// home
 .recentList
   display grid
   grid-template-columns: repeat(2, 50%)
-  grid-column-gap: 16px
-  grid-row-gap: 16px
+  grid-column-gap: 20px
+  grid-row-gap: 20px
   .recentLeft
     display flex
     justify-content space-between
   .recentCard
+    position relative
     margin-right: 0;
     margin-top: 20px;
     width 32%
-    height 100px
-    .cardTitle
-      font-weight: bold;
+    height 120px
     &.lifeCard
       display flex
       flex-direction column
       justify-content space-between
     &.readingCard
       flex-grow 1
-      margin-left: 20px;
+      margin-left: 16px
       background-color #ede0d9
       border none
+      padding-right: 0;
       .readingCardContent
         position: relative;
-        height: 44px;
-        line-height: 22px;
+        padding-right: 16px;
+        height: 72px;
+        line-height: 24px;
         overflow: hidden;
-      .bookName
-        margin-left: -5px;
     &.recentPictureSlider
-      width 360px
+      flex-grow: 1
       overflow: hidden;
       border-radius 6px
-      margin-left: 0;
-      img
-        width 120px
+      .picture
+        background-size: cover
+        height: 120px
     &.talkCard
       background-color #b3dcf5
       border none
+      padding-right: 0
+      .speaker
+        position absolute
+        left: 16px
+        top: 10px
       .talkCardContent
+        padding-right: 16px
         position: relative;
-        height: 44px;
-        line-height: 22px;
+        height: 96px;
+        line-height: 24px;
         overflow: hidden;
   .recentRight
     display flex

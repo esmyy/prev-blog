@@ -1,5 +1,6 @@
 # Site
 title: esmyy
+favicon: /images/favicon.png
 subtitle: ""
 description: ""
 keywords: "esmyy, myy, 马月月, 月月, 月月的个人网站"
@@ -9,7 +10,7 @@ timezone: ""
 
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://mayueyue.com
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -21,6 +22,25 @@ firstScreen:
   date: "2022年11月4日"
   addr: "北京朝阳区"
   description: "爱我所爱，长久不懈"
+
+# Home Page
+recentPicture:
+  one:
+    image: "https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"
+    text: ""
+    link: ""
+  two:
+    image: "https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"
+    text: ""
+    link: ""
+  three:
+    image: "https://cdn.pixabay.com/photo/2022/08/31/09/06/pumpkin-7422802_960_720.jpg"
+    text: ""
+    link: ""
+  four:
+    image: "https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"
+    text: ""
+    link: ""
 
 # Directory
 source_dir: source
@@ -42,7 +62,7 @@ external_link:
   exclude: ""
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -64,14 +84,17 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ""
-  per_page: 10
+  per_page: 8
   order_by: -date
-  pagination_dir: "page"
+  pagination_dir: page
 
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+archive_generator:
+  enabled: true
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
