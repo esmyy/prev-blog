@@ -12,10 +12,6 @@
     </div>
 
     <div class="articleBody" itemprop="articleBody">
-      <%- partial('post/justifiedGallery') %>
-      <% if (index){ %>
-      <%- partial('post/gallery') %>
-      <% } %>
       <% if (post.excerpt && index){ %>
       <%- post.excerpt %>
       <% if (config.excerpt_link){ %>

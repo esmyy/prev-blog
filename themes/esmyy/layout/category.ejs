@@ -1,3 +1,10 @@
-<div>
-    category
+<%
+console.log(site.categories)
+%>
+<div class="categoriesWrapper mt-32">
+    <% if (is_page()) {%>
+         <%- partial('_partial/tags.ejs', {tags: site.categories, isPure: false}) %>
+    <%} else {%>
+        <%- partial('_partial/timeline.ejs') %>
+    <%}%>
 </div>

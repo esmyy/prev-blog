@@ -1,0 +1,38 @@
+<%
+// 需要转换为中文展示的内容
+var tagMap = {
+  // category
+  reading: '阅读',
+  talk: '随笔',
+  picture: '照片',
+  life: '财米油盐',
+  tech: '技术相关',
+
+  // tag
+  tool: '工具'
+}
+
+function getTagName(name) {
+  return tagMap[name] || name
+}
+%>
+
+<% if (isPure) { %>
+  <% tags.forEach(function(ca, index) { %>
+      <a class="tagItem" href="<%= url_for(ca.path)%>">
+        <span class="tagName"><%= getTagName(ca.name) %></span>
+      </a>
+      <% if (index !== tags.length - 1) { %>
+        ,&nbsp;
+      <%}%>
+  <%})%>
+<%} else {%>
+  <div class="tagList">
+    <% tags.forEach(function(ca) { %>
+        <a class="tagListItem" href="<%= url_for(ca.path)%>">
+            <span class="tagName"><%= getTagName(ca.name) %></span>
+            <span class="tagCount">(<%= ca.length %>)</span>
+        </a>
+    <%})%>
+  </div>
+<%}%>

@@ -1,12 +1,15 @@
 <%
 var posts = page.posts.data;
 var recentPosts = page.posts;
+var readingList = site.categories.find(ca => {
+  return ca.name === 'reading'
+})
+var talkList = site.categories.find(ca => {
+  return ca.name === 'talk'
+})
+
 %>
-<% if (page.current === 1) {%>
-<%- partial('_partial/first-screen.ejs') %>
-<% } %>
-<%- partial('_partial/header.ejs') %>
-<main class="mainContent homePageMainContent">
+<div class="homePageMainContent">
   <div class="recentList">
     <div class="recentLeft">
       <div class="recentCard talkCard card">
@@ -16,7 +19,7 @@ var recentPosts = page.posts;
         </p>
       </div>
       <div class="recentCard card readingCard ">
-        <p class="cardTitle bookName"><iconpark-icon name="read-book"></iconpark-icon>《平凡的世界》</p>
+        <p class="cardTitle bookName"><iconpark-icon name="read-book"></iconpark-icon>《平凡的世界》.</p>
         <p class="readingCardContent mt-2 overflowEllipse">1975年初农民子弟孙少平到原西县高中读书，他贫困，自卑；后对处境相同的地主家庭出身的郝红梅产生情愫，在被同班同学侯玉英发现并当众说破后，与郝红梅关系渐变恶劣，后来郝红梅却与家境优越的顾养民恋爱。少平高中毕业，回到家乡做了一名教师。</p>
       </div>
     </div>
@@ -45,12 +48,4 @@ var recentPosts = page.posts;
             prev_text: ''
         }) %>
   </div>
-</main>
-<script>
-  $(".recentPictureSlider").slick({
-    lazyLoad: 'ondemand',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true
-  });
-</script>
+</div>

@@ -1,0 +1,42 @@
+<%
+var posts = page.posts;
+var year = new Date().getFullYear() + 1 + ''
+%>
+<div class="timelineWrapper">
+  <div class=" timeline">
+    <% posts.forEach(function(post) { %>
+    <% if (date(post.date, 'YYYY') != year) { %>
+    <% year = date(post.date, 'YYYY') %>
+    <div class="timelineItem year"><%= year %></div>
+    <% } %>
+
+    <div class="timelineItem">
+      <div class="date">
+        <%= date(post.date) %>
+      </div>
+      <div class="title">
+        <%= post.title %>
+      </div>
+      <div class="summary">
+        <%= post.excerpt || post.content.replace(/<[^>]*>/ig, ' ').slice(0, 160) %>
+      </div>
+      <% if (post.poster || post.photos.length) { %>
+      <img class="poster" src=<%= post.poster || post.photos[0] %> />
+      <% } %>
+    </div>
+    <% }) %>
+  </div>
+  <% if (page.total > 1) {%>
+    <div class="paginatorWrapper">
+      <%- paginator({
+        base: '/archives/',
+        current: page.current,
+        total: page.total,
+        prev_next: true,
+        page_class: 'pageNum',
+        next_text: '>',
+        prev_text: ''
+      }) %>
+    </div>
+  <% } %>
+</div>

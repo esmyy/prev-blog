@@ -3,18 +3,14 @@
 <%- partial('_partial/head') %>
 <body>
 <div id="esmyy">
-    <%- body %>
+    <% if (is_home_first_page()) {%>
+    <%- partial('_partial/first-screen.ejs') %>
+    <% } %>
+    <%- partial('_partial/header') %>
+    <main class="mainContent">
+        <%- body %>
+    </main>
     <%- partial('_partial/footer') %>
 </div>
-<script>
-// hljs.initHighlightingOnLoad();
-</script>
-<script src="/js/scrollreveal.js"></script>
-<script>
-const eles = document.querySelectorAll('[data-scroll-reveal]')
-eles.forEach(elem => {
-    ScrollReveal().reveal(elem)
-})
-</script>
 </body>
 </html>

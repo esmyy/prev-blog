@@ -4,6 +4,7 @@ date: 2021-03-29 01:47:04
 categories: 工具
 tags: [工具, git]
 excerpt: 执行上下文
+poster: https://avatars.githubusercontent.com/u/20430185?v=4
 ---
 
 `wogit` 是一个 git clone 加速命令行工具，使用加速镜像解决从 `github` 克隆速度慢的问题，在很多情况下能够显著提升 clone 速度。
@@ -76,3 +77,5 @@ wogit clone https://github.com/chalk/chalk.git -gitee
 原汁原味的 `git` 它不香吗
 
 只在 clone github 时用 wogit 就好啦
+
+[图片](https://cdn.pixabay.com/photo/2022/10/28/18/12/lake-7553642_960_720.jpg)

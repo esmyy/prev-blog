@@ -22,12 +22,8 @@ var favicon = config.favicon
   <% } %>
   <meta name="author" content="<%= config.author %>">
   <meta name="theme-color" content="#1e2327">
-    <script src="<%= config.root %>js/headScript.js"></script>
-    <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_20170_46.9093dbd766690862bebeb6b9021a824f.js"></script>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/highlight.min.js"></script>
-    <link rel="stylesheet"
-      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/monokai-sublime.min.css">
-  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
-  <link rel="icon" type="image/x-icon" href="<%= favicon %>">
-  <link rel="stylesheet" href="<%= config.root %>css/main.css">
+  <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_20170_46.9093dbd766690862bebeb6b9021a824f.js"></script>
+  <link rel="icon" type="image/png" href="<%= favicon %>">
+  <script src="<%- url_for(theme_js('js/headScript', env.env === 'production')) %>"></script>
+  <link rel="stylesheet" href="<%- url_for(theme_css('css/main', env.env === 'production')) %>">
 </head>

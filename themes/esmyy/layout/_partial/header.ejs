@@ -1,10 +1,18 @@
 <%
-var pathname = page.path
-var pictureActive = /picture/.test(pathname)
-var talkActive = /talk/.test(pathname)
-var readingActive = /reading/.test(pathname)
-var timelineActive = /timeline/.test(pathname)
-var homeActive = /^\/?$/.test(pathname)
+var pathname = page.path.replace('index.html', '')
+var pictureActive = /categories\/picture/.test(pathname)
+var talkActive = /categories\/talk/.test(pathname)
+var readingActive = /categories\/reading/.test(pathname)
+var archivesActive = /archives/.test(pathname)
+var tagActive = /tags/.test(pathname)
+var categoriesActicve = /categories\/$/.test(pathname)
+var homeActive = /^(\/?index.html)?$/.test(pathname)
+var hasPicture = site.categories.some(function(ca){
+  return ca.name === "picture";
+})
+var hasReading = site.categories.some(function(ca){
+  return ca.name === "reading";
+})
 %>
 <header>
   <div class="mainContent headerContent">
@@ -15,34 +23,52 @@ var homeActive = /^\/?$/.test(pathname)
           <span>首页</span>
         </a>
       </li>
-      <li class="<%= readingActive ? 'selected' : '' %>">
-        <a href="/reading">
-          <iconpark-icon name="read-book"></iconpark-icon>
-          <span>读书</span>
-        </a>
-      </li>
-      <li class="<%= pictureActive ? 'selected' : '' %>">
-        <a href="/pictures">
-          <iconpark-icon name="camera"></iconpark-icon>
-          <span>相册</span>
-        </a>
-      </li>
-      <li class="<%= talkActive ? 'selected' : '' %>">
-        <a href="/talk">
+     <li class="<%= talkActive ? 'selected' : '' %>">
+        <a href="/categories/talk">
           <iconpark-icon name="message-emoji"></iconpark-icon>
           <span>随笔</span>
         </a>
       </li>
-      <li class="<%= timelineActive ? 'selected' : '' %>">
-        <a href="/timeline">
+      <% if (hasPicture) {%>
+        <li class="<%= pictureActive ? 'selected' : '' %>">
+          <a href="/categories/照片">
+            <iconpark-icon name="camera"></iconpark-icon>
+            <span>照片</span>
+          </a>
+        </li>
+      <%}%>
+      <% if (hasReading) {%>
+        <li class="<%= readingActive ? 'selected' : '' %>">
+          <a href="/categories/阅读">
+            <iconpark-icon name="read-book"></iconpark-icon>
+            <span>阅读</span>
+          </a>
+        </li>
+      <%}%>
+
+      <li class="<%= tagActive ? 'selected' : '' %>">
+        <a href="/tags">
+          <iconpark-icon name="tag-one"></iconpark-icon>
+          <span>标签</span>
+        </a>
+      </li>
+      <li class="<%= categoriesActicve ? 'selected' : '' %>">
+        <a href="/categories">
+          <iconpark-icon name="document-folder"></iconpark-icon>
+          <span>分类</span>
+        </a>
+      </li>
+      <li class="<%= archivesActive ? 'selected' : '' %>">
+        <a href="/archives">
           <iconpark-icon name="calendar-thirty-two"></iconpark-icon>
           <span>时间轴</span>
         </a>
       </li>
     </ul>
+    <% if (hasPicture) { %>
+      <div>yes</div>
+    <%}%>
   </div>
-
-  <!--  avatar  -->
   <a class="avatar-box" href="https://github.com/esmyy">
     <img class="avatar" src="https://avatars.githubusercontent.com/u/20430185?v=4" alt="马月月头像" />
     <div class="status-box"></div>
