@@ -1,10 +1,11 @@
 <%
-var summary = post.excerpt || post.content.replace(/<[^>]*>/ig, ' ').slice(0, 160)
-var categories = post.categories.slice(0, 2)
+const summary = post.excerpt || post.content.replace(/<[^>]*>/ig, ' ').slice(0, 160)
+const categories = post.categories.slice(0, 2)
+let poster = get_first_img(post)
 %>
 <div class="articleCard">
-    <% if (post.poster) { %>
-        <img class="picture" src="<%= post.poster %>"/>
+    <% if (poster) { %>
+        <img class="picture" src="<%= poster %>"/>
     <% } %>
     <div class="articleDetail">
         <div>

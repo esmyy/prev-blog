@@ -86,7 +86,7 @@ prism_plugin:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ""
-  per_page: 8
+  per_page: 10
   order_by: -date
   pagination_dir: page
 
@@ -170,3 +170,38 @@ toc:
     position: after
     symbol: "#"
     style: header-anchor
+
+post_wordcount:
+  date: true # 发布日期
+  update: true # 更新日期
+  wordCount: true # 文章字数统计
+  totalCount: true # 站点总文章字数
+  min2read: true # 文章阅读时长
+  readCount: true # 文章阅读次数
+
+# hexo_external_link:
+#   enable: false
+#   enable_base64_encode: false
+#   url_param_name: ""
+#   html_file_name: "go.html"
+#   target_blank: true
+#   link_rel: "external nofollow noopener noreferrer"
+#   domain: "your_domain" # 如果开启了防盗链
+#   safety_chain: true
+
+# feed:
+#   type: atom
+#   path: atom.xml
+#   limit: 20;
+#   hub:
+#     content:
+#       content_limit: 140
+#   content_limit_delim: " "
+#   order_by: -date;
+
+# jsdelivr CDN
+jsdelivr:
+  enable: true
+  gh_user: esmyy
+  gh_repo: imagehost
+  baseUrl: cdn.jsdelivr.net

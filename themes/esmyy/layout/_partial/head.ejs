@@ -24,6 +24,6 @@ var favicon = config.favicon
   <meta name="theme-color" content="#1e2327">
   <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_20170_46.9093dbd766690862bebeb6b9021a824f.js"></script>
   <link rel="icon" type="image/png" href="<%= favicon %>">
-  <script src="<%- url_for(theme_js('js/headScript', env.env === 'production')) %>"></script>
-  <link rel="stylesheet" href="<%- url_for(theme_css('css/main', env.env === 'production')) %>">
+  <script src="<%- url_for(theme_js('js/headScript', env.env != 'development')) %>"></script>
+  <link rel="stylesheet" href="<%- url_for(theme_css('css/main', env.env != 'development')) %>">
 </head>

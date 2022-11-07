@@ -20,15 +20,19 @@ var year = new Date().getFullYear() + 1 + ''
       <div class="summary">
         <%= post.excerpt || post.content.replace(/<[^>]*>/ig, ' ').slice(0, 160) %>
       </div>
-      <% if (post.poster || post.photos.length) { %>
-      <img class="poster" src=<%= post.poster || post.photos[0] %> />
+
+      <%
+      var poster = get_first_img(post)
+      %>
+      <% if (poster) { %>
+      <img class="poster" src="<%= poster %>" />
       <% } %>
     </div>
     <% }) %>
   </div>
   <% if (page.total > 1) {%>
-    <div class="paginatorWrapper">
-      <%- paginator({
+  <div class="paginatorWrapper">
+    <%- paginator({
         base: '/archives/',
         current: page.current,
         total: page.total,
@@ -37,6 +41,6 @@ var year = new Date().getFullYear() + 1 + ''
         next_text: '>',
         prev_text: ''
       }) %>
-    </div>
+  </div>
   <% } %>
 </div>

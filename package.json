@@ -7,7 +7,9 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "dev": "hexo server"
+    "dev": "hexo server",
+    "post": "hexo new post",
+    "img": "hexo new picture"
   },
   "hexo": {
     "version": "6.3.0"

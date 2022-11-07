@@ -18,3 +18,13 @@ hexo.extend.helper.register("theme_js", (path, cache) =>
 hexo.extend.helper.register("theme_css", (path, cache) =>
   source(path, cache, ".css")
 );
+
+hexo.extend.helper.register("get_first_img", (post) => {
+  let poster = post.poster;
+  if (!post.poster) {
+    const match = post.more.match(/<img src="([^\s]*)/);
+    poster = match ? match[1] : "";
+  }
+
+  return poster.replace(/["?\/]$/, "");
+});

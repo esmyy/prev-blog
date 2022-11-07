@@ -1,6 +1,6 @@
 <%
 var pathname = page.path.replace('index.html', '')
-var pictureActive = /categories\/picture/.test(pathname)
+var photosActive = /categories\/photos/.test(pathname)
 var talkActive = /categories\/talk/.test(pathname)
 var readingActive = /categories\/reading/.test(pathname)
 var archivesActive = /archives/.test(pathname)
@@ -30,8 +30,8 @@ var hasReading = site.categories.some(function(ca){
         </a>
       </li>
       <% if (hasPicture) {%>
-        <li class="<%= pictureActive ? 'selected' : '' %>">
-          <a href="/categories/照片">
+        <li class="<%= photosActive ? 'selected' : '' %>">
+          <a href="/categories/photos">
             <iconpark-icon name="camera"></iconpark-icon>
             <span>照片</span>
           </a>
@@ -39,7 +39,7 @@ var hasReading = site.categories.some(function(ca){
       <%}%>
       <% if (hasReading) {%>
         <li class="<%= readingActive ? 'selected' : '' %>">
-          <a href="/categories/阅读">
+          <a href="/categories/reading">
             <iconpark-icon name="read-book"></iconpark-icon>
             <span>阅读</span>
           </a>
