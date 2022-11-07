@@ -22,8 +22,11 @@ var favicon = config.favicon
   <% } %>
   <meta name="author" content="<%= config.author %>">
   <meta name="theme-color" content="#1e2327">
-  <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_20170_46.9093dbd766690862bebeb6b9021a824f.js"></script>
   <link rel="icon" type="image/png" href="<%= favicon %>">
-  <script src="<%- url_for(theme_js('js/headScript', env.env != 'development')) %>"></script>
+  <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_20170_46.9093dbd766690862bebeb6b9021a824f.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.1/viewer.min.js" integrity="sha512-UzpQxIWgLbHvbVd4+8fcRWqFLi1pQ6qO6yXm+Hiig76VhnhW/gvfvnacdPanleB2ak+VwiI5BUqrPovGDPsKWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.1/viewer.min.css" integrity="sha512-XHhuZDcgyu28Fsd75blrhZKbqqWCXaUCOuy2McB4doeSDu34BgydakOK71TH/QEhr0nhiieBNhF8yWS8thOGUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="<%- url_for(theme_css('css/main', env.env != 'development')) %>">
 </head>

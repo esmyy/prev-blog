@@ -5,11 +5,11 @@ categories: talk
 tags: ["北京", "秋天", "COVID-19"]
 ---
 
-![image](https://avatars.githubusercontent.com/u/20430185?v=4)
+<div class="qrImgWrapper">
+{% asset_img autumn.jpeg 秋天 %}
+</div>
 
-2022 年 11 月 6 日，北京朝阳，秋意正浓。
-
-居家隔离的日子，连房门也不能打开了
+2022 年 11 月 6 日，北京朝阳，秋意正浓，居家隔离的日子，连房门也不能打开了，只找到一张前些日子拍的秋叶图。
 
 看着朋友圈
 秋天金黄的银杏叶落

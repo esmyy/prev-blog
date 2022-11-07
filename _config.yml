@@ -18,7 +18,7 @@ pretty_urls:
 
 # First Screen
 firstScreen:
-  image: "https://cdn.pixabay.com/photo/2022/10/28/18/12/lake-7553642_960_720.jpg"
+  image: /images/the-great-wall.jpeg
   date: "2022年11月4日"
   addr: "北京朝阳区"
   description: "爱我所爱，长久不懈"
@@ -26,19 +26,19 @@ firstScreen:
 # Home Page
 recentPicture:
   one:
-    image: "https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"
+    image: /images/3601.jpg
     text: ""
     link: ""
   two:
-    image: "https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"
+    image: /images/2101.jpg
     text: ""
     link: ""
   three:
-    image: "https://cdn.pixabay.com/photo/2022/08/31/09/06/pumpkin-7422802_960_720.jpg"
+    image: /images/3602.jpg
     text: ""
     link: ""
   four:
-    image: "https://p26-passport.byteacctimg.com/img/user-avatar/a8b63c3dff7d8860216a1dde87e50688~300x300.image"
+    image: /images/2102.jpg
     text: ""
     link: ""
 

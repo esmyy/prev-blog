@@ -14,11 +14,11 @@ var year = new Date().getFullYear() + 1 + ''
       <div class="date">
         <%= date(post.date) %>
       </div>
-      <div class="title">
+      <a href="<%= url_for(post.path) %>" class="title">
         <%= post.title %>
-      </div>
+      </a>
       <div class="summary">
-        <%= post.excerpt || post.content.replace(/<[^>]*>/ig, ' ').slice(0, 160) %>
+        <%= post.excerpt || post.content.replace(/<[^>]*>/ig, ' ').slice(0, 160) %>...
       </div>
 
       <%

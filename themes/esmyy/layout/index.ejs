@@ -50,10 +50,13 @@ var talkList = site.categories.find(ca => {
   </div>
 </div>
 <script>
-$(".recentPictureSlider").slick({
-  lazyLoad: 'ondemand',
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true
-});
+window.addEventListener('load', () => {
+  console.log('$', $)
+  $(".recentPictureSlider").slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true
+  });
+})
 </script>
