@@ -1,14 +1,17 @@
 <%
 var posts = page.posts.data;
 var recentPosts = page.posts;
-var readingList = site.categories.find(ca => {
+
+const reading = site.categories.findOne((ca) => {
   return ca.name === 'reading'
 })
-var talkList = site.categories.find(ca => {
-  return ca.name === 'talk'
-})
 
+let firstBook = null;
+if (reading.length) {
+  firstBook = reading.posts
+}
 %>
+
 <div class="homePageMainContent">
   <div class="recentList">
     <div class="recentLeft">
@@ -18,17 +21,19 @@ var talkList = site.categories.find(ca => {
           我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者
         </p>
       </div>
-      <div class="recentCard card readingCard ">
-        <p class="cardTitle bookName"><iconpark-icon name="read-book"></iconpark-icon>《平凡的世界》</p>
-        <p class="readingCardContent mt-2 overflowEllipse">1975年初农民子弟孙少平到原西县高中读书，他贫困，自卑；后对处境相同的地主家庭出身的郝红梅产生情愫，在被同班同学侯玉英发现并当众说破后，与郝红梅关系渐变恶劣，后来郝红梅却与家境优越的顾养民恋爱。少平高中毕业，回到家乡做了一名教师。</p>
-      </div>
+      <% if (firstBook) {%>
+        <div class="recentCard card readingCard ">
+          <p class="cardTitle bookName"><iconpark-icon name="read-book"></iconpark-icon>《<%= firstBook.title %>》</p>
+          <p class="readingCardContent mt-2 overflowEllipse">1975年初农民子弟孙少平到原西县高中读书，他贫困，自卑；后对处境相同的地主家庭出身的郝红梅产生情愫，在被同班同学侯玉英发现并当众说破后，与郝红梅关系渐变恶劣，后来郝红梅却与家境优越的顾养民恋爱。少平高中毕业，回到家乡做了一名教师。</p>
+        </div>
+      <%}%>
     </div>
     <div class="recentRight">
       <div class="recentCard recentPictureSlider">
-        <div class="picture" style="background-image:url(<%= config.recentPicture.one.image %>)"></div>
-        <div class="picture" style="background-image:url(<%= config.recentPicture.two.image %>)"></div>
-        <div class="picture" style="background-image:url(<%= config.recentPicture.three.image %>)"></div>
-        <div class="picture" style="background-image:url(<%= config.recentPicture.four.image %>)"></div>
+        <% config.recentPicture.forEach(function(p) {%>
+          <div class="picture" title="<%= p.text %>" style="background-image:url(<%= p.image %>)">
+          </div>
+        <%})%>
       </div>
     </div>
   </div>

@@ -3,16 +3,10 @@
     <p>有时怡然，洵美且好</p>
     <p>靠近美好，创造想要的生活</p>
   </div>
-  <div class="pictureIntroduction">
-    <p>
-      <%= config.firstScreen.date %>
-    </p>
-    <p>
-      <%= config.firstScreen.addr %>
-    </p>
-    <p>
-      <%= config.firstScreen.description %>
-    </p>
+  <div class="pictureIntroduction" style="color: <%= config.firstScreen.textColor %>">
+    <%- config.firstScreen.description %>
+    <%- config.firstScreen.addr %>
+    <%- config.firstScreen.date %>
   </div>
   <div class="scrollDownWrapper" id="scrollDownWrapper">
     <div class="scrollDown">

@@ -3,7 +3,7 @@ var posts = page.posts;
 var year = new Date().getFullYear() + 1 + ''
 %>
 <div class="timelineWrapper">
-  <div class=" timeline">
+  <div class="timeline">
     <% posts.forEach(function(post) { %>
     <% if (date(post.date, 'YYYY') != year) { %>
     <% year = date(post.date, 'YYYY') %>

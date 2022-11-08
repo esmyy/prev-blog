@@ -18,29 +18,36 @@ pretty_urls:
 
 # First Screen
 firstScreen:
-  image: /images/the-great-wall.jpeg
-  date: "2022年11月4日"
-  addr: "北京朝阳区"
-  description: "爱我所爱，长久不懈"
+  image: /images/beijing-chengdu-air-cloud.jpeg
+  date: '<p><iconpark-icon class="pr-4" name="calendar-thirty-two"></iconpark-icon>2022年10月11日</p>'
+  addr: '<p><iconpark-icon class="pr-4" name="local-two"></iconpark-icon>北京飞往成都</p>'
+  textColor: "#fff"
+  description: "<p></p>"
 
 # Home Page
 recentPicture:
-  one:
-    image: /images/3601.jpg
-    text: ""
-    link: ""
-  two:
-    image: /images/2101.jpg
-    text: ""
-    link: ""
-  three:
-    image: /images/3602.jpg
-    text: ""
-    link: ""
-  four:
-    image: /images/2102.jpg
-    text: ""
-    link: ""
+  [
+    {
+      image: "/images/3602.jpg",
+      text: "2022年10月4日，北京，天坛公园",
+      link: "",
+    },
+    {
+      image: "/images/2102.jpg",
+      text: "2022年10月6日，北京，八达岭长城",
+      link: "",
+    },
+    {
+      image: "/images/2101.jpg",
+      text: "2022年8月28日，成都，武侯区锦里小吃街",
+      link: "",
+    },
+    {
+      image: "/images/21-at-nightfall.jpeg",
+      text: "2022年10月4日，北京，圆明园",
+      link: "",
+    },
+  ]
 
 # Directory
 source_dir: source
