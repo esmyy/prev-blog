@@ -44,13 +44,11 @@ hexo.extend.helper.register("get_excerpt", (post) => {
 });
 
 hexo.extend.helper.register("get_last_of", (site, category) => {
-  const categories = site.categories.findOne((ca) => {
-    return ca.name === category;
-  });
+  const match = site.categories.data.find((c) => c.name === category);
 
   let last = null;
-  if (categories.length) {
-    last = categories.posts.last();
+  if (match) {
+    last = match.posts.last();
   }
 
   return last;

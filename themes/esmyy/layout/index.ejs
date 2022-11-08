@@ -1,5 +1,5 @@
 <%
-const lastBook = get_last_of(site, 'reading')
+const lastReading = get_last_of(site, 'reading')
 %>
 
 <div class="homePageMainContent">
@@ -7,14 +7,13 @@ const lastBook = get_last_of(site, 'reading')
     <div class="recentLeft">
       <div class="recentCard talkCard card">
         <p class="talkCardContent ellipse4">
-        <iconpark-icon name="speaker-one"></iconpark-icon>
-          我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者
+          <iconpark-icon name="speaker-one" class="verticalAlignTextTop pt-2"></iconpark-icon>
         </p>
       </div>
-      <% if (lastBook) {%>
+      <% if (lastReading) {%>
         <div class="recentCard card readingCard ">
-          <p class="cardTitle bookName"><iconpark-icon name="read-book"></iconpark-icon>《<%= lastBook.title %>》</p>
-          <p class="readingCardContent mt-2 ellipse3"><%= get_excerpt(lastBook) %></p>
+          <p class="cardTitle"><iconpark-icon name="read-book"></iconpark-icon>《<%= lastReading.title %>》</p>
+          <p class="readingCardContent mt-2 ellipse3"><%= get_excerpt(lastReading) %></p>
         </div>
       <%}%>
     </div>
@@ -46,7 +45,6 @@ const lastBook = get_last_of(site, 'reading')
 </div>
 <script>
 window.addEventListener('load', () => {
-  console.log('$', $)
   $(".recentPictureSlider").slick({
     lazyLoad: 'ondemand',
     slidesToShow: 3,

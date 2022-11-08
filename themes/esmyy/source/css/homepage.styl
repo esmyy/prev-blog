@@ -11,6 +11,7 @@
     margin-right: 0;
     margin-top: 20px;
     height 120px
+    line-height: 22px;
     &.lifeCard
       display flex
       flex-direction column
@@ -20,10 +21,11 @@
       margin-left: 12px
       background-color #ede0d9
       border none
+      .cardTitle
+        display: flex
+        align-items: center
       .readingCardContent
         position: relative;
-        height: 72px;
-        line-height: 24px;
         overflow: hidden;
     &.recentPictureSlider
       flex-grow: 1
@@ -42,9 +44,8 @@
         top: 10px
       .talkCardContent
         position: relative;
-        height: 96px;
-        line-height: 24px;
         overflow: hidden;
+        max-width: 160px
   .recentRight
     display flex
     justify-content space-between

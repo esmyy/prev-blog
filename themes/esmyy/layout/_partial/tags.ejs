@@ -1,11 +1,11 @@
 <%
 // 需要转换为中文展示的内容
-var tagMap = {
+var dict = {
   // category
   reading: '阅读',
-  talk: '随笔',
-  picture: '照片',
-  life: '财米油盐',
+  talk: '说说',
+  photos: '照片',
+  life: '生活',
   tech: '技术相关',
 
   // tag
@@ -13,7 +13,7 @@ var tagMap = {
 }
 
 function getTagName(name) {
-  return tagMap[name] || name
+  return dict[name] || name
 }
 %>
 

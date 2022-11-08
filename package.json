@@ -9,7 +9,7 @@
     "server": "hexo server",
     "dev": "hexo server",
     "po": "hexo new post",
-    "ph": "hexo new picture",
+    "ph": "hexo new photo",
     "r": "hexo new reading"
   },
   "hexo": {

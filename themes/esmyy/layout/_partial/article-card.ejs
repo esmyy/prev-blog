@@ -3,7 +3,7 @@ const excerpt = get_excerpt(post)
 const categories = post.categories.slice(0, 2)
 let poster = get_poster(post)
 %>
-<div class="articleCard">
+<div class="card articleCard">
     <% if (poster) { %>
         <img class="picture" src="<%= poster %>"/>
     <% } %>

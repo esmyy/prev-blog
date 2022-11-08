@@ -1,7 +1,7 @@
 ---
 title: 北京秋日，居家隔离的日子
 date: 2022-11-07 20:40:05
-categories: talk
+categories: life
 tags: ["北京", "秋天", "COVID-19"]
 ---
 
