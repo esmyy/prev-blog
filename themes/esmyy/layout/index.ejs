@@ -1,30 +1,20 @@
 <%
-var posts = page.posts.data;
-var recentPosts = page.posts;
-
-const reading = site.categories.findOne((ca) => {
-  return ca.name === 'reading'
-})
-
-let firstBook = null;
-if (reading.length) {
-  firstBook = reading.posts
-}
+const lastBook = get_last_of(site, 'reading')
 %>
 
 <div class="homePageMainContent">
   <div class="recentList">
     <div class="recentLeft">
       <div class="recentCard talkCard card">
-        <p class="talkCardContent overflowEllipse">
+        <p class="talkCardContent ellipse4">
         <iconpark-icon name="speaker-one"></iconpark-icon>
           我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者我们都是平凡的人，在平凡的世界里或者
         </p>
       </div>
-      <% if (firstBook) {%>
+      <% if (lastBook) {%>
         <div class="recentCard card readingCard ">
-          <p class="cardTitle bookName"><iconpark-icon name="read-book"></iconpark-icon>《<%= firstBook.title %>》</p>
-          <p class="readingCardContent mt-2 overflowEllipse">1975年初农民子弟孙少平到原西县高中读书，他贫困，自卑；后对处境相同的地主家庭出身的郝红梅产生情愫，在被同班同学侯玉英发现并当众说破后，与郝红梅关系渐变恶劣，后来郝红梅却与家境优越的顾养民恋爱。少平高中毕业，回到家乡做了一名教师。</p>
+          <p class="cardTitle bookName"><iconpark-icon name="read-book"></iconpark-icon>《<%= lastBook.title %>》</p>
+          <p class="readingCardContent mt-2 ellipse3"><%= get_excerpt(lastBook) %></p>
         </div>
       <%}%>
     </div>
@@ -38,7 +28,7 @@ if (reading.length) {
     </div>
   </div>
   <div class="articleList">
-    <% recentPosts.forEach(function(post){ %>
+    <% page.posts.forEach(function(post){ %>
     <%- include('_partial/article-card', {post: post}) %>
     <% }); %>
   </div>

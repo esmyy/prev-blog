@@ -1,7 +1,7 @@
 <%
-const summary = post.excerpt || post.content.replace(/<[^>]*>/ig, ' ').slice(0, 160)
+const excerpt = get_excerpt(post)
 const categories = post.categories.slice(0, 2)
-let poster = get_first_img(post)
+let poster = get_poster(post)
 %>
 <div class="articleCard">
     <% if (poster) { %>
@@ -12,7 +12,7 @@ let poster = get_first_img(post)
             <div class="title-box">
                 <a class="title" href="<%= post.path %>"><%= post.title %></a>
             </div>
-            <p class="summary"><%= summary %></p>
+            <p class="excerpt"><%= excerpt %></p>
         </div>
         <div class="footer">
             <div class="item date-box">

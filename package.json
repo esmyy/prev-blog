@@ -8,8 +8,9 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "dev": "hexo server",
-    "post": "hexo new post",
-    "img": "hexo new picture"
+    "po": "hexo new post",
+    "ph": "hexo new picture",
+    "r": "hexo new reading"
   },
   "hexo": {
     "version": "6.3.0"
