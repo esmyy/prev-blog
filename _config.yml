@@ -193,7 +193,7 @@ post_wordcount:
 jsdelivr:
   enable: true
   gh_user: esmyy
-  gh_repo: imagehost
+  gh_repo: imghost
   baseUrl: cdn.jsdelivr.net
 
 minify:
