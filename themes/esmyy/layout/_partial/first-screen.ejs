@@ -1,4 +1,4 @@
-<div class="firstScreen" id="firstScreen" style="background-image: url(<%= config.firstScreen.image %>)">
+<div class="firstScreen" id="firstScreen" style="background-image: url(<%= img_url(config.firstScreen.image, env.env === 'production') %>)">
   <div class="lifeCard">
     <p>有时怡然，洵美且好</p>
     <p>靠近美好，创造想要的生活</p>
@@ -14,13 +14,3 @@
     </div>
   </div>
 </div>
-<script>
-;(function () {
-  const scrollDownIcon = document.getElementById('scrollDownWrapper')
-  scrollDownIcon.addEventListener('click', function() {
-    const firstScreen = document.getElementById('firstScreen');
-    const classList = Array.from(firstScreen.classList);
-    firstScreen.classList = classList.concat(['hidden']).join(' ')
-  })
-})();
-</script>

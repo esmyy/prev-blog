@@ -20,7 +20,7 @@ const lastReading = get_last_of(site, 'reading')
     <div class="recentRight">
       <div class="recentCard recentPictureSlider">
         <% config.recentPicture.forEach(function(p) {%>
-          <div class="picture" title="<%= p.text %>" style="background-image:url(<%= p.image %>)">
+          <div class="picture" title="<%= p.text %>" style="background-image:url(<%= img_url(p.image, env.env === 'production') %>)">
           </div>
         <%})%>
       </div>
@@ -44,12 +44,23 @@ const lastReading = get_last_of(site, 'reading')
   </div>
 </div>
 <script>
-window.addEventListener('load', () => {
-  $(".recentPictureSlider").slick({
-    lazyLoad: 'ondemand',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true
-  });
-})
+;(function () {
+  const scrollDownIcon = document.getElementById('scrollDownWrapper')
+  scrollDownIcon.addEventListener('click', function() {
+    const firstScreen = document.getElementById('firstScreen');
+    const classList = Array.from(firstScreen.classList);
+    firstScreen.classList = classList.concat(['hidden']).join(' ')
+  })
+})();
+
+;(function() {
+  window.addEventListener('load', () => {
+    $(".recentPictureSlider").slick({
+      lazyLoad: 'ondemand',
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true
+    });
+  })
+})()
 </script>
