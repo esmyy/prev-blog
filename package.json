@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production hexo generate",
+    "build": "NODE_ENV=production hexo generate && sh ./scripts/imghost.sh",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
