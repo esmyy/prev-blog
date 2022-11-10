@@ -2,46 +2,44 @@
 const lastReading = get_last_of(site, 'reading')
 %>
 
-<div class="homePageMainContent">
-  <div class="recentList">
-    <div class="recentLeft">
-      <div class="recentCard talkCard card">
-        <p class="talkCardContent ellipse4">
-          <iconpark-icon name="speaker-one" class="verticalAlignTextTop pt-2"></iconpark-icon>
-        </p>
+<div class="recentList">
+  <div class="recentLeft">
+    <div class="recentCard talkCard card">
+      <p class="talkCardContent ellipse4">
+        <iconpark-icon name="speaker-one" class="verticalAlignTextTop pt-2"></iconpark-icon>
+      </p>
+    </div>
+    <% if (lastReading) {%>
+      <div class="recentCard card readingCard">
+        <p class="cardTitle"><iconpark-icon name="read-book"></iconpark-icon>《<%= lastReading.title %>》</p>
+        <p class="readingCardContent mt-2 ellipse3"><%= get_excerpt(lastReading) %></p>
       </div>
-      <% if (lastReading) {%>
-        <div class="recentCard card readingCard ">
-          <p class="cardTitle"><iconpark-icon name="read-book"></iconpark-icon>《<%= lastReading.title %>》</p>
-          <p class="readingCardContent mt-2 ellipse3"><%= get_excerpt(lastReading) %></p>
+    <%}%>
+  </div>
+  <div class="recentRight">
+    <div class="recentCard recentPictureSlider">
+      <% config.recentPicture.forEach(function(p) {%>
+        <div class="picture" title="<%= p.text %>" style="background-image:url(<%= img_url(p.image, env.env === 'production') %>)">
         </div>
-      <%}%>
-    </div>
-    <div class="recentRight">
-      <div class="recentCard recentPictureSlider">
-        <% config.recentPicture.forEach(function(p) {%>
-          <div class="picture" title="<%= p.text %>" style="background-image:url(<%= img_url(p.image, env.env === 'production') %>)">
-          </div>
-        <%})%>
-      </div>
+      <%})%>
     </div>
   </div>
-  <div class="articleList">
-    <% page.posts.forEach(function(post){ %>
-    <%- include('_partial/article-card', {post: post}) %>
-    <% }); %>
-  </div>
-  <div class="paginatorWrapper">
-    <%- paginator({
-            base: '/',
-            current: page.current,
-            total: page.total,
-            prev_next: true,
-            page_class: 'pageNum',
-            next_text: '>',
-            prev_text: ''
-        }) %>
-  </div>
+</div>
+<div class="articleList">
+  <% page.posts.forEach(function(post){ %>
+  <%- include('_partial/article-card', {post: post}) %>
+  <% }); %>
+</div>
+<div class="paginatorWrapper">
+  <%- paginator({
+          base: '/',
+          current: page.current,
+          total: page.total,
+          prev_next: true,
+          page_class: 'pageNum',
+          next_text: '>',
+          prev_text: ''
+      }) %>
 </div>
 <script>
 ;(function () {
@@ -59,7 +57,24 @@ const lastReading = get_last_of(site, 'reading')
       lazyLoad: 'ondemand',
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: true
+      autoplay: true,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
     });
   })
 })()

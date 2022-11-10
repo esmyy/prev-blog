@@ -29,7 +29,7 @@ let poster = get_poster(post)
             <% } %>
 
             <% if (post.tags.length) { %>
-                <div class="item">
+                <div class="item articleCardTags">
                     <iconpark-icon name="tag-one"></iconpark-icon>
                     <span class="value">
                     <%- partial('_partial/tags', { isPure: true, tags: post.tags}) %>

@@ -25,11 +25,22 @@
   .author
     text-align: right
   .pictureIntroduction
-    padding: 20px;
     position absolute
     bottom: 20px
     right: 20px
-    line-height: 30px
+    line-height: 24px
     p
       display: flex
       align-items: center
+
+
+@media screen and (max-width: 768px)
+  .firstScreen
+    height: 40vh
+    .lifeCard
+      top: 36%
+      padding: 12px
+
+    .pictureIntroduction
+      bottom: 12px
+      right: 12px

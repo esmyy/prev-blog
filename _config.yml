@@ -19,9 +19,9 @@ pretty_urls:
 
 # First Screen
 firstScreen:
-  image: /images/beijing-chengdu-air-cloud.jpeg
+  image: /images/air-beijing-chengdu.jpg
+  addr: '<p><iconpark-icon class="pr-4" size="16" name="local-two" style="margin-left: -2px;"></iconpark-icon>北京飞往成都</p>'
   date: '<p><iconpark-icon class="pr-4" name="calendar-thirty-two"></iconpark-icon>2022年10月11日</p>'
-  addr: '<p><iconpark-icon class="pr-4" name="local-two"></iconpark-icon>北京飞往成都</p>'
   textColor: "#fff"
   description: "<p></p>"
 
@@ -41,11 +41,6 @@ recentPicture:
     {
       image: "/images/2101.jpg",
       text: "2022年8月28日，成都，武侯区锦里小吃街",
-      link: "",
-    },
-    {
-      image: "/images/21-at-nightfall.jpeg",
-      text: "2022年10月4日，北京，圆明园",
       link: "",
     },
   ]
