@@ -1,5 +1,8 @@
-.headerContent
-  height 72px
+header
+  height 60px
+  border-bottom 1px solid --border-color
+  .headerContent
+    height: 100%
   .menus
     height 100%
     display flex
@@ -21,3 +24,31 @@
       &.selected
         border-bottom 2px solid orange
         margin-bottom -1px
+
+  .avatar-box
+    position: absolute;
+    top: 12px
+    right  20px
+    .avatar
+      width 42px
+      height 42px
+      border-radius 50%
+      cursor pointer
+      &:hover
+        box-shadow 0 0 8px #6192de
+
+@media screen and (max-width: 681px)
+  header
+    height 48px
+    .menus
+      font-size: 14px
+      li
+        margin: 0 6px
+        &.optionalMenuItem
+          display: none;
+    .avatar-box
+      top: 10px
+      right: 10px
+      .avatar
+        width: 32px
+        height: 32px

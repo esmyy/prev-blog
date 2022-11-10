@@ -35,3 +35,9 @@
     filter: alpha(opacity=20);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .scrollDownWrapper {
+    display: none;
+  }
+}

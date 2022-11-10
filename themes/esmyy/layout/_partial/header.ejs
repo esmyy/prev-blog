@@ -21,7 +21,7 @@ var lastTalk = get_last_of(site, 'talk')
         </a>
       </li>
       <% if (lastTalk) {%>
-      <li class="<%= talkActive ? 'selected' : '' %>">
+      <li class="optionalMenuItem <%= talkActive ? 'selected' : '' %>">
         <a href="/categories/talk">
           <iconpark-icon name="message-emoji"></iconpark-icon>
           <span>说说</span>
@@ -29,7 +29,7 @@ var lastTalk = get_last_of(site, 'talk')
       </li>
       <%}%>
       <% if (lastPhoto) {%>
-      <li class="<%= photosActive ? 'selected' : '' %>">
+      <li class="optionalMenuItem <%= photosActive ? 'selected' : '' %>">
         <a href="/categories/photos">
           <iconpark-icon name="camera"></iconpark-icon>
           <span>照片</span>
@@ -37,7 +37,7 @@ var lastTalk = get_last_of(site, 'talk')
       </li>
       <%}%>
       <% if (lastReading) {%>
-      <li class="<%= readingActive ? 'selected' : '' %>">
+      <li class="optionalMenuItem <%= readingActive ? 'selected' : '' %>">
         <a href="/categories/reading">
           <iconpark-icon name="read-book"></iconpark-icon>
           <span>阅读</span>
@@ -46,10 +46,10 @@ var lastTalk = get_last_of(site, 'talk')
       <%}%>
 
       <li class="<%= tagActive ? 'selected' : '' %>">
-      <a href="/tags">
-        <iconpark-icon name="tag-one"></iconpark-icon>
-        <span>标签</span>
-      </a>
+        <a href="/tags">
+          <iconpark-icon name="tag-one"></iconpark-icon>
+          <span>标签</span>
+        </a>
       </li>
       <li class="<%= categoriesActicve ? 'selected' : '' %>">
         <a href="/categories">
