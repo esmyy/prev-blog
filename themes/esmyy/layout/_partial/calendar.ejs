@@ -86,7 +86,7 @@ weekArr.forEach((week, weekNum) => {
   }
 })
 %>
-<div class="calendar-wrapper">
+<div class="calendarWrapper">
 
     <div class="contribution-box border radius">
         <svg width="717" height="112" class="js-calendar-graph-svg">
@@ -94,29 +94,29 @@ weekArr.forEach((week, weekNum) => {
                 <% weekArr.forEach(function (week, index) {%>
                     <g transform="translate(<%= index * 14 %>, 0)">
                         <% week.days.forEach(function (day) {%>
-                            <rect class="ContributionCalendar-day" width="10" height="10" x="<%= day.x %>" y="<%= day.y %>"  rx="2" ry="2" data-count="<%= day.count %>" data-date="<%= day.date %>" data-level="<%= day.level %>"></rect>
+                            <rect class="calendarDay" width="10" height="10" x="<%= day.x %>" y="<%= day.y %>"  rx="2" ry="2" data-count="<%= day.count %>" data-date="<%= day.date %>" data-level="<%= day.level %>"></rect>
                         <%})%>
                     </g>
                 <%})%>
 
                 <% monthArr.forEach(function (month) {%>
-                    <text x="<%= month.x %>" y="-7" class="ContributionCalendar-label"><%= month.month %></text>
+                    <text x="<%= month.x %>" y="-7" class="calendarLabel"><%= month.month %></text>
                 <%})%>
 
-                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="8" style="display: none;">Sun</text>
-                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="22">Mon</text>
-                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="32" style="display: none;">Tue</text>
-                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="48">Wed</text>
-                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="57" style="display: none;">Thu</text>
-                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="73">Fri</text>
-                <text text-anchor="start" class="ContributionCalendar-label" dx="-15" dy="81" style="display: none;">Sat</text>
+                <text text-anchor="start" class="calendarLabel" dx="-15" dy="8" style="display: none;">Sun</text>
+                <text text-anchor="start" class="calendarLabel" dx="-15" dy="22">Mon</text>
+                <text text-anchor="start" class="calendarLabel" dx="-15" dy="32" style="display: none;">Tue</text>
+                <text text-anchor="start" class="calendarLabel" dx="-15" dy="48">Wed</text>
+                <text text-anchor="start" class="calendarLabel" dx="-15" dy="57" style="display: none;">Thu</text>
+                <text text-anchor="start" class="calendarLabel" dx="-15" dy="73">Fri</text>
+                <text text-anchor="start" class="calendarLabel" dx="-15" dy="81" style="display: none;">Sat</text>
             </g>
         </svg>
         <div class="level-box">
             <span class="text">Less</span>
             <% LEVEL_ARR.forEach(function (l) { %>
                 <svg  class="js-calendar-graph-svg" width="10" height="10">
-                    <rect class="ContributionCalendar-day" width="10" height="10" rx="2" ry="2" data-count="<%= l.count %>" data-date="<%= l.date %>" data-level="<%= l.level %>"></rect>
+                    <rect class="calendarDay" width="10" height="10" rx="2" ry="2" data-count="<%= l.count %>" data-date="<%= l.date %>" data-level="<%= l.level %>"></rect>
                 </svg>
             <% }) %>
             <span class="text">More</span>
