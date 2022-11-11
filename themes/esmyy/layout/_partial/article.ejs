@@ -1,29 +1,27 @@
-<article class="mainContent articleContent">
-  <div  data-scroll-reveal>
-    <% if (post.title){ %>
-    <div class="articleHeader">
-      <h1><%= post.title %></h1>
-    </div>
+<article class="articleContent">
+  <% if (post.title){ %>
+  <div class="articleHeader">
+    <h1><%= post.title %></h1>
+  </div>
+  <% } %>
+
+  <div class="articleMeta">
+    <iconpark-icon name="calendar"></iconpark-icon>
+    <span class="date"><%= date(post.date) %></span>
+  </div>
+
+  <div class="articleBody" itemprop="articleBody">
+    <% if (post.excerpt && index){ %>
+    <%- post.excerpt %>
+    <% if (config.excerpt_link){ %>
+    <p>
+      <a class="article-more-link" href="<%- url_for(post.path) %>">
+        <%= config.excerpt_link %>
+      </a>
+    </p>
     <% } %>
-
-    <div class="articleMeta">
-      <iconpark-icon name="calendar"></iconpark-icon>
-      <span class="date"><%= date(post.date) %></span>
-    </div>
-
-    <div class="articleBody" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-      <%- post.excerpt %>
-      <% if (config.excerpt_link){ %>
-      <p>
-        <a class="article-more-link" href="<%- url_for(post.path) %>">
-          <%= config.excerpt_link %>
-        </a>
-      </p>
-      <% } %>
-      <% } else { %>
-      <%- post.content %>
-      <% } %>
-    </div>
+    <% } else { %>
+    <%- post.content %>
+    <% } %>
   </div>
 </article>

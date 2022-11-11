@@ -2,14 +2,24 @@
 <html lang="zh-CN">
 <%- partial('_partial/head') %>
 <body>
+<%
+const isPure = page.layout === 'pure'
+%>
 <div id="esmyy">
-    <%- partial('_partial/first-screen.ejs') %>
-    <%- partial('_partial/header') %>
-    <main class="mainContent">
-        <%- body %>
-    </main>
-    <%- partial('_partial/footer') %>
-    <%- partial('_partial/back-top.ejs') %>
+    <% if (isPure) {%>
+         <main class="mainContent">
+            <%- body %>
+        </main>
+    <%} else {%>
+        <%- partial('_partial/first-screen.ejs') %>
+        <%- partial('_partial/header') %>
+        <main class="mainContent">
+            <%- body %>
+        </main>
+        <%- partial('_partial/footer') %>
+        <%- partial('_partial/back-top.ejs') %>
+    <%}%>
+
 </div>
 <script>
 // 设置”回到顶部“按钮
@@ -27,7 +37,7 @@
     }
   })
 
-  backTop.addEventListener('click', () => {
+  backTop?.addEventListener('click', () => {
     $('html,body').animate({scrollTop: '0px'}, 800);
   })
 })();
