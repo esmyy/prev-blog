@@ -1,4 +1,4 @@
-<div class="firstScreen" id="firstScreen" style="background-image: url(<%= img_url(config.firstScreen.image, env.env === 'production') %>)">
+<div class="firstScreen <%= is_home_first_page() ? 'homeFirstPage' : '' %>" id="firstScreen" style="background-image: url(<%= img_url(config.firstScreen.image, env.env === 'production') %>)">
   <div class="lifeCard">
     <p>有时怡然，洵美且好</p>
     <p>靠近美好，创造想要的生活</p>

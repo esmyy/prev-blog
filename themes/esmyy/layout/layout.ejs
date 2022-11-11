@@ -3,14 +3,43 @@
 <%- partial('_partial/head') %>
 <body>
 <div id="esmyy">
-    <% if (is_home_first_page()) {%>
     <%- partial('_partial/first-screen.ejs') %>
-    <% } %>
     <%- partial('_partial/header') %>
     <main class="mainContent">
         <%- body %>
     </main>
     <%- partial('_partial/footer') %>
+    <%- partial('_partial/back-top.ejs') %>
 </div>
+<script>
+// 设置”回到顶部“按钮
+;(() => {
+  const backTop = document.querySelector('.backTopWrapper');
+  window.addEventListener('scroll', (e) => {
+    const list = Array.from(backTop.classList)
+    const isVisible = list.includes('visible')
+    const scrollY = window.scrollY
+    if (scrollY > 100 && !isVisible) {
+        list.push('visible');
+        backTop.classList = list.join(' ')
+    } else if (scrollY < 100 && isVisible) {
+        backTop.classList = list.filter(s => s !== 'visible').join(' ')
+    }
+  })
+
+  backTop.addEventListener('click', () => {
+    $('html,body').animate({scrollTop: '0px'}, 800);
+  })
+})();
+
+// 设置首屏图片在手机一直可见
+;(() => {
+    const firstScreen = document.querySelector('.firstScreen')
+    const isHomeFirstPage = document.querySelector('.homeFirstPage')
+    if (!isHomeFirstPage && window.innerWidth > 414) {
+        firstScreen.classList = Array.from(firstScreen.classList).concat('hidden').join(' ')
+    }
+})();
+</script>
 </body>
 </html>
