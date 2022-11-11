@@ -1,9 +1,11 @@
 #!/bin/bash
 
-cp -rf public .imghost
+scp -r public/ .imghost
 rm .imghost/**/*.html
 
-cp -rf .imghost/images .imghost/2022 ../imghost
+scp -r .imghost/images ../imghost
+scp -r .imghost/2022 ../imghost
+
 cd ../imghost
 git add .
 git commit -m "feat: update imgs"

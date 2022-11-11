@@ -77,10 +77,6 @@ highlight:
   hljs: true
   engine: highlight
 
-prism_plugin:
-  mode: "preprocess" # realtime/preprocess
-  theme: "default"
-
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -194,3 +190,8 @@ jsdelivr:
 minify:
   html:
     enable: false
+
+prism_plugin:
+  mode: "preprocess" # realtime/preprocess
+  theme: "default"
+  line_number: false # default false
