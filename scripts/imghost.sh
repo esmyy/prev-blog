@@ -10,4 +10,4 @@ cd ../imghost
 git add .
 git commit -m "feat: update imgs"
 git push
-cd ../mayueyue.com
+cd ../esmyy.com
