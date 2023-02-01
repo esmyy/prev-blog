@@ -6,6 +6,7 @@ on:
       - "source/**"
       - ".github/workflows/pages.yml"
       - "_config.yml"
+      - "package.json"
     branches:
       - main # default branch
 
