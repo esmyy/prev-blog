@@ -2,6 +2,8 @@ name: Pages
 
 on:
   push:
+    paths:
+      - "source/**"
     branches:
       - main # default branch
 
@@ -9,9 +11,9 @@ jobs:
   pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js 16.9.0
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: "16.9.0"
       - name: Cache NPM dependencies
