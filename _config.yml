@@ -194,4 +194,5 @@ minify:
 prism_plugin:
   mode: "preprocess" # realtime/preprocess
   theme: "default"
+  custom_css: "none"
   line_number: false # default false
