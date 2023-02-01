@@ -1,0 +1,1 @@
+.backTopWrapper{position:fixed;bottom:20px;right:-60px;transition:all .5s ease-in}.backTopWrapper.visible{right:20px;transition:all .5s ease-in}.backTopWrapper .backTopIcon{width:36px;height:36px;border-radius:4px;background-color:#b3dcf5;display:flex;justify-content:center;align-items:center;font-weight:700;color:#fff}
