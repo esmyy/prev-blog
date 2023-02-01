@@ -5,6 +5,13 @@ hexo.extend.helper.register("img_url", (path, useCDN) => {
     : path;
 });
 
+hexo.extend.helper.register("css_url", (path, useCDN) => {
+  const jsdelivrCDN = hexo.config.jsdelivr;
+  return jsdelivrCDN.enable && useCDN
+    ? `//${jsdelivrCDN.baseUrl}/gh/${jsdelivrCDN.gh_user}/${jsdelivrCDN.gh_repo}@main${path}`
+    : path;
+});
+
 hexo.extend.helper.register("get_poster", (post) => {
   let poster = post.poster;
   if (!post.poster) {

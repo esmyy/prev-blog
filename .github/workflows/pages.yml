@@ -4,9 +4,7 @@ on:
   push:
     paths:
       - "source/**"
-      - ".github/workflows/pages.yml"
-      - "_config.yml"
-      - "package.json"
+      - "themes/esmyy/**"
     branches:
       - main # default branch
 

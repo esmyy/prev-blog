@@ -3,7 +3,10 @@
 scp -r public/ .imghost
 rm .imghost/**/*.html
 scp -r .imghost/images ../imghost
+scp -r .imghost/css ../imghost
 scp -r .imghost/2022 ../imghost
+scp -r .imghost/2023 ../imghost
+scp -r .imghost/2024 ../imghost
 rm -rf .imghost
 
 cd ../imghost
