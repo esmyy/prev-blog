@@ -19,7 +19,7 @@ hexo.extend.helper.register("get_poster", (post) => {
     poster = match ? match[1] : "";
   }
 
-  return poster.replace(/["?\/]$/, "");
+  return poster.replace(/["?\/]$/, "").replace(/^\/blog/, "");
 });
 
 hexo.extend.helper.register("get_excerpt", (post) => {
