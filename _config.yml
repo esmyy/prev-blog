@@ -8,6 +8,7 @@ keywords: "esmyy, myy, 马月月, 月月, 月月的个人网站"
 author: Esmyy
 language: zh-CN
 timezone: ""
+root: "/blog"
 
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://mayueyue.com

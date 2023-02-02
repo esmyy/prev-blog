@@ -5,7 +5,7 @@ var talkActive = /categories\/talk/.test(pathname)
 var readingActive = /categories\/reading/.test(pathname)
 var archivesActive = /archives/.test(pathname)
 var tagActive = /tags/.test(pathname)
-var categoriesActicve = /categories/.test(pathname)
+var categoriesActicve = /categories\/?$/.test(pathname)
 var homeActive = /^(\/?index.html)?$/.test(pathname)
 var lastPhoto = get_last_of(site, 'photo')
 var lastReading = get_last_of(site, 'reading')
@@ -15,14 +15,14 @@ var lastTalk = get_last_of(site, 'talk')
   <div class="mainContent headerContent">
     <ul class="menus">
       <li class="<%= homeActive ? 'selected' : '' %>">
-        <a href="/">
+        <a href="<%= url_for('/') %>">
           <iconpark-icon name="book-open"></iconpark-icon>
           <span>首页</span>
         </a>
       </li>
       <% if (lastTalk) {%>
       <li class="optionalMenuItem <%= talkActive ? 'selected' : '' %>">
-        <a href="/categories/talk">
+        <a href="<%= url_for('/categories/talk') %>">
           <iconpark-icon name="message-emoji"></iconpark-icon>
           <span>说说</span>
         </a>
@@ -30,7 +30,7 @@ var lastTalk = get_last_of(site, 'talk')
       <%}%>
       <% if (lastPhoto) {%>
       <li class="optionalMenuItem <%= photosActive ? 'selected' : '' %>">
-        <a href="/categories/photos">
+        <a href="<%= url_for('/categories/photos') %>">
           <iconpark-icon name="camera"></iconpark-icon>
           <span>照片</span>
         </a>
@@ -38,7 +38,7 @@ var lastTalk = get_last_of(site, 'talk')
       <%}%>
       <% if (lastReading) {%>
       <li class="optionalMenuItem <%= readingActive ? 'selected' : '' %>">
-        <a href="/categories/reading">
+        <a href="<%= url_for('/categories/reading') %>">
           <iconpark-icon name="read-book"></iconpark-icon>
           <span>阅读</span>
         </a>
@@ -46,19 +46,19 @@ var lastTalk = get_last_of(site, 'talk')
       <%}%>
 
       <li class="<%= tagActive ? 'selected' : '' %>">
-        <a href="/tags">
+        <a href="<%= url_for("/tags") %>">
           <iconpark-icon name="tag-one"></iconpark-icon>
           <span>标签</span>
         </a>
       </li>
       <li class="<%= categoriesActicve ? 'selected' : '' %>">
-        <a href="/categories">
+        <a href="<%= url_for('/categories') %>">
           <iconpark-icon name="document-folder"></iconpark-icon>
           <span>分类</span>
         </a>
       </li>
       <li class="<%= archivesActive ? 'selected' : '' %>">
-        <a href="/archives">
+        <a href="<%= url_for('/archives') %>">
           <iconpark-icon name="calendar-thirty-two"></iconpark-icon>
           <span>时间轴</span>
         </a>
