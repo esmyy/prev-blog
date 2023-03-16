@@ -1,0 +1,26 @@
+{
+  "unversionedId": "frameworks/vue2/index",
+  "id": "frameworks/vue2/index",
+  "title": "index",
+  "description": "",
+  "source": "@site/docs/05-frameworks/vue2/index.md",
+  "sourceDirName": "05-frameworks/vue2",
+  "slug": "/frameworks/vue2/",
+  "permalink": "/docs/frameworks/vue2/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "displayed_sidebar": "vue2"
+  },
+  "sidebar": "vue2",
+  "previous": {
+    "title": "插件",
+    "permalink": "/docs/frameworks/vue2/vuex/plugins"
+  },
+  "next": {
+    "title": "intro",
+    "permalink": "/docs/frameworks/vue2/intro"
+  }
+}

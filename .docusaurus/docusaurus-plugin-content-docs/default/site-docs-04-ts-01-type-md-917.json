@@ -1,0 +1,25 @@
+{
+  "unversionedId": "TS/type",
+  "id": "TS/type",
+  "title": "常用类型",
+  "description": "归纳常用类型，作为项目开发基础的类型工具，提高效率。",
+  "source": "@site/docs/04-TS/01-type.md",
+  "sourceDirName": "04-TS",
+  "slug": "/TS/type",
+  "permalink": "/docs/TS/type",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/04-TS/01-type.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "命名约定",
+    "permalink": "/docs/TS/convention"
+  },
+  "next": {
+    "title": "实用技巧",
+    "permalink": "/docs/TS/skill"
+  }
+}

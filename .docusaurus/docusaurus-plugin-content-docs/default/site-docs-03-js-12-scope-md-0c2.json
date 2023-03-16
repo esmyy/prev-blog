@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/scope",
+  "id": "JS/scope",
+  "title": "作用域",
+  "description": "作用域是变量所属区域的划分，是一套存储和查找变量的规则。",
+  "source": "@site/docs/03-JS/12-scope.md",
+  "sourceDirName": "03-JS",
+  "slug": "/JS/scope",
+  "permalink": "/docs/JS/scope",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/12-scope.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "执行上下文",
+    "permalink": "/docs/JS/context"
+  },
+  "next": {
+    "title": "闭包",
+    "permalink": "/docs/JS/closure"
+  }
+}

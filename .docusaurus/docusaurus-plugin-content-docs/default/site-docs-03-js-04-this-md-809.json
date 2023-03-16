@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/this",
+  "id": "JS/this",
+  "title": "this",
+  "description": "this 是执行上下文级别的关键字。简单来说，每个执行上下文中可以绑定一个对象，这个对象通过 this 引用，这样就能够方便地使用这个对象的属性了。",
+  "source": "@site/docs/03-JS/04-this.md",
+  "sourceDirName": "03-JS",
+  "slug": "/JS/this",
+  "permalink": "/docs/JS/this",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/04-this.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "对象与原型",
+    "permalink": "/docs/JS/object"
+  },
+  "next": {
+    "title": "执行上下文",
+    "permalink": "/docs/JS/context"
+  }
+}

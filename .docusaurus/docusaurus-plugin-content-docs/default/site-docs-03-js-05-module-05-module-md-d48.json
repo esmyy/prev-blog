@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/module/module",
+  "id": "JS/module/module",
+  "title": "模块化",
+  "description": "| 名称       | 适用侧        | 关键字                  |",
+  "source": "@site/docs/03-JS/05-module/05-module.md",
+  "sourceDirName": "03-JS/05-module",
+  "slug": "/JS/module/",
+  "permalink": "/docs/JS/module/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/05-module/05-module.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "函数",
+    "permalink": "/docs/JS/function"
+  },
+  "next": {
+    "title": "CommonJS",
+    "permalink": "/docs/JS/module/commonjs"
+  }
+}

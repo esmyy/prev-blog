@@ -1,0 +1,25 @@
+{
+  "unversionedId": "security/cors",
+  "id": "security/cors",
+  "title": "cors",
+  "description": "",
+  "source": "@site/docs/52-security/01-cors.md",
+  "sourceDirName": "52-security",
+  "slug": "/security/cors",
+  "permalink": "/docs/security/cors",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/52-security/01-cors.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CDN",
+    "permalink": "/docs/network/cdn"
+  },
+  "next": {
+    "title": "XSS",
+    "permalink": "/docs/security/xss"
+  }
+}

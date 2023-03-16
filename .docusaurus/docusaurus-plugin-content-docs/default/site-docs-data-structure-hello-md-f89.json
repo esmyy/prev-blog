@@ -1,0 +1,24 @@
+{
+  "unversionedId": "data-structure/hello",
+  "id": "data-structure/hello",
+  "title": "hello",
+  "description": "",
+  "source": "@site/docs/data-structure/hello.md",
+  "sourceDirName": "data-structure",
+  "slug": "/data-structure/hello",
+  "permalink": "/docs/data-structure/hello",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/data-structure/hello.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "hello",
+    "permalink": "/docs/be/hello"
+  },
+  "next": {
+    "title": "hello",
+    "permalink": "/docs/monitor/hello"
+  }
+}

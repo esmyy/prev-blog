@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tools/cmd",
+  "id": "tools/cmd",
+  "title": "ff",
+  "description": "",
+  "source": "@site/docs/43-tools/11-cmd.md",
+  "sourceDirName": "43-tools",
+  "slug": "/tools/cmd",
+  "permalink": "/docs/tools/cmd",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/11-cmd.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "代理",
+    "permalink": "/docs/tools/proxy"
+  },
+  "next": {
+    "title": "npm",
+    "permalink": "/docs/tools/npm"
+  }
+}

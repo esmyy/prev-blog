@@ -1,0 +1,25 @@
+{
+  "unversionedId": "security/csrf",
+  "id": "security/csrf",
+  "title": "CSRF",
+  "description": "CSRF，Cross Site Request Forgery，中文是跨站点请求伪造。CSRF 是真的跨站了，不像 XSS 那样，说跨站又不跨站，不成样子。CSRF 的基本流程如下",
+  "source": "@site/docs/52-security/03-csrf.md",
+  "sourceDirName": "52-security",
+  "slug": "/security/csrf",
+  "permalink": "/docs/security/csrf",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/52-security/03-csrf.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "XSS",
+    "permalink": "/docs/security/xss"
+  },
+  "next": {
+    "title": "同源与跨域",
+    "permalink": "/docs/security/hello"
+  }
+}

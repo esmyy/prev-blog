@@ -1,0 +1,25 @@
+{
+  "unversionedId": "project/env/node",
+  "id": "project/env/node",
+  "title": "nvm",
+  "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions",
+  "source": "@site/docs/10-project/01-env/10-node.md",
+  "sourceDirName": "10-project/01-env",
+  "slug": "/project/env/node",
+  "permalink": "/docs/project/env/node",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/01-env/10-node.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "终端",
+    "permalink": "/docs/project/env/terminal"
+  },
+  "next": {
+    "title": "git",
+    "permalink": "/docs/project/env/git"
+  }
+}

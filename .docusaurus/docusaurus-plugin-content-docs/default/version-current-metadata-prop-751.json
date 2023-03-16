@@ -1,0 +1,2722 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "开始",
+        "href": "/docs/",
+        "docId": "index"
+      },
+      {
+        "type": "category",
+        "label": "HTML",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "基础",
+            "href": "/docs/HTML/basic",
+            "docId": "HTML/basic"
+          },
+          {
+            "type": "link",
+            "label": "语义化",
+            "href": "/docs/HTML/semantic",
+            "docId": "HTML/semantic"
+          },
+          {
+            "type": "link",
+            "label": "iframe",
+            "href": "/docs/HTML/iframe",
+            "docId": "HTML/iframe"
+          },
+          {
+            "type": "link",
+            "label": "SEO",
+            "href": "/docs/HTML/SEO",
+            "docId": "HTML/SEO"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "CSS",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "基础知识",
+            "href": "/docs/CSS/basic",
+            "docId": "CSS/basic"
+          },
+          {
+            "type": "link",
+            "label": "拓展应用",
+            "href": "/docs/CSS/extension",
+            "docId": "CSS/extension"
+          },
+          {
+            "type": "link",
+            "label": "Q & A",
+            "href": "/docs/CSS/qa",
+            "docId": "CSS/qa"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "JS",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "变量定义",
+            "href": "/docs/JS/base",
+            "docId": "JS/base"
+          },
+          {
+            "type": "category",
+            "label": "数据类型",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "引用类型",
+                "href": "/docs/JS/types/reference",
+                "docId": "JS/types/reference"
+              }
+            ],
+            "href": "/docs/JS/types/"
+          },
+          {
+            "type": "link",
+            "label": "对象",
+            "href": "/docs/JS/object",
+            "docId": "JS/object"
+          },
+          {
+            "type": "link",
+            "label": "函数",
+            "href": "/docs/JS/function",
+            "docId": "JS/function"
+          },
+          {
+            "type": "category",
+            "label": "模块化",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "CommonJS",
+                "href": "/docs/JS/module/commonjs",
+                "docId": "JS/module/commonjs"
+              },
+              {
+                "type": "link",
+                "label": "AMD",
+                "href": "/docs/JS/module/amd",
+                "docId": "JS/module/amd"
+              },
+              {
+                "type": "link",
+                "label": "ES Module",
+                "href": "/docs/JS/module/esm",
+                "docId": "JS/module/esm"
+              }
+            ],
+            "href": "/docs/JS/module/"
+          },
+          {
+            "type": "link",
+            "label": "执行上下文",
+            "href": "/docs/JS/context",
+            "docId": "JS/context"
+          },
+          {
+            "type": "link",
+            "label": "作用域",
+            "href": "/docs/JS/scope",
+            "docId": "JS/scope"
+          },
+          {
+            "type": "link",
+            "label": "闭包",
+            "href": "/docs/JS/closure",
+            "docId": "JS/closure"
+          },
+          {
+            "type": "link",
+            "label": "this",
+            "href": "/docs/JS/this",
+            "docId": "JS/this"
+          },
+          {
+            "type": "category",
+            "label": "异步",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "熟悉 Promise 使用",
+                "href": "/docs/JS/async/promise-use",
+                "docId": "JS/async/promise-use"
+              },
+              {
+                "type": "link",
+                "label": "深入 Promise 原理",
+                "href": "/docs/JS/async/promise-deep",
+                "docId": "JS/async/promise-deep"
+              },
+              {
+                "type": "link",
+                "label": "async/await",
+                "href": "/docs/JS/async/async",
+                "docId": "JS/async/async"
+              },
+              {
+                "type": "link",
+                "label": "axios",
+                "href": "/docs/JS/async/axios",
+                "docId": "JS/async/axios"
+              }
+            ],
+            "href": "/docs/JS/async/"
+          },
+          {
+            "type": "link",
+            "label": "proxy",
+            "href": "/docs/JS/proxy",
+            "docId": "JS/proxy"
+          },
+          {
+            "type": "link",
+            "label": "动画",
+            "href": "/docs/JS/animate",
+            "docId": "JS/animate"
+          },
+          {
+            "type": "link",
+            "label": "api",
+            "href": "/docs/JS/api",
+            "docId": "JS/api"
+          },
+          {
+            "type": "link",
+            "label": "请求",
+            "href": "/docs/JS/request",
+            "docId": "JS/request"
+          },
+          {
+            "type": "link",
+            "label": "存储",
+            "href": "/docs/JS/storage",
+            "docId": "JS/storage"
+          },
+          {
+            "type": "link",
+            "label": "Babel",
+            "href": "/docs/JS/babel",
+            "docId": "JS/babel"
+          },
+          {
+            "type": "link",
+            "label": "其他",
+            "href": "/docs/JS/other",
+            "docId": "JS/other"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "TS",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "命名约定",
+            "href": "/docs/TS/convention",
+            "docId": "TS/convention"
+          },
+          {
+            "type": "link",
+            "label": "常用类型",
+            "href": "/docs/TS/type",
+            "docId": "TS/type"
+          },
+          {
+            "type": "link",
+            "label": "实用技巧",
+            "href": "/docs/TS/skill",
+            "docId": "TS/skill"
+          },
+          {
+            "type": "link",
+            "label": "工具包",
+            "href": "/docs/TS/utils",
+            "docId": "TS/utils"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "框架",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "React",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "core",
+                "href": "/docs/frameworks/react/core",
+                "docId": "frameworks/react/core"
+              },
+              {
+                "type": "link",
+                "label": "renderer",
+                "href": "/docs/frameworks/react/renderer",
+                "docId": "frameworks/react/renderer"
+              },
+              {
+                "type": "link",
+                "label": "reconciler",
+                "href": "/docs/frameworks/react/reconciler",
+                "docId": "frameworks/react/reconciler"
+              },
+              {
+                "type": "link",
+                "label": "Fiber",
+                "href": "/docs/frameworks/react/fiber",
+                "docId": "frameworks/react/fiber"
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "vue2",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "category",
+                "label": "概览",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "目录结构",
+                    "href": "/docs/frameworks/vue2/overview/dir",
+                    "docId": "frameworks/vue2/overview/dir"
+                  },
+                  {
+                    "type": "link",
+                    "label": "编译入口",
+                    "href": "/docs/frameworks/vue2/overview/entry",
+                    "docId": "frameworks/vue2/overview/entry"
+                  },
+                  {
+                    "type": "link",
+                    "label": "构造函数",
+                    "href": "/docs/frameworks/vue2/overview/constructor",
+                    "docId": "frameworks/vue2/overview/constructor"
+                  },
+                  {
+                    "type": "link",
+                    "label": "new Vue",
+                    "href": "/docs/frameworks/vue2/overview/new-vue",
+                    "docId": "frameworks/vue2/overview/new-vue"
+                  },
+                  {
+                    "type": "link",
+                    "label": "mount",
+                    "href": "/docs/frameworks/vue2/overview/mount",
+                    "docId": "frameworks/vue2/overview/mount"
+                  }
+                ],
+                "href": "/docs/frameworks/vue2/overview/"
+              },
+              {
+                "type": "category",
+                "label": "编译",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "compiler",
+                    "href": "/docs/frameworks/vue2/compiler/compiler",
+                    "docId": "frameworks/vue2/compiler/compiler"
+                  },
+                  {
+                    "type": "link",
+                    "label": "AST",
+                    "href": "/docs/frameworks/vue2/compiler/ast",
+                    "docId": "frameworks/vue2/compiler/ast"
+                  },
+                  {
+                    "type": "link",
+                    "label": "parse",
+                    "href": "/docs/frameworks/vue2/compiler/parse",
+                    "docId": "frameworks/vue2/compiler/parse"
+                  },
+                  {
+                    "type": "link",
+                    "label": "optimize",
+                    "href": "/docs/frameworks/vue2/compiler/optimize",
+                    "docId": "frameworks/vue2/compiler/optimize"
+                  },
+                  {
+                    "type": "link",
+                    "label": "codegen",
+                    "href": "/docs/frameworks/vue2/compiler/codegen",
+                    "docId": "frameworks/vue2/compiler/codegen"
+                  },
+                  {
+                    "type": "link",
+                    "label": "compileToFunctions",
+                    "href": "/docs/frameworks/vue2/compiler/compile-to-functions",
+                    "docId": "frameworks/vue2/compiler/compile-to-functions"
+                  },
+                  {
+                    "type": "link",
+                    "label": "qa",
+                    "href": "/docs/frameworks/vue2/compiler/qa",
+                    "docId": "frameworks/vue2/compiler/qa"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "渲染",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "章节概述",
+                    "href": "/docs/frameworks/vue2/render/overview",
+                    "docId": "frameworks/vue2/render/overview"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Virtual DOM",
+                    "href": "/docs/frameworks/vue2/render/vdom",
+                    "docId": "frameworks/vue2/render/vdom"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Watcher",
+                    "href": "/docs/frameworks/vue2/render/watcher",
+                    "docId": "frameworks/vue2/render/watcher"
+                  },
+                  {
+                    "type": "link",
+                    "label": "render",
+                    "href": "/docs/frameworks/vue2/render/render",
+                    "docId": "frameworks/vue2/render/render"
+                  },
+                  {
+                    "type": "link",
+                    "label": "update",
+                    "href": "/docs/frameworks/vue2/render/update",
+                    "docId": "frameworks/vue2/render/update"
+                  },
+                  {
+                    "type": "link",
+                    "label": "createElement 的作用是根据中间代码生成 vnode",
+                    "href": "/docs/frameworks/vue2/render/create-element",
+                    "docId": "frameworks/vue2/render/create-element"
+                  },
+                  {
+                    "type": "link",
+                    "label": "createComponentVNode",
+                    "href": "/docs/frameworks/vue2/render/create-vnode",
+                    "docId": "frameworks/vue2/render/create-vnode"
+                  },
+                  {
+                    "type": "link",
+                    "label": "patch",
+                    "href": "/docs/frameworks/vue2/render/patch",
+                    "docId": "frameworks/vue2/render/patch"
+                  },
+                  {
+                    "type": "link",
+                    "label": "createElm",
+                    "href": "/docs/frameworks/vue2/render/create-elm",
+                    "docId": "frameworks/vue2/render/create-elm"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "响应式",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "介绍",
+                    "href": "/docs/frameworks/vue2/reactivity/intro",
+                    "docId": "frameworks/vue2/reactivity/intro"
+                  },
+                  {
+                    "type": "link",
+                    "label": "数据初始化",
+                    "href": "/docs/frameworks/vue2/reactivity/data",
+                    "docId": "frameworks/vue2/reactivity/data"
+                  },
+                  {
+                    "type": "link",
+                    "label": "依赖收集",
+                    "href": "/docs/frameworks/vue2/reactivity/collect-deps",
+                    "docId": "frameworks/vue2/reactivity/collect-deps"
+                  },
+                  {
+                    "type": "link",
+                    "label": "派发更新",
+                    "href": "/docs/frameworks/vue2/reactivity/dispatch-update",
+                    "docId": "frameworks/vue2/reactivity/dispatch-update"
+                  },
+                  {
+                    "type": "link",
+                    "label": "视图更新",
+                    "href": "/docs/frameworks/vue2/reactivity/view-update",
+                    "docId": "frameworks/vue2/reactivity/view-update"
+                  },
+                  {
+                    "type": "link",
+                    "label": "nextTick",
+                    "href": "/docs/frameworks/vue2/reactivity/next-tick",
+                    "docId": "frameworks/vue2/reactivity/next-tick"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Computed",
+                    "href": "/docs/frameworks/vue2/reactivity/computed",
+                    "docId": "frameworks/vue2/reactivity/computed"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Vue Router",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "介绍",
+                    "href": "/docs/frameworks/vue2/vue-router/intro",
+                    "docId": "frameworks/vue2/vue-router/intro"
+                  },
+                  {
+                    "type": "link",
+                    "label": "install",
+                    "href": "/docs/frameworks/vue2/vue-router/install",
+                    "docId": "frameworks/vue2/vue-router/install"
+                  },
+                  {
+                    "type": "link",
+                    "label": "三个模块",
+                    "href": "/docs/frameworks/vue2/vue-router/main",
+                    "docId": "frameworks/vue2/vue-router/main"
+                  },
+                  {
+                    "type": "link",
+                    "label": "路由表",
+                    "href": "/docs/frameworks/vue2/vue-router/route-map",
+                    "docId": "frameworks/vue2/vue-router/route-map"
+                  },
+                  {
+                    "type": "link",
+                    "label": "路由切换",
+                    "href": "/docs/frameworks/vue2/vue-router/transition",
+                    "docId": "frameworks/vue2/vue-router/transition"
+                  },
+                  {
+                    "type": "link",
+                    "label": "match",
+                    "href": "/docs/frameworks/vue2/vue-router/match",
+                    "docId": "frameworks/vue2/vue-router/match"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Vuex",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "install",
+                    "href": "/docs/frameworks/vue2/vuex/install",
+                    "docId": "frameworks/vue2/vuex/install"
+                  },
+                  {
+                    "type": "link",
+                    "label": "模块",
+                    "href": "/docs/frameworks/vue2/vuex/module",
+                    "docId": "frameworks/vue2/vuex/module"
+                  },
+                  {
+                    "type": "link",
+                    "label": "API",
+                    "href": "/docs/frameworks/vue2/vuex/api",
+                    "docId": "frameworks/vue2/vuex/api"
+                  },
+                  {
+                    "type": "link",
+                    "label": "插件",
+                    "href": "/docs/frameworks/vue2/vuex/plugins",
+                    "docId": "frameworks/vue2/vuex/plugins"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Vue 3",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "base",
+                "href": "/docs/frameworks/vue3/overview",
+                "docId": "frameworks/vue3/overview"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "label": "Express",
+            "href": "/docs/frameworks/express",
+            "docId": "frameworks/express"
+          },
+          {
+            "type": "link",
+            "label": "Koa",
+            "href": "/docs/frameworks/koa",
+            "docId": "frameworks/koa"
+          },
+          {
+            "type": "link",
+            "label": "Egg",
+            "href": "/docs/frameworks/egg",
+            "docId": "frameworks/egg"
+          }
+        ],
+        "href": "/docs/frameworks/"
+      },
+      {
+        "type": "category",
+        "label": "工程化",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "准备工作",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "终端",
+                "href": "/docs/project/env/terminal",
+                "docId": "project/env/terminal"
+              },
+              {
+                "type": "link",
+                "label": "编辑器",
+                "href": "/docs/project/env/vscode",
+                "docId": "project/env/vscode"
+              },
+              {
+                "type": "link",
+                "label": "Node",
+                "href": "/docs/project/env/node",
+                "docId": "project/env/node"
+              },
+              {
+                "type": "link",
+                "label": "Git",
+                "href": "/docs/project/env/git",
+                "docId": "project/env/git"
+              }
+            ],
+            "href": "/docs/project/env/"
+          },
+          {
+            "type": "link",
+            "label": "项目结构",
+            "href": "/docs/project/structure",
+            "docId": "project/structure"
+          },
+          {
+            "type": "link",
+            "label": "组件化",
+            "href": "/docs/project/components",
+            "docId": "project/components"
+          },
+          {
+            "type": "link",
+            "label": "脚本与自动化",
+            "href": "/docs/project/scripts",
+            "docId": "project/scripts"
+          },
+          {
+            "type": "link",
+            "label": "配置文件",
+            "href": "/docs/project/dot-config",
+            "docId": "project/dot-config"
+          },
+          {
+            "type": "link",
+            "label": "项目文档",
+            "href": "/docs/project/docs",
+            "docId": "project/docs"
+          },
+          {
+            "type": "category",
+            "label": "构建工具",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "category",
+                "label": "webpack",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "webpack-cli",
+                    "href": "/docs/project/bundler/webpack/webpack-cli",
+                    "docId": "project/bundler/webpack/webpack-cli"
+                  },
+                  {
+                    "type": "link",
+                    "label": "准备工作",
+                    "href": "/docs/project/bundler/webpack/prepare",
+                    "docId": "project/bundler/webpack/prepare"
+                  },
+                  {
+                    "type": "link",
+                    "label": "compiler",
+                    "href": "/docs/project/bundler/webpack/compiler",
+                    "docId": "project/bundler/webpack/compiler"
+                  },
+                  {
+                    "type": "category",
+                    "label": "compilation",
+                    "collapsible": true,
+                    "collapsed": true,
+                    "items": [
+                      {
+                        "type": "link",
+                        "label": "buildModule",
+                        "href": "/docs/project/bundler/webpack/compilation/build-module",
+                        "docId": "project/bundler/webpack/compilation/build-module"
+                      }
+                    ],
+                    "href": "/docs/project/bundler/webpack/compilation/"
+                  },
+                  {
+                    "type": "link",
+                    "label": "plugin",
+                    "href": "/docs/project/bundler/webpack/plugin",
+                    "docId": "project/bundler/webpack/plugin"
+                  },
+                  {
+                    "type": "link",
+                    "label": "loader",
+                    "href": "/docs/project/bundler/webpack/loader",
+                    "docId": "project/bundler/webpack/loader"
+                  },
+                  {
+                    "type": "link",
+                    "label": "输出结构",
+                    "href": "/docs/project/bundler/webpack/output",
+                    "docId": "project/bundler/webpack/output"
+                  },
+                  {
+                    "type": "link",
+                    "label": "sourcemap",
+                    "href": "/docs/project/bundler/webpack/sourcemap",
+                    "docId": "project/bundler/webpack/sourcemap"
+                  },
+                  {
+                    "type": "link",
+                    "label": "文件指纹",
+                    "href": "/docs/project/bundler/webpack/hash",
+                    "docId": "project/bundler/webpack/hash"
+                  },
+                  {
+                    "type": "link",
+                    "label": "常用插件",
+                    "href": "/docs/project/bundler/webpack/use",
+                    "docId": "project/bundler/webpack/use"
+                  },
+                  {
+                    "type": "link",
+                    "label": "热更新",
+                    "href": "/docs/project/bundler/webpack/hmr",
+                    "docId": "project/bundler/webpack/hmr"
+                  },
+                  {
+                    "type": "link",
+                    "label": "AST 的生成",
+                    "href": "/docs/project/bundler/webpack/parse",
+                    "docId": "project/bundler/webpack/parse"
+                  }
+                ],
+                "href": "/docs/project/bundler/webpack/"
+              },
+              {
+                "type": "link",
+                "label": "Rollup",
+                "href": "/docs/project/bundler/rollup",
+                "docId": "project/bundler/rollup"
+              },
+              {
+                "type": "link",
+                "label": "Vite",
+                "href": "/docs/project/bundler/vite",
+                "docId": "project/bundler/vite"
+              }
+            ],
+            "href": "/docs/project/bundler/"
+          },
+          {
+            "type": "link",
+            "label": "Mock",
+            "href": "/docs/project/mock",
+            "docId": "project/mock"
+          },
+          {
+            "type": "category",
+            "label": "包管理",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "yarn",
+                "href": "/docs/project/pkg/yarn",
+                "docId": "project/pkg/yarn"
+              },
+              {
+                "type": "link",
+                "label": "依赖管理",
+                "href": "/docs/project/pkg/deps",
+                "docId": "project/pkg/deps"
+              },
+              {
+                "type": "link",
+                "label": "npm",
+                "href": "/docs/project/pkg/npm",
+                "docId": "project/pkg/npm"
+              }
+            ],
+            "href": "/docs/project/pkg/"
+          },
+          {
+            "type": "link",
+            "label": "代码美化",
+            "href": "/docs/project/prettier",
+            "docId": "project/prettier"
+          },
+          {
+            "type": "category",
+            "label": "常用工具包",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "发布订阅",
+                "href": "/docs/project/scheme/mitt",
+                "docId": "project/scheme/mitt"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "label": "测试",
+            "href": "/docs/project/testing",
+            "docId": "project/testing"
+          },
+          {
+            "type": "link",
+            "label": "类型管理",
+            "href": "/docs/project/types",
+            "docId": "project/types"
+          },
+          {
+            "type": "link",
+            "label": "版本控制",
+            "href": "/docs/project/version",
+            "docId": "project/version"
+          }
+        ],
+        "href": "/docs/project/"
+      },
+      {
+        "type": "category",
+        "label": "浏览器",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "多进程架构",
+            "href": "/docs/browser/process",
+            "docId": "browser/process"
+          },
+          {
+            "type": "link",
+            "label": "渲染流程",
+            "href": "/docs/browser/render",
+            "docId": "browser/render"
+          },
+          {
+            "type": "link",
+            "label": "Chrome",
+            "href": "/docs/browser/chrome",
+            "docId": "browser/chrome"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "性能优化",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "性能优化",
+            "href": "/docs/performance/analysis",
+            "docId": "performance/analysis"
+          },
+          {
+            "type": "link",
+            "label": "cache",
+            "href": "/docs/performance/cache",
+            "docId": "performance/cache"
+          },
+          {
+            "type": "link",
+            "label": "file",
+            "href": "/docs/performance/file",
+            "docId": "performance/file"
+          },
+          {
+            "type": "link",
+            "label": "render",
+            "href": "/docs/performance/render",
+            "docId": "performance/render"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "Testing",
+        "href": "/docs/testing/",
+        "docId": "testing/index"
+      },
+      {
+        "type": "category",
+        "label": "App 开发",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "hybrid",
+            "href": "/docs/app/hybrid",
+            "docId": "app/hybrid"
+          },
+          {
+            "type": "link",
+            "label": "wechat",
+            "href": "/docs/app/wechat",
+            "docId": "app/wechat"
+          },
+          {
+            "type": "link",
+            "label": "rn",
+            "href": "/docs/app/rn",
+            "docId": "app/rn"
+          },
+          {
+            "type": "link",
+            "label": "flutter",
+            "href": "/docs/app/flutter",
+            "docId": "app/flutter"
+          },
+          {
+            "type": "link",
+            "label": "weex",
+            "href": "/docs/app/weex",
+            "docId": "app/weex"
+          },
+          {
+            "type": "link",
+            "label": "uni-app 开发",
+            "href": "/docs/app/uniapp",
+            "docId": "app/uniapp"
+          },
+          {
+            "type": "link",
+            "label": "Android",
+            "href": "/docs/app/android",
+            "docId": "app/android"
+          },
+          {
+            "type": "link",
+            "label": "ios",
+            "href": "/docs/app/ios",
+            "docId": "app/ios"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "后端",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "node",
+            "href": "/docs/be/node",
+            "docId": "be/node"
+          },
+          {
+            "type": "link",
+            "label": "java",
+            "href": "/docs/be/java",
+            "docId": "be/java"
+          },
+          {
+            "type": "category",
+            "label": "node",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "egg",
+                "href": "/docs/be/node/egg",
+                "docId": "be/node/egg"
+              },
+              {
+                "type": "link",
+                "label": "express",
+                "href": "/docs/be/node/express",
+                "docId": "be/node/express"
+              },
+              {
+                "type": "link",
+                "label": "koa",
+                "href": "/docs/be/node/koa",
+                "docId": "be/node/koa"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "监控",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "hello",
+            "href": "/docs/monitor/hello",
+            "docId": "monitor/hello"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "系统及运维",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "基础命令",
+            "href": "/docs/ops-linux/cmd",
+            "docId": "ops-linux/cmd"
+          },
+          {
+            "type": "link",
+            "label": "字符处理",
+            "href": "/docs/ops-linux/char",
+            "docId": "ops-linux/char"
+          },
+          {
+            "type": "link",
+            "label": "alias",
+            "href": "/docs/ops-linux/alias",
+            "docId": "ops-linux/alias"
+          },
+          {
+            "type": "link",
+            "label": "Nginx",
+            "href": "/docs/ops-linux/nginx",
+            "docId": "ops-linux/nginx"
+          },
+          {
+            "type": "link",
+            "label": "网络测试",
+            "href": "/docs/ops-linux/test",
+            "docId": "ops-linux/test"
+          },
+          {
+            "type": "link",
+            "label": "hello",
+            "href": "/docs/ops-linux/hello",
+            "docId": "ops-linux/hello"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "工具",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "说明",
+            "href": "/docs/tools/index",
+            "docId": "tools/index"
+          },
+          {
+            "type": "link",
+            "label": "代理",
+            "href": "/docs/tools/proxy",
+            "docId": "tools/proxy"
+          },
+          {
+            "type": "link",
+            "label": "ff",
+            "href": "/docs/tools/cmd",
+            "docId": "tools/cmd"
+          },
+          {
+            "type": "link",
+            "label": "npm",
+            "href": "/docs/tools/npm",
+            "docId": "tools/npm"
+          },
+          {
+            "type": "link",
+            "label": "efficient",
+            "href": "/docs/tools/efficient",
+            "docId": "tools/efficient"
+          },
+          {
+            "type": "link",
+            "label": "chrome",
+            "href": "/docs/tools/chrome",
+            "docId": "tools/chrome"
+          },
+          {
+            "type": "link",
+            "label": "Git",
+            "href": "/docs/tools/git",
+            "docId": "tools/git"
+          },
+          {
+            "type": "link",
+            "label": "Github",
+            "href": "/docs/tools/github",
+            "docId": "tools/github"
+          },
+          {
+            "type": "link",
+            "label": "Node",
+            "href": "/docs/tools/nvm",
+            "docId": "tools/nvm"
+          },
+          {
+            "type": "link",
+            "label": "postman",
+            "href": "/docs/tools/postman",
+            "docId": "tools/postman"
+          },
+          {
+            "type": "link",
+            "label": "终端",
+            "href": "/docs/tools/terminal",
+            "docId": "tools/terminal"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "网络",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "主要协议",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "DHCP",
+                "href": "/docs/network/protocol/dhcp",
+                "docId": "network/protocol/dhcp"
+              },
+              {
+                "type": "link",
+                "label": "DNS",
+                "href": "/docs/network/protocol/dns",
+                "docId": "network/protocol/dns"
+              },
+              {
+                "type": "link",
+                "label": "HTTP",
+                "href": "/docs/network/protocol/http",
+                "docId": "network/protocol/http"
+              },
+              {
+                "type": "link",
+                "label": "TCP",
+                "href": "/docs/network/protocol/tcp",
+                "docId": "network/protocol/tcp"
+              },
+              {
+                "type": "link",
+                "label": "ICMP",
+                "href": "/docs/network/protocol/icmp",
+                "docId": "network/protocol/icmp"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "label": "CDN",
+            "href": "/docs/network/cdn",
+            "docId": "network/cdn"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Web 安全",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "cors",
+            "href": "/docs/security/cors",
+            "docId": "security/cors"
+          },
+          {
+            "type": "link",
+            "label": "XSS",
+            "href": "/docs/security/xss",
+            "docId": "security/xss"
+          },
+          {
+            "type": "link",
+            "label": "CSRF",
+            "href": "/docs/security/csrf",
+            "docId": "security/csrf"
+          },
+          {
+            "type": "link",
+            "label": "同源与跨域",
+            "href": "/docs/security/hello",
+            "docId": "security/hello"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "数据结构",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "二叉树",
+            "href": "/docs/data-structure/binary-tree",
+            "docId": "data-structure/binary-tree"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "算法",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "hello",
+            "href": "/docs/algorightm/hello",
+            "docId": "algorightm/hello"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "技术之外",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "加入新团队",
+            "href": "/docs/working/new",
+            "docId": "working/new"
+          }
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "type": "category",
+        "label": "React",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "core",
+            "href": "/docs/frameworks/react/core",
+            "docId": "frameworks/react/core"
+          },
+          {
+            "type": "link",
+            "label": "renderer",
+            "href": "/docs/frameworks/react/renderer",
+            "docId": "frameworks/react/renderer"
+          },
+          {
+            "type": "link",
+            "label": "reconciler",
+            "href": "/docs/frameworks/react/reconciler",
+            "docId": "frameworks/react/reconciler"
+          },
+          {
+            "type": "link",
+            "label": "Fiber",
+            "href": "/docs/frameworks/react/fiber",
+            "docId": "frameworks/react/fiber"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "vue2",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "概览",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "目录结构",
+                "href": "/docs/frameworks/vue2/overview/dir",
+                "docId": "frameworks/vue2/overview/dir"
+              },
+              {
+                "type": "link",
+                "label": "编译入口",
+                "href": "/docs/frameworks/vue2/overview/entry",
+                "docId": "frameworks/vue2/overview/entry"
+              },
+              {
+                "type": "link",
+                "label": "构造函数",
+                "href": "/docs/frameworks/vue2/overview/constructor",
+                "docId": "frameworks/vue2/overview/constructor"
+              },
+              {
+                "type": "link",
+                "label": "new Vue",
+                "href": "/docs/frameworks/vue2/overview/new-vue",
+                "docId": "frameworks/vue2/overview/new-vue"
+              },
+              {
+                "type": "link",
+                "label": "mount",
+                "href": "/docs/frameworks/vue2/overview/mount",
+                "docId": "frameworks/vue2/overview/mount"
+              }
+            ],
+            "href": "/docs/frameworks/vue2/overview/"
+          },
+          {
+            "type": "category",
+            "label": "编译",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "compiler",
+                "href": "/docs/frameworks/vue2/compiler/compiler",
+                "docId": "frameworks/vue2/compiler/compiler"
+              },
+              {
+                "type": "link",
+                "label": "AST",
+                "href": "/docs/frameworks/vue2/compiler/ast",
+                "docId": "frameworks/vue2/compiler/ast"
+              },
+              {
+                "type": "link",
+                "label": "parse",
+                "href": "/docs/frameworks/vue2/compiler/parse",
+                "docId": "frameworks/vue2/compiler/parse"
+              },
+              {
+                "type": "link",
+                "label": "optimize",
+                "href": "/docs/frameworks/vue2/compiler/optimize",
+                "docId": "frameworks/vue2/compiler/optimize"
+              },
+              {
+                "type": "link",
+                "label": "codegen",
+                "href": "/docs/frameworks/vue2/compiler/codegen",
+                "docId": "frameworks/vue2/compiler/codegen"
+              },
+              {
+                "type": "link",
+                "label": "compileToFunctions",
+                "href": "/docs/frameworks/vue2/compiler/compile-to-functions",
+                "docId": "frameworks/vue2/compiler/compile-to-functions"
+              },
+              {
+                "type": "link",
+                "label": "qa",
+                "href": "/docs/frameworks/vue2/compiler/qa",
+                "docId": "frameworks/vue2/compiler/qa"
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "渲染",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "章节概述",
+                "href": "/docs/frameworks/vue2/render/overview",
+                "docId": "frameworks/vue2/render/overview"
+              },
+              {
+                "type": "link",
+                "label": "Virtual DOM",
+                "href": "/docs/frameworks/vue2/render/vdom",
+                "docId": "frameworks/vue2/render/vdom"
+              },
+              {
+                "type": "link",
+                "label": "Watcher",
+                "href": "/docs/frameworks/vue2/render/watcher",
+                "docId": "frameworks/vue2/render/watcher"
+              },
+              {
+                "type": "link",
+                "label": "render",
+                "href": "/docs/frameworks/vue2/render/render",
+                "docId": "frameworks/vue2/render/render"
+              },
+              {
+                "type": "link",
+                "label": "update",
+                "href": "/docs/frameworks/vue2/render/update",
+                "docId": "frameworks/vue2/render/update"
+              },
+              {
+                "type": "link",
+                "label": "createElement 的作用是根据中间代码生成 vnode",
+                "href": "/docs/frameworks/vue2/render/create-element",
+                "docId": "frameworks/vue2/render/create-element"
+              },
+              {
+                "type": "link",
+                "label": "createComponentVNode",
+                "href": "/docs/frameworks/vue2/render/create-vnode",
+                "docId": "frameworks/vue2/render/create-vnode"
+              },
+              {
+                "type": "link",
+                "label": "patch",
+                "href": "/docs/frameworks/vue2/render/patch",
+                "docId": "frameworks/vue2/render/patch"
+              },
+              {
+                "type": "link",
+                "label": "createElm",
+                "href": "/docs/frameworks/vue2/render/create-elm",
+                "docId": "frameworks/vue2/render/create-elm"
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "响应式",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "介绍",
+                "href": "/docs/frameworks/vue2/reactivity/intro",
+                "docId": "frameworks/vue2/reactivity/intro"
+              },
+              {
+                "type": "link",
+                "label": "数据初始化",
+                "href": "/docs/frameworks/vue2/reactivity/data",
+                "docId": "frameworks/vue2/reactivity/data"
+              },
+              {
+                "type": "link",
+                "label": "依赖收集",
+                "href": "/docs/frameworks/vue2/reactivity/collect-deps",
+                "docId": "frameworks/vue2/reactivity/collect-deps"
+              },
+              {
+                "type": "link",
+                "label": "派发更新",
+                "href": "/docs/frameworks/vue2/reactivity/dispatch-update",
+                "docId": "frameworks/vue2/reactivity/dispatch-update"
+              },
+              {
+                "type": "link",
+                "label": "视图更新",
+                "href": "/docs/frameworks/vue2/reactivity/view-update",
+                "docId": "frameworks/vue2/reactivity/view-update"
+              },
+              {
+                "type": "link",
+                "label": "nextTick",
+                "href": "/docs/frameworks/vue2/reactivity/next-tick",
+                "docId": "frameworks/vue2/reactivity/next-tick"
+              },
+              {
+                "type": "link",
+                "label": "Computed",
+                "href": "/docs/frameworks/vue2/reactivity/computed",
+                "docId": "frameworks/vue2/reactivity/computed"
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Vue Router",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "介绍",
+                "href": "/docs/frameworks/vue2/vue-router/intro",
+                "docId": "frameworks/vue2/vue-router/intro"
+              },
+              {
+                "type": "link",
+                "label": "install",
+                "href": "/docs/frameworks/vue2/vue-router/install",
+                "docId": "frameworks/vue2/vue-router/install"
+              },
+              {
+                "type": "link",
+                "label": "三个模块",
+                "href": "/docs/frameworks/vue2/vue-router/main",
+                "docId": "frameworks/vue2/vue-router/main"
+              },
+              {
+                "type": "link",
+                "label": "路由表",
+                "href": "/docs/frameworks/vue2/vue-router/route-map",
+                "docId": "frameworks/vue2/vue-router/route-map"
+              },
+              {
+                "type": "link",
+                "label": "路由切换",
+                "href": "/docs/frameworks/vue2/vue-router/transition",
+                "docId": "frameworks/vue2/vue-router/transition"
+              },
+              {
+                "type": "link",
+                "label": "match",
+                "href": "/docs/frameworks/vue2/vue-router/match",
+                "docId": "frameworks/vue2/vue-router/match"
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "Vuex",
+            "collapsible": true,
+            "collapsed": true,
+            "items": [
+              {
+                "type": "link",
+                "label": "install",
+                "href": "/docs/frameworks/vue2/vuex/install",
+                "docId": "frameworks/vue2/vuex/install"
+              },
+              {
+                "type": "link",
+                "label": "模块",
+                "href": "/docs/frameworks/vue2/vuex/module",
+                "docId": "frameworks/vue2/vuex/module"
+              },
+              {
+                "type": "link",
+                "label": "API",
+                "href": "/docs/frameworks/vue2/vuex/api",
+                "docId": "frameworks/vue2/vuex/api"
+              },
+              {
+                "type": "link",
+                "label": "插件",
+                "href": "/docs/frameworks/vue2/vuex/plugins",
+                "docId": "frameworks/vue2/vuex/plugins"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Vue 3",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "base",
+            "href": "/docs/frameworks/vue3/overview",
+            "docId": "frameworks/vue3/overview"
+          }
+        ]
+      },
+      {
+        "type": "link",
+        "label": "Express",
+        "href": "/docs/frameworks/express",
+        "docId": "frameworks/express"
+      },
+      {
+        "type": "link",
+        "label": "Koa",
+        "href": "/docs/frameworks/koa",
+        "docId": "frameworks/koa"
+      },
+      {
+        "type": "link",
+        "label": "Egg",
+        "href": "/docs/frameworks/egg",
+        "docId": "frameworks/egg"
+      },
+      {
+        "type": "link",
+        "label": "框架",
+        "href": "/docs/frameworks/",
+        "docId": "frameworks/index"
+      }
+    ]
+  },
+  "docs": {
+    "algorightm/hello": {
+      "id": "algorightm/hello",
+      "title": "hello",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "app/android": {
+      "id": "app/android",
+      "title": "Android",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "app/flutter": {
+      "id": "app/flutter",
+      "title": "flutter",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "app/hybrid": {
+      "id": "app/hybrid",
+      "title": "hybrid",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "app/ios": {
+      "id": "app/ios",
+      "title": "ios",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "app/rn": {
+      "id": "app/rn",
+      "title": "rn",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "app/uniapp": {
+      "id": "app/uniapp",
+      "title": "uni-app 开发",
+      "description": "uni-app 的开发，给人一种二手货的感觉，工具的使用也缺少顺滑，舒适的感觉。",
+      "sidebar": "tutorialSidebar"
+    },
+    "app/wechat": {
+      "id": "app/wechat",
+      "title": "wechat",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "app/weex": {
+      "id": "app/weex",
+      "title": "weex",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "be/java": {
+      "id": "be/java",
+      "title": "java",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "be/node": {
+      "id": "be/node",
+      "title": "node",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "be/node/egg": {
+      "id": "be/node/egg",
+      "title": "egg",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "be/node/express": {
+      "id": "be/node/express",
+      "title": "express",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "be/node/koa": {
+      "id": "be/node/koa",
+      "title": "koa",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "browser/chrome": {
+      "id": "browser/chrome",
+      "title": "Chrome",
+      "description": "介绍 Chrome 与开发者工具",
+      "sidebar": "tutorialSidebar"
+    },
+    "browser/process": {
+      "id": "browser/process",
+      "title": "多进程架构",
+      "description": "在 以 Chrome 为例，说明浏览器的多进程架构，多进程架构的好处，一些注意点。",
+      "sidebar": "tutorialSidebar"
+    },
+    "browser/render": {
+      "id": "browser/render",
+      "title": "渲染流程",
+      "description": "渲染流程的基本流程",
+      "sidebar": "tutorialSidebar"
+    },
+    "CSS/basic": {
+      "id": "CSS/basic",
+      "title": "基础知识",
+      "description": "CSS is a language for writing style sheets, and is designed to describe the rendering of structured documents (such as HTML and XML) on a variety of media. CSS is used to describe the presentation of a source document, and usually does not change the underlying semantics expressed by its document language.",
+      "sidebar": "tutorialSidebar"
+    },
+    "CSS/extension": {
+      "id": "CSS/extension",
+      "title": "拓展应用",
+      "description": "scss",
+      "sidebar": "tutorialSidebar"
+    },
+    "CSS/qa": {
+      "id": "CSS/qa",
+      "title": "Q & A",
+      "description": "inline 元素间的空隙",
+      "sidebar": "tutorialSidebar"
+    },
+    "data-structure/binary-tree": {
+      "id": "data-structure/binary-tree",
+      "title": "二叉树",
+      "description": "二叉树，每个节点最多有两个子树的树结构，一般称作左子树，右子树。",
+      "sidebar": "tutorialSidebar"
+    },
+    "frameworks/egg": {
+      "id": "frameworks/egg",
+      "title": "Egg",
+      "description": "Express 和 Koa 基础框架，缺少项目级别的约定，各团队往往自定义一套项目结构和实施方案，给理解和团队协作带来困难。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/express": {
+      "id": "frameworks/express",
+      "title": "Express",
+      "description": "Express 对 HTTP server 做了一层薄薄的封装，增加 Route 支持较为便利的路由控制分发，支持一些简单的拓展。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/index": {
+      "id": "frameworks/index",
+      "title": "框架",
+      "description": "",
+      "sidebar": "frameworks"
+    },
+    "frameworks/koa": {
+      "id": "frameworks/koa",
+      "title": "Koa",
+      "description": "Koa 由 Express 幕后的原班人马打造。 Koa 中间件选择了洋葱圈模型，使用 async/await 来实现后置处理逻辑，增加了 Context 来表示当前请求的上下文。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/react/core": {
+      "id": "frameworks/react/core",
+      "title": "core",
+      "description": "",
+      "sidebar": "frameworks"
+    },
+    "frameworks/react/fiber": {
+      "id": "frameworks/react/fiber",
+      "title": "Fiber",
+      "description": "",
+      "sidebar": "frameworks"
+    },
+    "frameworks/react/reconciler": {
+      "id": "frameworks/react/reconciler",
+      "title": "reconciler",
+      "description": "",
+      "sidebar": "frameworks"
+    },
+    "frameworks/react/renderer": {
+      "id": "frameworks/react/renderer",
+      "title": "renderer",
+      "description": "",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/compiler/ast": {
+      "id": "frameworks/vue2/compiler/ast",
+      "title": "AST",
+      "description": "AST 全名 Abstract Syntax Tree ，中文叫做抽象语法树，AST 就是对源码抽象的结构化表示。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/compiler/codegen": {
+      "id": "frameworks/vue2/compiler/codegen",
+      "title": "codegen",
+      "description": "codegen 是编译过程的最后一步，这一步的输入是 optimize 后的 AST，输出是可执行的中间代码。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/compiler/compile-to-functions": {
+      "id": "frameworks/vue2/compiler/compile-to-functions",
+      "title": "compileToFunctions",
+      "description": "在 codegen 之后，最后做的事情，是提供方法去使用编译的结果，这就是 compileToFunctions 做的事情。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/compiler/compiler": {
+      "id": "frameworks/vue2/compiler/compiler",
+      "title": "compiler",
+      "description": "在 new Vue 的说明过程中，我们知道在\\_init 函数中，created 之后是 $mount",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/compiler/optimize": {
+      "id": "frameworks/vue2/compiler/optimize",
+      "title": "optimize",
+      "description": "是一个 AST，optimize 是对 AST 进行优化",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/compiler/parse": {
+      "id": "frameworks/vue2/compiler/parse",
+      "title": "parse",
+      "description": "编译核心三步的第一步 —— parse，负责模板的解析和 AST 的生成。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/compiler/qa": {
+      "id": "frameworks/vue2/compiler/qa",
+      "title": "qa",
+      "description": "答疑",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/overview/constructor": {
+      "id": "frameworks/vue2/overview/constructor",
+      "title": "构造函数",
+      "description": "根据 new Vue 调用，可以猜测到 Vue 大概是这样的一个结构",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/overview/dir": {
+      "id": "frameworks/vue2/overview/dir",
+      "title": "目录结构",
+      "description": "在 src 目录下 tree -L 1 结果如下",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/overview/entry": {
+      "id": "frameworks/vue2/overview/entry",
+      "title": "编译入口",
+      "description": "说明如何通过构建配置找到编译入口，并对入口层次结构进行总结",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/overview/mount": {
+      "id": "frameworks/vue2/overview/mount",
+      "title": "mount",
+      "description": "created 是实例创建完成，创建完成之后就到了使用，也就是 mount 的过程。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/overview/new-vue": {
+      "id": "frameworks/vue2/overview/new-vue",
+      "title": "new Vue",
+      "description": "对于任意一个实例，都可以分为 实例的生成 和 实例的使用 两个阶段。于 Vue 而言，created 钩子的发布，是生成和使用这两个阶段的分隔界限。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/overview/overview": {
+      "id": "frameworks/vue2/overview/overview",
+      "title": "内容概述",
+      "description": "叙述逻辑及约定说明",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/reactivity/collect-deps": {
+      "id": "frameworks/vue2/reactivity/collect-deps",
+      "title": "依赖收集",
+      "description": "依赖收集，就是在使用某个变量的时候，进行登记，在该变量更新后，通知到对应的使用者。 这个登记是在变量自身，而非使用方，具体过程在 defineReactive 中定义的 getter。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/reactivity/computed": {
+      "id": "frameworks/vue2/reactivity/computed",
+      "title": "Computed",
+      "description": "computed 对应一类数据更新订阅者，我称之为 computed watcher。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/reactivity/data": {
+      "id": "frameworks/vue2/reactivity/data",
+      "title": "数据初始化",
+      "description": "从 data 的初始化开始",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/reactivity/dispatch-update": {
+      "id": "frameworks/vue2/reactivity/dispatch-update",
+      "title": "派发更新",
+      "description": "大白话说，就是在数据改变了的时候，通知数据的使用方。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/reactivity/intro": {
+      "id": "frameworks/vue2/reactivity/intro",
+      "title": "介绍",
+      "description": "研究定义了数据之后，Vue.js 是如何处理的，改了数据之后，视图又是咋实现更新的。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/reactivity/next-tick": {
+      "id": "frameworks/vue2/reactivity/next-tick",
+      "title": "nextTick",
+      "description": "本文说明 tick, nextTick, Vue.prototype.$nextTick 和 Vue.nextTick",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/reactivity/view-update": {
+      "id": "frameworks/vue2/reactivity/view-update",
+      "title": "视图更新",
+      "description": "一般而言的组件更新，其实是指视图更新，为了和组件内部状态，数据等的更新区别，本文明确指视图更新。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/create-element": {
+      "id": "frameworks/vue2/render/create-element",
+      "title": "createElement 的作用是根据中间代码生成 vnode",
+      "description": "前置内容",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/create-elm": {
+      "id": "frameworks/vue2/render/create-elm",
+      "title": "createElm",
+      "description": "createElm 在 patch 过程中调用，负责根据 vnode 生成 DOM 元素并插入到对应的位置。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/create-vnode": {
+      "id": "frameworks/vue2/render/create-vnode",
+      "title": "createComponentVNode",
+      "description": "在 Vue 源码中有不止一个 createComponent，我根据其作用取了别名。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/overview": {
+      "id": "frameworks/vue2/render/overview",
+      "title": "章节概述",
+      "description": "这一章叙述渲染的过程，在编译生成中间代码之后，需要将中间代码转化为 VDOM，然后再利用 VDOM 去构建真实的 DOM。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/patch": {
+      "id": "frameworks/vue2/render/patch",
+      "title": "patch",
+      "description": "patch 的输入是 VDOM Tree，输出是 DOM Tree，是将虚拟 DOM 转换为真实 DOM 的所在。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/render": {
+      "id": "frameworks/vue2/render/render",
+      "title": "render",
+      "description": "编译结果 -> VDOM",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/update": {
+      "id": "frameworks/vue2/render/update",
+      "title": "update",
+      "description": "VDOM -> DOM",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/vdom": {
+      "id": "frameworks/vue2/render/vdom",
+      "title": "Virtual DOM",
+      "description": "DOM 本身就是一种抽象描述，而我们所说的 Virtual DOM 就是另一种描述而已。VDOM 就像一种本地化的描述，根据我们的需要去抽象一个结构，方便我们使用。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/render/watcher": {
+      "id": "frameworks/vue2/render/watcher",
+      "title": "Watcher",
+      "description": "Watcher 实例化是了解渲染过程的关键入口，本文并不具体说明渲染和更新过程，只是概略地说明 Watcher 实例化的过程。为了解渲染和更新打个前站。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vue-router/install": {
+      "id": "frameworks/vue2/vue-router/install",
+      "title": "install",
+      "description": "Vue Router 作为一个插件安装，以添加内置路由组件，在每个 Vue 组件实例上添加 VueRouter 实例的引用。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vue-router/intro": {
+      "id": "frameworks/vue2/vue-router/intro",
+      "title": "介绍",
+      "description": "版本：3.4.9",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vue-router/main": {
+      "id": "frameworks/vue2/vue-router/main",
+      "title": "三个模块",
+      "description": "简要说明 VueRouter 构造函数及方法的定义，说明涉及到的 history 和 matcher 两个核心模块。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vue-router/match": {
+      "id": "frameworks/vue2/vue-router/match",
+      "title": "match",
+      "description": "定义在 src/create-matcher.js",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vue-router/route-map": {
+      "id": "frameworks/vue2/vue-router/route-map",
+      "title": "路由表",
+      "description": "在 Vue Router 实例化配置的时候，配置的是一个 routes 数组，类似下面这样",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vue-router/transition": {
+      "id": "frameworks/vue2/vue-router/transition",
+      "title": "路由切换",
+      "description": "切换过程的核心是 transitionTo，那么切换过程中是如何实现 router.history 内部状态和 window.history 状态的对应，当使用 go 方法切换页面时，又是如何实现 router 内部状态的切换的呢？这一切，要从 init 说起。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vuex/api": {
+      "id": "frameworks/vue2/vuex/api",
+      "title": "API",
+      "description": "本文说明 getters, state, dispatch 和 commit",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vuex/install": {
+      "id": "frameworks/vue2/vuex/install",
+      "title": "install",
+      "description": "基于 3.x，插件安装函数定义在 src/store.js",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vuex/module": {
+      "id": "frameworks/vue2/vuex/module",
+      "title": "模块",
+      "description": "本文说明 Store 实例化过程中的 modules，围绕着 modules 的处理过程，理解 state, mutations, actions 各部分组成在内部是如何整合的。",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue2/vuex/plugins": {
+      "id": "frameworks/vue2/vuex/plugins",
+      "title": "插件",
+      "description": "本文以内置的 devtool 插件为例，说明 Vuex 插件的机制，稍微说一下 Vue.js devtools 这个 Chrome 插件。定义在 src/plugins/devtool.js",
+      "sidebar": "frameworks"
+    },
+    "frameworks/vue3/overview": {
+      "id": "frameworks/vue3/overview",
+      "title": "base",
+      "description": "",
+      "sidebar": "frameworks"
+    },
+    "HTML/basic": {
+      "id": "HTML/basic",
+      "title": "基础",
+      "description": "Doctype",
+      "sidebar": "tutorialSidebar"
+    },
+    "HTML/iframe": {
+      "id": "HTML/iframe",
+      "title": "iframe",
+      "description": "同源",
+      "sidebar": "tutorialSidebar"
+    },
+    "HTML/semantic": {
+      "id": "HTML/semantic",
+      "title": "语义化",
+      "description": "Using the correct HTML elements to describe your document content.",
+      "sidebar": "tutorialSidebar"
+    },
+    "HTML/SEO": {
+      "id": "HTML/SEO",
+      "title": "SEO",
+      "description": "了解搜索引擎，根据搜索引擎的的要求，提供能够更好的描述自己，更容易让搜索引擎理解的内容。",
+      "sidebar": "tutorialSidebar"
+    },
+    "index": {
+      "id": "index",
+      "title": "开始",
+      "description": "一次有效的梳理理解，归纳总结，是解决”知道这个东西“但”不了解“的有效方法，是对抗记忆消退的有效解决方案。",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/animate": {
+      "id": "JS/animate",
+      "title": "动画",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/api": {
+      "id": "JS/api",
+      "title": "api",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/async/async": {
+      "id": "JS/async/async",
+      "title": "async/await",
+      "description": "async",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/async/axios": {
+      "id": "JS/async/axios",
+      "title": "axios",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/async/index": {
+      "id": "JS/async/index",
+      "title": "异步",
+      "description": "深入研究 Promise, async/await 等内容",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/async/promise-deep": {
+      "id": "JS/async/promise-deep",
+      "title": "深入 Promise 原理",
+      "description": "把握本质 —— Promise 是个构造函数。",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/async/promise-use": {
+      "id": "JS/async/promise-use",
+      "title": "熟悉 Promise 使用",
+      "description": "执行器函数",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/babel": {
+      "id": "JS/babel",
+      "title": "Babel",
+      "description": "Babel is a JavaScript compiler. Use next generation JavaScript, today.",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/base": {
+      "id": "JS/base",
+      "title": "变量定义",
+      "description": "基础知识点检查及简要介绍。",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/closure": {
+      "id": "JS/closure",
+      "title": "闭包",
+      "description": "A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/context": {
+      "id": "JS/context",
+      "title": "执行上下文",
+      "description": "下面这行代码的执行结果是什么？",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/function": {
+      "id": "JS/function",
+      "title": "函数",
+      "description": "箭头函数",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/module/amd": {
+      "id": "JS/module/amd",
+      "title": "AMD",
+      "description": "AMD 是 RequireJS 推广过程中产出的，RequireJS 是应用 AMD 的一个加载器库。RequireJS 的结构如下",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/module/commonjs": {
+      "id": "JS/module/commonjs",
+      "title": "CommonJS",
+      "description": "CommonJS 规范主要用于服务器端模块化代码组织",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/module/esm": {
+      "id": "JS/module/esm",
+      "title": "ES Module",
+      "description": "import 和 export 是关键字，不是对象，不能直接像 CommonJS 的实现那样去研究理解。",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/module/index": {
+      "id": "JS/module/index",
+      "title": "模块化",
+      "description": "模块，就是代码的定义，组织和加载，各模块化方案使用和实现上差别，但主逻辑是一致的。",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/object": {
+      "id": "JS/object",
+      "title": "对象",
+      "description": "JS 中对象是一组属性的无序集合，可以把对象想象成一张散列表，其中的内容就是一组名/值对，值可以是数据或者函数。",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/other": {
+      "id": "JS/other",
+      "title": "其他",
+      "description": "JSON",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/proxy": {
+      "id": "JS/proxy",
+      "title": "proxy",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/request": {
+      "id": "JS/request",
+      "title": "请求",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/scope": {
+      "id": "JS/scope",
+      "title": "作用域",
+      "description": "作用域是变量所属区域的划分，是一套存储和查找变量的规则。",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/storage": {
+      "id": "JS/storage",
+      "title": "存储",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/this": {
+      "id": "JS/this",
+      "title": "this",
+      "description": "| Q          | A                            |",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/types/index": {
+      "id": "JS/types/index",
+      "title": "数据类型",
+      "description": "共 8 种数据类型，6 种常用 + BigInt + Object。以下是原始类型的描述，反过来就是引用类型 Object。",
+      "sidebar": "tutorialSidebar"
+    },
+    "JS/types/reference": {
+      "id": "JS/types/reference",
+      "title": "引用类型",
+      "description": "本文简单总结 Object 之外的其他引用类型。",
+      "sidebar": "tutorialSidebar"
+    },
+    "monitor/hello": {
+      "id": "monitor/hello",
+      "title": "hello",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "network/cdn": {
+      "id": "network/cdn",
+      "title": "CDN",
+      "description": "CDN 内容分发网络，目的在于解决长距离访问缓慢的问题。CDN 的基本思路是将源站的内容分发到不同的机房去，用户请求时，直接用最近的站点响应。就跟很多连锁的服务门店是类似的。",
+      "sidebar": "tutorialSidebar"
+    },
+    "network/protocol/dhcp": {
+      "id": "network/protocol/dhcp",
+      "title": "DHCP",
+      "description": "动态主机协议(Dynamic Host Configuration Protocol)，用以在局域网中设备接入分配 IP，基本的原理是接入设备和 DHCP Server 通过广播进行通信协商，协商好之后通过广播广而告之。",
+      "sidebar": "tutorialSidebar"
+    },
+    "network/protocol/dns": {
+      "id": "network/protocol/dns",
+      "title": "DNS",
+      "description": "DNS 相关的内容，包含",
+      "sidebar": "tutorialSidebar"
+    },
+    "network/protocol/http": {
+      "id": "network/protocol/http",
+      "title": "HTTP",
+      "description": "了解 HTTP 协议的发展，各关键版本的一些基本知识。",
+      "sidebar": "tutorialSidebar"
+    },
+    "network/protocol/icmp": {
+      "id": "network/protocol/icmp",
+      "title": "ICMP",
+      "description": "ICMP 因特网消息控制协议，它就像一个侦察兵，快速侦察，向源主机反馈情况，以便源主机决策。",
+      "sidebar": "tutorialSidebar"
+    },
+    "network/protocol/tcp": {
+      "id": "network/protocol/tcp",
+      "title": "TCP",
+      "description": "说到 TCP，那内容就太多了，简单捋一下连接和断开等内容。",
+      "sidebar": "tutorialSidebar"
+    },
+    "ops-linux/alias": {
+      "id": "ops-linux/alias",
+      "title": "alias",
+      "description": "In Linux, an alias is a shortcut that references a command. An alias replaces a string that invokes a command in the Linux shell with another user-defined string.",
+      "sidebar": "tutorialSidebar"
+    },
+    "ops-linux/char": {
+      "id": "ops-linux/char",
+      "title": "字符处理",
+      "description": "在日志的查看和分析过程中用的比较多，往往和管道 | 结合起来使用。",
+      "sidebar": "tutorialSidebar"
+    },
+    "ops-linux/cmd": {
+      "id": "ops-linux/cmd",
+      "title": "基础命令",
+      "description": "命令大全",
+      "sidebar": "tutorialSidebar"
+    },
+    "ops-linux/hello": {
+      "id": "ops-linux/hello",
+      "title": "hello",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "ops-linux/nginx": {
+      "id": "ops-linux/nginx",
+      "title": "Nginx",
+      "description": "常见问题",
+      "sidebar": "tutorialSidebar"
+    },
+    "ops-linux/test": {
+      "id": "ops-linux/test",
+      "title": "网络测试",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "performance/analysis": {
+      "id": "performance/analysis",
+      "title": "性能优化",
+      "description": "首先需要了解性能优化的背景，为什么需要优化，然后如何去优化，如何去评估优化效果。",
+      "sidebar": "tutorialSidebar"
+    },
+    "performance/cache": {
+      "id": "performance/cache",
+      "title": "cache",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "performance/file": {
+      "id": "performance/file",
+      "title": "file",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "performance/render": {
+      "id": "performance/render",
+      "title": "render",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/index": {
+      "id": "project/bundler/index",
+      "title": "构建工具",
+      "description": "所谓构建过程，就是拿源文件，做一堆转换，处理，最后输出编译后的文件。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/rollup": {
+      "id": "project/bundler/rollup",
+      "title": "Rollup",
+      "description": "Rollup 小而美，专注于 JS 内容的打包，比较适合于打包工具库，SDK，组件库等。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/vite": {
+      "id": "project/bundler/vite",
+      "title": "Vite",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/compilation/build-module": {
+      "id": "project/bundler/webpack/compilation/build-module",
+      "title": "buildModule",
+      "description": "添加了模块的记录之后，从 buildModule 开始，进入到模块内容的读取分析过程",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/compilation/index": {
+      "id": "project/bundler/webpack/compilation/index",
+      "title": "compilation",
+      "description": "compilation 负责一次具体编译过程，这个过程中关注的是从 entry 的读到 output 的写。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/compiler": {
+      "id": "project/bundler/webpack/compiler",
+      "title": "compiler",
+      "description": "compiler 保存配置信息，根据配置定义和发布事件，负责整体的调度。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/hash": {
+      "id": "project/bundler/webpack/hash",
+      "title": "文件指纹",
+      "description": "文件指纹，大约可以理解为打包后输出的文件名，应当针对不同的文件，使用不同的指纹策略，以便充分利用缓存。 Webpack 里面有三类 hash",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/hmr": {
+      "id": "project/bundler/webpack/hmr",
+      "title": "热更新",
+      "description": "Webpack 中的文件监听，基本原理是周期性比较文件的最后编辑时间，监听的源码变化时重新构建。 Rebuild 存在的问题/不足 是需要手动刷新浏览器，还有就是构建的内容在硬盘上，有 I/O 成本。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/index": {
+      "id": "project/bundler/webpack/index",
+      "title": "webpack",
+      "description": "webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/loader": {
+      "id": "project/bundler/webpack/loader",
+      "title": "loader",
+      "description": "Loaders are transformations that are applied to the source code of a module. They allow you to pre-process files as you import or “load” them. Thus, loaders are kind of like “tasks” in other build tools and provide a powerful way to handle front-end build steps. Loaders can transform files from a different language (like TypeScript) to JavaScript or load inline images as data URLs. Loaders even allow you to do things like import CSS files directly from your JavaScript modules!",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/output": {
+      "id": "project/bundler/webpack/output",
+      "title": "输出结构",
+      "description": "有以下代码, app.js",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/parse": {
+      "id": "project/bundler/webpack/parse",
+      "title": "AST 的生成",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/plugin": {
+      "id": "project/bundler/webpack/plugin",
+      "title": "plugin",
+      "description": "Webpack 本身是一个事件流插件系统，在工作流程中的两个核心内容是 loader 和 plugin，loader 更多地专注于”转换“，语法的转换，文件转换为有效的模块等，而 loader 之外的事情，都由 plugin 来做，如创建目录，chunk 拆分等。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/prepare": {
+      "id": "project/bundler/webpack/prepare",
+      "title": "准备工作",
+      "description": "本文先简单介绍一下 webpack 的事件流机制，以及 compiler 和 compilation 这两个核心对象。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/sourcemap": {
+      "id": "project/bundler/webpack/sourcemap",
+      "title": "sourcemap",
+      "description": "source map 可以理解资源地图，也可以理解为模块字典，在 Devtool (opens new window)中的说明很详细了。 不过并不需要过分关注其细节，source map 一个是用来开发环节调试，一个是用来做生产环境错误追踪。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/use": {
+      "id": "project/bundler/webpack/use",
+      "title": "常用插件",
+      "description": "|     需求      |                                  配置说明                                  |",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/bundler/webpack/webpack-cli": {
+      "id": "project/bundler/webpack/webpack-cli",
+      "title": "webpack-cli",
+      "description": "Webpack CLI provides the interface of options webpack uses in its configuration file. The CLI options override options passed in the configuration file.",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/components": {
+      "id": "project/components",
+      "title": "组件化",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/docs": {
+      "id": "project/docs",
+      "title": "项目文档",
+      "description": "文档的生成与组织",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/dot-config": {
+      "id": "project/dot-config",
+      "title": "配置文件",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/env/git": {
+      "id": "project/env/git",
+      "title": "Git",
+      "description": "新版本的 Mac 自带了 git 命令。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/env/index": {
+      "id": "project/env/index",
+      "title": "准备工作",
+      "description": "工具及相关环境准备",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/env/node": {
+      "id": "project/env/node",
+      "title": "Node",
+      "description": "Node 我使用 nvm 进行管理",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/env/terminal": {
+      "id": "project/env/terminal",
+      "title": "终端",
+      "description": "看到好多这个那个终端的，让子弹飞一会儿，再飞一会儿。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/env/vscode": {
+      "id": "project/env/vscode",
+      "title": "编辑器",
+      "description": "日常使用的编辑器是 VS Code。",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/index": {
+      "id": "project/index",
+      "title": "介绍",
+      "description": "前端工程化，",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/mock": {
+      "id": "project/mock",
+      "title": "Mock",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/pkg/deps": {
+      "id": "project/pkg/deps",
+      "title": "依赖管理",
+      "description": "语义化版本",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/pkg/index": {
+      "id": "project/pkg/index",
+      "title": "包管理与依赖",
+      "description": "JS 包管理，有三个组成部分",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/pkg/npm": {
+      "id": "project/pkg/npm",
+      "title": "npm",
+      "description": "JS 包管理，有三个组成部分",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/pkg/yarn": {
+      "id": "project/pkg/yarn",
+      "title": "yarn",
+      "description": "Yet Another Resource Navigator",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/prettier": {
+      "id": "project/prettier",
+      "title": "代码美化",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/scheme/mitt": {
+      "id": "project/scheme/mitt",
+      "title": "发布订阅",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/scripts": {
+      "id": "project/scripts",
+      "title": "脚本与自动化",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/structure": {
+      "id": "project/structure",
+      "title": "项目结构",
+      "description": "方案选型与项目结构",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/testing": {
+      "id": "project/testing",
+      "title": "测试",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/types": {
+      "id": "project/types",
+      "title": "类型管理",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "project/version": {
+      "id": "project/version",
+      "title": "版本控制",
+      "description": "Git",
+      "sidebar": "tutorialSidebar"
+    },
+    "security/cors": {
+      "id": "security/cors",
+      "title": "cors",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "security/csrf": {
+      "id": "security/csrf",
+      "title": "CSRF",
+      "description": "CSRF，Cross Site Request Forgery，中文是跨站点请求伪造。CSRF 是真的跨站了，不像 XSS 那样，说跨站又不跨站，不成样子。CSRF 的基本流程如下",
+      "sidebar": "tutorialSidebar"
+    },
+    "security/hello": {
+      "id": "security/hello",
+      "title": "同源与跨域",
+      "description": "谈到跨域的时候，基本上都是说的如何合法跨域访问的问题。",
+      "sidebar": "tutorialSidebar"
+    },
+    "security/xss": {
+      "id": "security/xss",
+      "title": "XSS",
+      "description": "XSS 全称 Cross Site Scripting，中文叫做跨站脚本攻击，这个名称是历史原因，理解为网页脚本注入攻击即可。",
+      "sidebar": "tutorialSidebar"
+    },
+    "testing/index": {
+      "id": "testing/index",
+      "title": "Testing",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/chrome": {
+      "id": "tools/chrome",
+      "title": "chrome",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/cmd": {
+      "id": "tools/cmd",
+      "title": "ff",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/efficient": {
+      "id": "tools/efficient",
+      "title": "efficient",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/git": {
+      "id": "tools/git",
+      "title": "Git",
+      "description": "新版本的 Mac 自带了 git 命令。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/github": {
+      "id": "tools/github",
+      "title": "Github",
+      "description": "esmyy.github.io",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/index": {
+      "id": "tools/index",
+      "title": "说明",
+      "description": "介绍各种自用的工具，包含图形化工具，命令行工具，开发的，效率的等等，研究一些实现。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/npm": {
+      "id": "tools/npm",
+      "title": "npm",
+      "description": "JS 包管理，有三个组成部分",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/nvm": {
+      "id": "tools/nvm",
+      "title": "Node",
+      "description": "Node 我使用 nvm 进行管理",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/postman": {
+      "id": "tools/postman",
+      "title": "postman",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/proxy": {
+      "id": "tools/proxy",
+      "title": "代理",
+      "description": "Charles",
+      "sidebar": "tutorialSidebar"
+    },
+    "tools/terminal": {
+      "id": "tools/terminal",
+      "title": "终端",
+      "description": "看到好多这个那个终端的，让子弹飞一会儿，再飞一会儿。",
+      "sidebar": "tutorialSidebar"
+    },
+    "TS/convention": {
+      "id": "TS/convention",
+      "title": "命名约定",
+      "description": "我习惯类型命名统一采用 T 开头",
+      "sidebar": "tutorialSidebar"
+    },
+    "TS/skill": {
+      "id": "TS/skill",
+      "title": "实用技巧",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "TS/type": {
+      "id": "TS/type",
+      "title": "常用类型",
+      "description": "归纳常用类型，作为项目开发基础的类型工具，提高效率。",
+      "sidebar": "tutorialSidebar"
+    },
+    "TS/utils": {
+      "id": "TS/utils",
+      "title": "工具包",
+      "description": "",
+      "sidebar": "tutorialSidebar"
+    },
+    "working/new": {
+      "id": "working/new",
+      "title": "加入新团队",
+      "description": "比较规范成熟的公司/团队，会有入职引导，根据引导准备好网络，账号，一些权限等。",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

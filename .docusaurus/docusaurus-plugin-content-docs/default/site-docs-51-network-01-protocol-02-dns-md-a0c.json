@@ -1,0 +1,25 @@
+{
+  "unversionedId": "network/protocol/dns",
+  "id": "network/protocol/dns",
+  "title": "DNS",
+  "description": "DNS 相关的内容，包含",
+  "source": "@site/docs/51-network/01-protocol/02-dns.md",
+  "sourceDirName": "51-network/01-protocol",
+  "slug": "/network/protocol/dns",
+  "permalink": "/docs/network/protocol/dns",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/51-network/01-protocol/02-dns.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DHCP",
+    "permalink": "/docs/network/protocol/dhcp"
+  },
+  "next": {
+    "title": "HTTP",
+    "permalink": "/docs/network/protocol/http"
+  }
+}

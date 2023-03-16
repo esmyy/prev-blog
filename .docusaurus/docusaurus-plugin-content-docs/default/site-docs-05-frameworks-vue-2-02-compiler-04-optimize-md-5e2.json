@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/compiler/optimize",
+  "id": "frameworks/vue2/compiler/optimize",
+  "title": "optimize",
+  "description": "是一个 AST，optimize 是对 AST 进行优化",
+  "source": "@site/docs/05-frameworks/vue2/02-compiler/04-optimize.md",
+  "sourceDirName": "05-frameworks/vue2/02-compiler",
+  "slug": "/frameworks/vue2/compiler/optimize",
+  "permalink": "/docs/frameworks/vue2/compiler/optimize",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/02-compiler/04-optimize.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "vue2",
+  "previous": {
+    "title": "parse",
+    "permalink": "/docs/frameworks/vue2/compiler/parse"
+  },
+  "next": {
+    "title": "codegen",
+    "permalink": "/docs/frameworks/vue2/compiler/codegen"
+  }
+}

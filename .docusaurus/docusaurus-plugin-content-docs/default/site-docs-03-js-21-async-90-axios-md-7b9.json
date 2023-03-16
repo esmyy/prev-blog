@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/async/axios",
+  "id": "JS/async/axios",
+  "title": "axios",
+  "description": "",
+  "source": "@site/docs/03-JS/21-async/90-axios.md",
+  "sourceDirName": "03-JS/21-async",
+  "slug": "/JS/async/axios",
+  "permalink": "/docs/JS/async/axios",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/21-async/90-axios.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 90,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "async/await",
+    "permalink": "/docs/JS/async/async"
+  },
+  "next": {
+    "title": "proxy",
+    "permalink": "/docs/JS/proxy"
+  }
+}

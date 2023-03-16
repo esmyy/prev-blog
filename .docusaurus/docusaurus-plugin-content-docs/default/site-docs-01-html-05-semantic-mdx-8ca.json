@@ -1,0 +1,25 @@
+{
+  "unversionedId": "HTML/semantic",
+  "id": "HTML/semantic",
+  "title": "语义化",
+  "description": "Using the correct HTML elements to describe your document content.",
+  "source": "@site/docs/01-HTML/05-semantic.mdx",
+  "sourceDirName": "01-HTML",
+  "slug": "/HTML/semantic",
+  "permalink": "/docs/HTML/semantic",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/01-HTML/05-semantic.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iframe",
+    "permalink": "/docs/HTML/iframe"
+  },
+  "next": {
+    "title": "SEO",
+    "permalink": "/docs/HTML/SEO"
+  }
+}

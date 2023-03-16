@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tools/webpack/hmr",
+  "id": "tools/webpack/hmr",
+  "title": "Rebuild & HMR",
+  "description": "Webpack 中的文件监听，基本原理是周期性比较文件的最后编辑时间，监听的源码变化时重新构建。 Rebuild 存在的问题/不足 是需要手动刷新浏览器，还有就是构建的内容在硬盘上，有 I/O 成本。",
+  "source": "@site/docs/43-tools/88-webpack/05-hmr.md",
+  "sourceDirName": "43-tools/88-webpack",
+  "slug": "/tools/webpack/hmr",
+  "permalink": "/docs/tools/webpack/hmr",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/88-webpack/05-hmr.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "plugin",
+    "permalink": "/docs/tools/webpack/plugin"
+  },
+  "next": {
+    "title": "文件指纹",
+    "permalink": "/docs/tools/webpack/hash"
+  }
+}

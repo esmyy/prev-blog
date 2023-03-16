@@ -1,0 +1,24 @@
+{
+  "unversionedId": "monitor/hello",
+  "id": "monitor/hello",
+  "title": "hello",
+  "description": "",
+  "source": "@site/docs/monitor/hello.md",
+  "sourceDirName": "monitor",
+  "slug": "/monitor/hello",
+  "permalink": "/docs/monitor/hello",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/monitor/hello.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "hello",
+    "permalink": "/docs/data-structure/hello"
+  },
+  "next": {
+    "title": "hello",
+    "permalink": "/docs/network/hello"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "vue2/index",
+  "id": "vue2/index",
+  "title": "index",
+  "description": "",
+  "source": "@site/docs/vue2/index.md",
+  "sourceDirName": "vue2",
+  "slug": "/vue2/",
+  "permalink": "/docs/vue2/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/vue2/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "displayed_sidebar": "vue2"
+  },
+  "sidebar": "vue2",
+  "next": {
+    "title": "intro",
+    "permalink": "/docs/vue2/intro"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tools/efficient",
+  "id": "tools/efficient",
+  "title": "efficient",
+  "description": "",
+  "source": "@site/docs/43-tools/21-efficient.md",
+  "sourceDirName": "43-tools",
+  "slug": "/tools/efficient",
+  "permalink": "/docs/tools/efficient",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/21-efficient.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 21,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "npm",
+    "permalink": "/docs/tools/npm"
+  },
+  "next": {
+    "title": "chrome",
+    "permalink": "/docs/tools/chrome"
+  }
+}

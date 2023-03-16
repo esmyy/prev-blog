@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/vuex/module",
+  "id": "frameworks/vue2/vuex/module",
+  "title": "模块",
+  "description": "本文说明 Store 实例化过程中的 modules，围绕着 modules 的处理过程，理解 state, mutations, actions 各部分组成在内部是如何整合的。",
+  "source": "@site/docs/05-frameworks/vue2/06-vuex/02-module.md",
+  "sourceDirName": "05-frameworks/vue2/06-vuex",
+  "slug": "/frameworks/vue2/vuex/module",
+  "permalink": "/docs/frameworks/vue2/vuex/module",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/06-vuex/02-module.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "vue2",
+  "previous": {
+    "title": "install",
+    "permalink": "/docs/frameworks/vue2/vuex/install"
+  },
+  "next": {
+    "title": "API",
+    "permalink": "/docs/frameworks/vue2/vuex/api"
+  }
+}

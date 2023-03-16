@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tools/webpack/loader",
+  "id": "tools/webpack/loader",
+  "title": "loader",
+  "description": "loader 本身是一个函数，主要用于对模块的源代码进行转换，输出转换的结果。 Loader 的另一个作用是将 JS，JSON 外的文件类型转换为有效的 JS 模块，正因如此才可以添加到依赖图中。 loader 的配置示例如下",
+  "source": "@site/docs/43-tools/88-webpack/03-loader.md",
+  "sourceDirName": "43-tools/88-webpack",
+  "slug": "/tools/webpack/loader",
+  "permalink": "/docs/tools/webpack/loader",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/88-webpack/03-loader.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "工作流程",
+    "permalink": "/docs/tools/webpack/flow"
+  },
+  "next": {
+    "title": "plugin",
+    "permalink": "/docs/tools/webpack/plugin"
+  }
+}

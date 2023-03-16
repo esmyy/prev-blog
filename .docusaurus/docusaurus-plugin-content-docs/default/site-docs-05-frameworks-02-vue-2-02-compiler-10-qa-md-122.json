@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/compiler/qa",
+  "id": "frameworks/vue2/compiler/qa",
+  "title": "qa",
+  "description": "答疑",
+  "source": "@site/docs/05-frameworks/02-vue2/02-compiler/10-qa.md",
+  "sourceDirName": "05-frameworks/02-vue2/02-compiler",
+  "slug": "/frameworks/vue2/compiler/qa",
+  "permalink": "/docs/frameworks/vue2/compiler/qa",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/02-vue2/02-compiler/10-qa.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "frameworks",
+  "previous": {
+    "title": "compileToFunctions",
+    "permalink": "/docs/frameworks/vue2/compiler/compile-to-functions"
+  },
+  "next": {
+    "title": "章节概述",
+    "permalink": "/docs/frameworks/vue2/render/overview"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/render/create-element",
+  "id": "frameworks/vue2/render/create-element",
+  "title": "createElement 的作用是根据中间代码生成 vnode",
+  "description": "前置内容",
+  "source": "@site/docs/05-frameworks/02-vue2/03-render/07-create-element.md",
+  "sourceDirName": "05-frameworks/02-vue2/03-render",
+  "slug": "/frameworks/vue2/render/create-element",
+  "permalink": "/docs/frameworks/vue2/render/create-element",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/02-vue2/03-render/07-create-element.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "frameworks",
+  "previous": {
+    "title": "update",
+    "permalink": "/docs/frameworks/vue2/render/update"
+  },
+  "next": {
+    "title": "createComponentVNode",
+    "permalink": "/docs/frameworks/vue2/render/create-vnode"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/async/promise-deep",
+  "id": "JS/async/promise-deep",
+  "title": "深入 Promise 原理",
+  "description": "把握本质 —— Promise 是个构造函数。",
+  "source": "@site/docs/03-JS/21-async/02-promise-deep.md",
+  "sourceDirName": "03-JS/21-async",
+  "slug": "/JS/async/promise-deep",
+  "permalink": "/docs/JS/async/promise-deep",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/21-async/02-promise-deep.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "熟悉 Promise 使用",
+    "permalink": "/docs/JS/async/promise-use"
+  },
+  "next": {
+    "title": "async/await",
+    "permalink": "/docs/JS/async/async"
+  }
+}

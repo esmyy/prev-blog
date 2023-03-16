@@ -1,0 +1,25 @@
+{
+  "unversionedId": "project/components",
+  "id": "project/components",
+  "title": "组件化",
+  "description": "",
+  "source": "@site/docs/10-project/11-components.md",
+  "sourceDirName": "10-project",
+  "slug": "/project/components",
+  "permalink": "/docs/project/components",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/11-components.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "项目结构",
+    "permalink": "/docs/project/structure"
+  },
+  "next": {
+    "title": "脚本与自动化",
+    "permalink": "/docs/project/scripts"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/reactivity/computed",
+  "id": "frameworks/vue2/reactivity/computed",
+  "title": "Computed",
+  "description": "computed 对应一类数据更新订阅者，我称之为 computed watcher。",
+  "source": "@site/docs/05-frameworks/vue2/04-reactivity/07-computed.md",
+  "sourceDirName": "05-frameworks/vue2/04-reactivity",
+  "slug": "/frameworks/vue2/reactivity/computed",
+  "permalink": "/docs/frameworks/vue2/reactivity/computed",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/04-reactivity/07-computed.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "vue2",
+  "previous": {
+    "title": "nextTick",
+    "permalink": "/docs/frameworks/vue2/reactivity/next-tick"
+  },
+  "next": {
+    "title": "介绍",
+    "permalink": "/docs/frameworks/vue2/vue-router/intro"
+  }
+}

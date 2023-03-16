@@ -1,0 +1,25 @@
+{
+  "unversionedId": "utility/utils",
+  "id": "utility/utils",
+  "title": "utils",
+  "description": "",
+  "source": "@site/docs/15-utility/02-utils.md",
+  "sourceDirName": "15-utility",
+  "slug": "/utility/utils",
+  "permalink": "/docs/utility/utils",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/15-utility/02-utils.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "TS - Types",
+    "permalink": "/docs/utility/ts-types"
+  },
+  "next": {
+    "title": "date",
+    "permalink": "/docs/utility/date"
+  }
+}

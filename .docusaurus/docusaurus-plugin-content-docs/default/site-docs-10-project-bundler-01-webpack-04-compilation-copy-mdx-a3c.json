@@ -1,0 +1,25 @@
+{
+  "unversionedId": "project/bundler/webpack/compilation copy",
+  "id": "project/bundler/webpack/compilation copy",
+  "title": "主要流程",
+  "description": "compilation 负责一次具体编译过程，这个过程中关注的是从 entry 的读，到 output 的写。",
+  "source": "@site/docs/10-project/bundler/01-webpack/04-compilation copy.mdx",
+  "sourceDirName": "10-project/bundler/01-webpack",
+  "slug": "/project/bundler/webpack/compilation copy",
+  "permalink": "/docs/project/bundler/webpack/compilation copy",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/bundler/01-webpack/04-compilation copy.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "compiler",
+    "permalink": "/docs/project/bundler/webpack/compiler"
+  },
+  "next": {
+    "title": "主要流程",
+    "permalink": "/docs/project/bundler/webpack/compilation"
+  }
+}

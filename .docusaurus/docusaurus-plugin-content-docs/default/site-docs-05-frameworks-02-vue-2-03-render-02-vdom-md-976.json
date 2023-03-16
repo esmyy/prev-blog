@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/render/vdom",
+  "id": "frameworks/vue2/render/vdom",
+  "title": "Virtual DOM",
+  "description": "DOM 本身就是一种抽象描述，而我们所说的 Virtual DOM 就是另一种描述而已。VDOM 就像一种本地化的描述，根据我们的需要去抽象一个结构，方便我们使用。",
+  "source": "@site/docs/05-frameworks/02-vue2/03-render/02-vdom.md",
+  "sourceDirName": "05-frameworks/02-vue2/03-render",
+  "slug": "/frameworks/vue2/render/vdom",
+  "permalink": "/docs/frameworks/vue2/render/vdom",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/02-vue2/03-render/02-vdom.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "frameworks",
+  "previous": {
+    "title": "章节概述",
+    "permalink": "/docs/frameworks/vue2/render/overview"
+  },
+  "next": {
+    "title": "Watcher",
+    "permalink": "/docs/frameworks/vue2/render/watcher"
+  }
+}

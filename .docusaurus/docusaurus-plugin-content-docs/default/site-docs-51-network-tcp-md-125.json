@@ -1,0 +1,24 @@
+{
+  "unversionedId": "network/tcp",
+  "id": "network/tcp",
+  "title": "tcp",
+  "description": "",
+  "source": "@site/docs/51-network/tcp.md",
+  "sourceDirName": "51-network",
+  "slug": "/network/tcp",
+  "permalink": "/docs/network/tcp",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/51-network/tcp.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "structure",
+    "permalink": "/docs/network/structure"
+  },
+  "next": {
+    "title": "cors",
+    "permalink": "/docs/security/cors"
+  }
+}

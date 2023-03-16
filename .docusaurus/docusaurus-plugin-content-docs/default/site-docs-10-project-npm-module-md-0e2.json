@@ -1,0 +1,24 @@
+{
+  "unversionedId": "project/npm/module",
+  "id": "project/npm/module",
+  "title": "包管理",
+  "description": "JS 包管理，有三个组成部分",
+  "source": "@site/docs/10-project/npm/module.md",
+  "sourceDirName": "10-project/npm",
+  "slug": "/project/npm/module",
+  "permalink": "/docs/project/npm/module",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/npm/module.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Mock",
+    "permalink": "/docs/project/mock"
+  },
+  "next": {
+    "title": "依赖管理",
+    "permalink": "/docs/project/package.json"
+  }
+}

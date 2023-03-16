@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tools/webpack/sourcemap",
+  "id": "tools/webpack/sourcemap",
+  "title": "source map",
+  "description": "source map 可以理解资源地图，也可以理解为模块字典，在 Devtool (opens new window)中的说明很详细了。 不过并不需要过分关注其细节，source map 一个是用来开发环节调试，一个是用来做生产环境错误追踪。",
+  "source": "@site/docs/43-tools/88-webpack/08-sourcemap.md",
+  "sourceDirName": "43-tools/88-webpack",
+  "slug": "/tools/webpack/sourcemap",
+  "permalink": "/docs/tools/webpack/sourcemap",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/88-webpack/08-sourcemap.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "输出结构",
+    "permalink": "/docs/tools/webpack/output"
+  },
+  "next": {
+    "title": "常用插件",
+    "permalink": "/docs/tools/webpack/use"
+  }
+}

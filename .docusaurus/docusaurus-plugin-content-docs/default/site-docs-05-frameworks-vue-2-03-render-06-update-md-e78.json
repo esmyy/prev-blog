@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/render/update",
+  "id": "frameworks/vue2/render/update",
+  "title": "update",
+  "description": "VDOM -> DOM",
+  "source": "@site/docs/05-frameworks/vue2/03-render/06-update.md",
+  "sourceDirName": "05-frameworks/vue2/03-render",
+  "slug": "/frameworks/vue2/render/update",
+  "permalink": "/docs/frameworks/vue2/render/update",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/03-render/06-update.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {},
+  "sidebar": "vue2",
+  "previous": {
+    "title": "render",
+    "permalink": "/docs/frameworks/vue2/render/render"
+  },
+  "next": {
+    "title": "createElement 的作用是根据中间代码生成 vnode",
+    "permalink": "/docs/frameworks/vue2/render/create-element"
+  }
+}

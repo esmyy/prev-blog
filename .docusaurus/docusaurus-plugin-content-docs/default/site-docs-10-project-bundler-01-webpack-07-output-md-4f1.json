@@ -1,0 +1,25 @@
+{
+  "unversionedId": "project/bundler/webpack/output",
+  "id": "project/bundler/webpack/output",
+  "title": "输出结构",
+  "description": "有以下代码, app.js",
+  "source": "@site/docs/10-project/bundler/01-webpack/07-output.md",
+  "sourceDirName": "10-project/bundler/01-webpack",
+  "slug": "/project/bundler/webpack/output",
+  "permalink": "/docs/project/bundler/webpack/output",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/bundler/01-webpack/07-output.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "loader",
+    "permalink": "/docs/project/bundler/webpack/loader"
+  },
+  "next": {
+    "title": "sourcemap",
+    "permalink": "/docs/project/bundler/webpack/sourcemap"
+  }
+}

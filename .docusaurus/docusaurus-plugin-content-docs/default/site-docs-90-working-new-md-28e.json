@@ -1,0 +1,20 @@
+{
+  "unversionedId": "working/new",
+  "id": "working/new",
+  "title": "加入新团队",
+  "description": "比较规范成熟的公司/团队，会有入职引导，根据引导准备好网络，账号，一些权限等。",
+  "source": "@site/docs/90-working/new.md",
+  "sourceDirName": "90-working",
+  "slug": "/working/new",
+  "permalink": "/docs/working/new",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/90-working/new.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "hello",
+    "permalink": "/docs/algorightm/hello"
+  }
+}

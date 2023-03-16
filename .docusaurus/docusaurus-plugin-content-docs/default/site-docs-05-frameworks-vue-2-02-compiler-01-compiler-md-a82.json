@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/compiler/compiler",
+  "id": "frameworks/vue2/compiler/compiler",
+  "title": "compiler",
+  "description": "在 new Vue 的说明过程中，我们知道在\\_init 函数中，created 之后是 $mount",
+  "source": "@site/docs/05-frameworks/vue2/02-compiler/01-compiler.md",
+  "sourceDirName": "05-frameworks/vue2/02-compiler",
+  "slug": "/frameworks/vue2/compiler/compiler",
+  "permalink": "/docs/frameworks/vue2/compiler/compiler",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/02-compiler/01-compiler.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "vue2",
+  "previous": {
+    "title": "mount",
+    "permalink": "/docs/frameworks/vue2/overview/mount"
+  },
+  "next": {
+    "title": "AST",
+    "permalink": "/docs/frameworks/vue2/compiler/ast"
+  }
+}

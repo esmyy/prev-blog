@@ -1,0 +1,25 @@
+{
+  "unversionedId": "utility/ts-types",
+  "id": "utility/ts-types",
+  "title": "TS - Types",
+  "description": "",
+  "source": "@site/docs/15-utility/01-ts-types.md",
+  "sourceDirName": "15-utility",
+  "slug": "/utility/ts-types",
+  "permalink": "/docs/utility/ts-types",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/15-utility/01-ts-types.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "版本控制",
+    "permalink": "/docs/project/version"
+  },
+  "next": {
+    "title": "utils",
+    "permalink": "/docs/utility/utils"
+  }
+}

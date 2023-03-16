@@ -1,0 +1,24 @@
+{
+  "unversionedId": "JS/types/index",
+  "id": "JS/types/index",
+  "title": "数据类型",
+  "description": "共 8 种数据类型，6 种常用 + BigInt + Object。以下是原始类型的描述，反过来就是引用类型 Object。",
+  "source": "@site/docs/03-JS/01-types/index.mdx",
+  "sourceDirName": "03-JS/01-types",
+  "slug": "/JS/types/",
+  "permalink": "/docs/JS/types/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/01-types/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "变量定义",
+    "permalink": "/docs/JS/base"
+  },
+  "next": {
+    "title": "引用类型",
+    "permalink": "/docs/JS/types/reference"
+  }
+}

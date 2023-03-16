@@ -1,0 +1,25 @@
+{
+  "unversionedId": "project/pkg/yarn",
+  "id": "project/pkg/yarn",
+  "title": "yarn",
+  "description": "Yet Another Resource Navigator",
+  "source": "@site/docs/10-project/pkg/13-yarn.md",
+  "sourceDirName": "10-project/pkg",
+  "slug": "/project/pkg/yarn",
+  "permalink": "/docs/project/pkg/yarn",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/pkg/13-yarn.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "包管理与依赖",
+    "permalink": "/docs/project/pkg/"
+  },
+  "next": {
+    "title": "依赖管理",
+    "permalink": "/docs/project/pkg/deps"
+  }
+}

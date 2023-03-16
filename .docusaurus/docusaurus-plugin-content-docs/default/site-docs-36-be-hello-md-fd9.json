@@ -1,0 +1,24 @@
+{
+  "unversionedId": "be/hello",
+  "id": "be/hello",
+  "title": "hello",
+  "description": "",
+  "source": "@site/docs/36-be/hello.md",
+  "sourceDirName": "36-be",
+  "slug": "/be/hello",
+  "permalink": "/docs/be/hello",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/36-be/hello.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "java",
+    "permalink": "/docs/be/java"
+  },
+  "next": {
+    "title": "egg",
+    "permalink": "/docs/be/node/egg"
+  }
+}

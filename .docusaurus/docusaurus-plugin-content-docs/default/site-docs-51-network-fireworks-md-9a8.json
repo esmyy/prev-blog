@@ -1,0 +1,24 @@
+{
+  "unversionedId": "network/fireworks",
+  "id": "network/fireworks",
+  "title": "fireworks",
+  "description": "",
+  "source": "@site/docs/51-network/fireworks.md",
+  "sourceDirName": "51-network",
+  "slug": "/network/fireworks",
+  "permalink": "/docs/network/fireworks",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/51-network/fireworks.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CDN",
+    "permalink": "/docs/network/cdn"
+  },
+  "next": {
+    "title": "cors",
+    "permalink": "/docs/security/cors"
+  }
+}

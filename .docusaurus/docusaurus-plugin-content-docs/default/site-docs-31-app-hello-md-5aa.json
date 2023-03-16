@@ -1,0 +1,24 @@
+{
+  "unversionedId": "app/hello",
+  "id": "app/hello",
+  "title": "hello",
+  "description": "",
+  "source": "@site/docs/31-app/hello.md",
+  "sourceDirName": "31-app",
+  "slug": "/app/hello",
+  "permalink": "/docs/app/hello",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/31-app/hello.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "basic",
+    "permalink": "/docs/browser/basic"
+  },
+  "next": {
+    "title": "hello",
+    "permalink": "/docs/be/hello"
+  }
+}

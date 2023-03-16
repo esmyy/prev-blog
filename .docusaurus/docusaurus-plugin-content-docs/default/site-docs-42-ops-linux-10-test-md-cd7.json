@@ -1,0 +1,25 @@
+{
+  "unversionedId": "ops-linux/test",
+  "id": "ops-linux/test",
+  "title": "网络测试",
+  "description": "",
+  "source": "@site/docs/42-ops-linux/10-test.md",
+  "sourceDirName": "42-ops-linux",
+  "slug": "/ops-linux/test",
+  "permalink": "/docs/ops-linux/test",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/42-ops-linux/10-test.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Nginx",
+    "permalink": "/docs/ops-linux/nginx"
+  },
+  "next": {
+    "title": "hello",
+    "permalink": "/docs/ops-linux/hello"
+  }
+}

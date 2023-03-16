@@ -1,0 +1,24 @@
+{
+  "unversionedId": "tools/nvm",
+  "id": "tools/nvm",
+  "title": "Node",
+  "description": "Node 我使用 nvm 进行管理",
+  "source": "@site/docs/43-tools/nvm.md",
+  "sourceDirName": "43-tools",
+  "slug": "/tools/nvm",
+  "permalink": "/docs/tools/nvm",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/nvm.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Github",
+    "permalink": "/docs/tools/github"
+  },
+  "next": {
+    "title": "postman",
+    "permalink": "/docs/tools/postman"
+  }
+}

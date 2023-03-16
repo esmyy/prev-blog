@@ -1,0 +1,24 @@
+{
+  "unversionedId": "CSS/animate",
+  "id": "CSS/animate",
+  "title": "动画与渐变",
+  "description": "",
+  "source": "@site/docs/02-CSS/animate.md",
+  "sourceDirName": "02-CSS",
+  "slug": "/CSS/animate",
+  "permalink": "/docs/CSS/animate",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-CSS/animate.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Q & A",
+    "permalink": "/docs/CSS/qa"
+  },
+  "next": {
+    "title": "颜色",
+    "permalink": "/docs/CSS/color"
+  }
+}

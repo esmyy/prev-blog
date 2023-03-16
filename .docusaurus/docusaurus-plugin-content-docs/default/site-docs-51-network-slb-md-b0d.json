@@ -1,0 +1,24 @@
+{
+  "unversionedId": "network/slb",
+  "id": "network/slb",
+  "title": "slb",
+  "description": "",
+  "source": "@site/docs/51-network/slb.md",
+  "sourceDirName": "51-network",
+  "slug": "/network/slb",
+  "permalink": "/docs/network/slb",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/51-network/slb.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "fireworks",
+    "permalink": "/docs/network/fireworks"
+  },
+  "next": {
+    "title": "structure",
+    "permalink": "/docs/network/structure"
+  }
+}

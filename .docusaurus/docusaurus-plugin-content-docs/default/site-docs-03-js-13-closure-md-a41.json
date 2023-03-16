@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/closure",
+  "id": "JS/closure",
+  "title": "闭包",
+  "description": "A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.",
+  "source": "@site/docs/03-JS/13-closure.md",
+  "sourceDirName": "03-JS",
+  "slug": "/JS/closure",
+  "permalink": "/docs/JS/closure",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/13-closure.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 13,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "作用域",
+    "permalink": "/docs/JS/scope"
+  },
+  "next": {
+    "title": "this",
+    "permalink": "/docs/JS/this"
+  }
+}

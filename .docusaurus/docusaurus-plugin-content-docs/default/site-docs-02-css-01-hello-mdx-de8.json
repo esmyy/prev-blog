@@ -1,0 +1,25 @@
+{
+  "unversionedId": "CSS/hello",
+  "id": "CSS/hello",
+  "title": "基础概念",
+  "description": "CSS is a language for writing style sheets, and is designed to describe the rendering of structured documents (such as HTML and XML) on a variety of media. CSS is used to describe the presentation of a source document, and usually does not change the underlying semantics expressed by its document language.",
+  "source": "@site/docs/02-CSS/01-hello.mdx",
+  "sourceDirName": "02-CSS",
+  "slug": "/CSS/hello",
+  "permalink": "/docs/CSS/hello",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-CSS/01-hello.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SEO",
+    "permalink": "/docs/HTML/SEO"
+  },
+  "next": {
+    "title": "样式重置",
+    "permalink": "/docs/CSS/css-reset"
+  }
+}

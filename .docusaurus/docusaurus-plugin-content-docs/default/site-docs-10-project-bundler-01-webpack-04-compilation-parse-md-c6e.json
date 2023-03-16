@@ -1,0 +1,24 @@
+{
+  "unversionedId": "project/bundler/webpack/compilation/parse",
+  "id": "project/bundler/webpack/compilation/parse",
+  "title": "AST 的生成",
+  "description": "",
+  "source": "@site/docs/10-project/bundler/01-webpack/04-compilation/parse.md",
+  "sourceDirName": "10-project/bundler/01-webpack/04-compilation",
+  "slug": "/project/bundler/webpack/compilation/parse",
+  "permalink": "/docs/project/bundler/webpack/compilation/parse",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/bundler/01-webpack/04-compilation/parse.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "主要流程",
+    "permalink": "/docs/project/bundler/webpack/compilation/"
+  },
+  "next": {
+    "title": "plugin",
+    "permalink": "/docs/project/bundler/webpack/plugin"
+  }
+}

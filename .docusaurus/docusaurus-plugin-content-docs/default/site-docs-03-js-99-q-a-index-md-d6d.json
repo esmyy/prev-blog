@@ -1,0 +1,24 @@
+{
+  "unversionedId": "JS/Q & A/index",
+  "id": "JS/Q & A/index",
+  "title": "Q & A",
+  "description": "常见问题，综合应用手写题",
+  "source": "@site/docs/03-JS/99-Q & A/index.md",
+  "sourceDirName": "03-JS/99-Q & A",
+  "slug": "/JS/Q & A/",
+  "permalink": "/docs/JS/Q & A/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/99-Q & A/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "其他",
+    "permalink": "/docs/JS/other"
+  },
+  "next": {
+    "title": "Q & A",
+    "permalink": "/docs/JS/qa"
+  }
+}

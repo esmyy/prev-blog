@@ -1,0 +1,25 @@
+{
+  "unversionedId": "HTML/iframe",
+  "id": "HTML/iframe",
+  "title": "iframe",
+  "description": "同源",
+  "source": "@site/docs/01-HTML/03-iframe.md",
+  "sourceDirName": "01-HTML",
+  "slug": "/HTML/iframe",
+  "permalink": "/docs/HTML/iframe",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/01-HTML/03-iframe.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "语义化",
+    "permalink": "/docs/HTML/semantic"
+  },
+  "next": {
+    "title": "SEO",
+    "permalink": "/docs/HTML/SEO"
+  }
+}

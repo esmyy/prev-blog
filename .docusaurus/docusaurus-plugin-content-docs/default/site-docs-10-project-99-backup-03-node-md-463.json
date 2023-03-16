@@ -1,0 +1,25 @@
+{
+  "unversionedId": "project/backup/node",
+  "id": "project/backup/node",
+  "title": "Node",
+  "description": "Node 我使用 nvm 进行管理",
+  "source": "@site/docs/10-project/99-backup/03-node.md",
+  "sourceDirName": "10-project/99-backup",
+  "slug": "/project/backup/node",
+  "permalink": "/docs/project/backup/node",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/99-backup/03-node.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "编辑器",
+    "permalink": "/docs/project/backup/editor"
+  },
+  "next": {
+    "title": "Git",
+    "permalink": "/docs/project/backup/git"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "CSS/color",
+  "id": "CSS/color",
+  "title": "颜色",
+  "description": "CSS 中颜色有多种表示方式",
+  "source": "@site/docs/02-CSS/21-color.md",
+  "sourceDirName": "02-CSS",
+  "slug": "/CSS/color",
+  "permalink": "/docs/CSS/color",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/02-CSS/21-color.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 21,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "动画与渐变",
+    "permalink": "/docs/CSS/animate"
+  },
+  "next": {
+    "title": "拓展应用",
+    "permalink": "/docs/CSS/extension"
+  }
+}

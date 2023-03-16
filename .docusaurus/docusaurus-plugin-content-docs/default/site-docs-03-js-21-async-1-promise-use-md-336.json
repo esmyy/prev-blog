@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/async/promise-use",
+  "id": "JS/async/promise-use",
+  "title": "熟悉 Promise 使用",
+  "description": "执行器函数",
+  "source": "@site/docs/03-JS/21-async/1-promise-use.md",
+  "sourceDirName": "03-JS/21-async",
+  "slug": "/JS/async/promise-use",
+  "permalink": "/docs/JS/async/promise-use",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/21-async/1-promise-use.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "异步",
+    "permalink": "/docs/JS/async/"
+  },
+  "next": {
+    "title": "深入 Promise 原理",
+    "permalink": "/docs/JS/async/promise-deep"
+  }
+}

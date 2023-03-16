@@ -1,0 +1,20 @@
+{
+  "unversionedId": "qa/js/10=array",
+  "id": "qa/js/10=array",
+  "title": "数组",
+  "description": "",
+  "source": "@site/docs/99-qa/js/10=array.md",
+  "sourceDirName": "99-qa/js",
+  "slug": "/qa/js/10=array",
+  "permalink": "/docs/qa/js/10=array",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/99-qa/js/10=array.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "qa",
+  "previous": {
+    "title": "Q & A",
+    "permalink": "/docs/qa/"
+  }
+}

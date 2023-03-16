@@ -1,0 +1,24 @@
+{
+  "unversionedId": "project/pkg/npm",
+  "id": "project/pkg/npm",
+  "title": "npm",
+  "description": "JS 包管理，有三个组成部分",
+  "source": "@site/docs/10-project/pkg/npm.md",
+  "sourceDirName": "10-project/pkg",
+  "slug": "/project/pkg/npm",
+  "permalink": "/docs/project/pkg/npm",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/pkg/npm.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "依赖管理",
+    "permalink": "/docs/project/pkg/deps"
+  },
+  "next": {
+    "title": "代码美化",
+    "permalink": "/docs/project/prettier"
+  }
+}

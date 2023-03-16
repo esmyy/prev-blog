@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tools/npm",
+  "id": "tools/npm",
+  "title": "npm",
+  "description": "JS 包管理，有三个组成部分",
+  "source": "@site/docs/43-tools/11-npm.md",
+  "sourceDirName": "43-tools",
+  "slug": "/tools/npm",
+  "permalink": "/docs/tools/npm",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/11-npm.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ff",
+    "permalink": "/docs/tools/cmd"
+  },
+  "next": {
+    "title": "efficient",
+    "permalink": "/docs/tools/efficient"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "network/cdn",
+  "id": "network/cdn",
+  "title": "CDN",
+  "description": "CDN 内容分发网络，目的在于解决长距离访问缓慢的问题。CDN 的基本思路是将源站的内容分发到不同的机房去，用户请求时，直接用最近的站点响应。就跟很多连锁的服务门店是类似的。",
+  "source": "@site/docs/51-network/50-cdn.md",
+  "sourceDirName": "51-network",
+  "slug": "/network/cdn",
+  "permalink": "/docs/network/cdn",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/51-network/50-cdn.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 50,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ICMP",
+    "permalink": "/docs/network/protocol/icmp"
+  },
+  "next": {
+    "title": "cors",
+    "permalink": "/docs/security/cors"
+  }
+}

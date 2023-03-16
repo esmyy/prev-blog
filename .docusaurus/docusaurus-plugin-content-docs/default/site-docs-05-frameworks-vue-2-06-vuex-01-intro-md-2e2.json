@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/vuex/intro",
+  "id": "frameworks/vue2/vuex/intro",
+  "title": "install",
+  "description": "基于 3.x，插件安装函数定义在 src/store.js",
+  "source": "@site/docs/05-frameworks/vue2/06-vuex/01-intro.md",
+  "sourceDirName": "05-frameworks/vue2/06-vuex",
+  "slug": "/frameworks/vue2/vuex/intro",
+  "permalink": "/docs/frameworks/vue2/vuex/intro",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/06-vuex/01-intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "vue2",
+  "previous": {
+    "title": "match",
+    "permalink": "/docs/frameworks/vue2/vue-router/match"
+  },
+  "next": {
+    "title": "module",
+    "permalink": "/docs/frameworks/vue2/vuex/module"
+  }
+}

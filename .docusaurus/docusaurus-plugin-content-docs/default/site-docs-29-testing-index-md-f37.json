@@ -1,0 +1,24 @@
+{
+  "unversionedId": "testing/index",
+  "id": "testing/index",
+  "title": "Testing",
+  "description": "",
+  "source": "@site/docs/29-testing/index.md",
+  "sourceDirName": "29-testing",
+  "slug": "/testing/",
+  "permalink": "/docs/testing/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/29-testing/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "render",
+    "permalink": "/docs/performance/render"
+  },
+  "next": {
+    "title": "hybrid",
+    "permalink": "/docs/app/hybrid"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "network/protocol/tcp",
+  "id": "network/protocol/tcp",
+  "title": "TCP",
+  "description": "说到 TCP，那内容就太多了，简单捋一下连接和断开等内容。",
+  "source": "@site/docs/51-network/01-protocol/20-tcp.md",
+  "sourceDirName": "51-network/01-protocol",
+  "slug": "/network/protocol/tcp",
+  "permalink": "/docs/network/protocol/tcp",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/51-network/01-protocol/20-tcp.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "HTTP",
+    "permalink": "/docs/network/protocol/http"
+  },
+  "next": {
+    "title": "ICMP",
+    "permalink": "/docs/network/protocol/icmp"
+  }
+}

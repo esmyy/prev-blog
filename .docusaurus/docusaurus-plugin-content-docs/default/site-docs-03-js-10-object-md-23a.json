@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/object",
+  "id": "JS/object",
+  "title": "对象与原型",
+  "description": "object",
+  "source": "@site/docs/03-JS/10-object.md",
+  "sourceDirName": "03-JS",
+  "slug": "/JS/object",
+  "permalink": "/docs/JS/object",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/10-object.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "闭包",
+    "permalink": "/docs/JS/closure"
+  },
+  "next": {
+    "title": "变量提升",
+    "permalink": "/docs/JS/var-hoist"
+  }
+}

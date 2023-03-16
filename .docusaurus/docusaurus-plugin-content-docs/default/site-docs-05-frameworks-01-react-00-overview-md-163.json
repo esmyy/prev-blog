@@ -1,0 +1,21 @@
+{
+  "unversionedId": "frameworks/react/overview",
+  "id": "frameworks/react/overview",
+  "title": "React",
+  "description": "基于 React 18.2.0 版本",
+  "source": "@site/docs/05-frameworks/01-react/00-overview.md",
+  "sourceDirName": "05-frameworks/01-react",
+  "slug": "/frameworks/react/overview",
+  "permalink": "/docs/frameworks/react/overview",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/01-react/00-overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {},
+  "sidebar": "frameworks",
+  "next": {
+    "title": "介绍",
+    "permalink": "/docs/frameworks/react/base"
+  }
+}

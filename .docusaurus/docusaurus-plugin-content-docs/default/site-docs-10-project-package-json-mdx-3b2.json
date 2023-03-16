@@ -1,0 +1,24 @@
+{
+  "unversionedId": "project/package.json",
+  "id": "project/package.json",
+  "title": "依赖管理",
+  "description": "语义化版本",
+  "source": "@site/docs/10-project/package.json.mdx",
+  "sourceDirName": "10-project",
+  "slug": "/project/package.json",
+  "permalink": "/docs/project/package.json",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/package.json.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Mock",
+    "permalink": "/docs/project/mock"
+  },
+  "next": {
+    "title": "包管理",
+    "permalink": "/docs/project/pkg/"
+  }
+}

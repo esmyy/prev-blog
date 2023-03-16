@@ -1,0 +1,909 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "algorightm/hello",
+              "path": "/docs/algorightm/hello",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "app/android",
+              "path": "/docs/app/android",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "app/flutter",
+              "path": "/docs/app/flutter",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "app/hybrid",
+              "path": "/docs/app/hybrid",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "app/ios",
+              "path": "/docs/app/ios",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "app/rn",
+              "path": "/docs/app/rn",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "app/uniapp",
+              "path": "/docs/app/uniapp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "app/wechat",
+              "path": "/docs/app/wechat",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "app/weex",
+              "path": "/docs/app/weex",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "be/java",
+              "path": "/docs/be/java",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "be/node",
+              "path": "/docs/be/node",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "be/node/egg",
+              "path": "/docs/be/node/egg",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "be/node/express",
+              "path": "/docs/be/node/express",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "be/node/koa",
+              "path": "/docs/be/node/koa",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "browser/chrome",
+              "path": "/docs/browser/chrome",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "browser/process",
+              "path": "/docs/browser/process",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "browser/render",
+              "path": "/docs/browser/render",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "CSS/basic",
+              "path": "/docs/CSS/basic",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "CSS/extension",
+              "path": "/docs/CSS/extension",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "CSS/qa",
+              "path": "/docs/CSS/qa",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "data-structure/binary-tree",
+              "path": "/docs/data-structure/binary-tree",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "frameworks/egg",
+              "path": "/docs/frameworks/egg",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/express",
+              "path": "/docs/frameworks/express",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/index",
+              "path": "/docs/frameworks/",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/koa",
+              "path": "/docs/frameworks/koa",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/react/core",
+              "path": "/docs/frameworks/react/core",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/react/fiber",
+              "path": "/docs/frameworks/react/fiber",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/react/reconciler",
+              "path": "/docs/frameworks/react/reconciler",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/react/renderer",
+              "path": "/docs/frameworks/react/renderer",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/compiler/ast",
+              "path": "/docs/frameworks/vue2/compiler/ast",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/compiler/codegen",
+              "path": "/docs/frameworks/vue2/compiler/codegen",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/compiler/compile-to-functions",
+              "path": "/docs/frameworks/vue2/compiler/compile-to-functions",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/compiler/compiler",
+              "path": "/docs/frameworks/vue2/compiler/compiler",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/compiler/optimize",
+              "path": "/docs/frameworks/vue2/compiler/optimize",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/compiler/parse",
+              "path": "/docs/frameworks/vue2/compiler/parse",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/compiler/qa",
+              "path": "/docs/frameworks/vue2/compiler/qa",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/overview/constructor",
+              "path": "/docs/frameworks/vue2/overview/constructor",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/overview/dir",
+              "path": "/docs/frameworks/vue2/overview/dir",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/overview/entry",
+              "path": "/docs/frameworks/vue2/overview/entry",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/overview/mount",
+              "path": "/docs/frameworks/vue2/overview/mount",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/overview/new-vue",
+              "path": "/docs/frameworks/vue2/overview/new-vue",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/overview/overview",
+              "path": "/docs/frameworks/vue2/overview/",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/reactivity/collect-deps",
+              "path": "/docs/frameworks/vue2/reactivity/collect-deps",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/reactivity/computed",
+              "path": "/docs/frameworks/vue2/reactivity/computed",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/reactivity/data",
+              "path": "/docs/frameworks/vue2/reactivity/data",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/reactivity/dispatch-update",
+              "path": "/docs/frameworks/vue2/reactivity/dispatch-update",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/reactivity/intro",
+              "path": "/docs/frameworks/vue2/reactivity/intro",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/reactivity/next-tick",
+              "path": "/docs/frameworks/vue2/reactivity/next-tick",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/reactivity/view-update",
+              "path": "/docs/frameworks/vue2/reactivity/view-update",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/create-element",
+              "path": "/docs/frameworks/vue2/render/create-element",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/create-elm",
+              "path": "/docs/frameworks/vue2/render/create-elm",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/create-vnode",
+              "path": "/docs/frameworks/vue2/render/create-vnode",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/overview",
+              "path": "/docs/frameworks/vue2/render/overview",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/patch",
+              "path": "/docs/frameworks/vue2/render/patch",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/render",
+              "path": "/docs/frameworks/vue2/render/render",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/update",
+              "path": "/docs/frameworks/vue2/render/update",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/vdom",
+              "path": "/docs/frameworks/vue2/render/vdom",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/render/watcher",
+              "path": "/docs/frameworks/vue2/render/watcher",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vue-router/install",
+              "path": "/docs/frameworks/vue2/vue-router/install",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vue-router/intro",
+              "path": "/docs/frameworks/vue2/vue-router/intro",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vue-router/main",
+              "path": "/docs/frameworks/vue2/vue-router/main",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vue-router/match",
+              "path": "/docs/frameworks/vue2/vue-router/match",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vue-router/route-map",
+              "path": "/docs/frameworks/vue2/vue-router/route-map",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vue-router/transition",
+              "path": "/docs/frameworks/vue2/vue-router/transition",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vuex/api",
+              "path": "/docs/frameworks/vue2/vuex/api",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vuex/install",
+              "path": "/docs/frameworks/vue2/vuex/install",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vuex/module",
+              "path": "/docs/frameworks/vue2/vuex/module",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue2/vuex/plugins",
+              "path": "/docs/frameworks/vue2/vuex/plugins",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "frameworks/vue3/overview",
+              "path": "/docs/frameworks/vue3/overview",
+              "sidebar": "frameworks"
+            },
+            {
+              "id": "HTML/basic",
+              "path": "/docs/HTML/basic",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HTML/iframe",
+              "path": "/docs/HTML/iframe",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HTML/semantic",
+              "path": "/docs/HTML/semantic",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HTML/SEO",
+              "path": "/docs/HTML/SEO",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "index",
+              "path": "/docs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/animate",
+              "path": "/docs/JS/animate",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/api",
+              "path": "/docs/JS/api",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/async/async",
+              "path": "/docs/JS/async/async",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/async/axios",
+              "path": "/docs/JS/async/axios",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/async/index",
+              "path": "/docs/JS/async/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/async/promise-deep",
+              "path": "/docs/JS/async/promise-deep",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/async/promise-use",
+              "path": "/docs/JS/async/promise-use",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/babel",
+              "path": "/docs/JS/babel",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/base",
+              "path": "/docs/JS/base",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/closure",
+              "path": "/docs/JS/closure",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/context",
+              "path": "/docs/JS/context",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/function",
+              "path": "/docs/JS/function",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/module/amd",
+              "path": "/docs/JS/module/amd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/module/commonjs",
+              "path": "/docs/JS/module/commonjs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/module/esm",
+              "path": "/docs/JS/module/esm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/module/index",
+              "path": "/docs/JS/module/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/object",
+              "path": "/docs/JS/object",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/other",
+              "path": "/docs/JS/other",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/proxy",
+              "path": "/docs/JS/proxy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/request",
+              "path": "/docs/JS/request",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/scope",
+              "path": "/docs/JS/scope",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/storage",
+              "path": "/docs/JS/storage",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/this",
+              "path": "/docs/JS/this",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/types/index",
+              "path": "/docs/JS/types/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "JS/types/reference",
+              "path": "/docs/JS/types/reference",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "monitor/hello",
+              "path": "/docs/monitor/hello",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "network/cdn",
+              "path": "/docs/network/cdn",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "network/protocol/dhcp",
+              "path": "/docs/network/protocol/dhcp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "network/protocol/dns",
+              "path": "/docs/network/protocol/dns",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "network/protocol/http",
+              "path": "/docs/network/protocol/http",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "network/protocol/icmp",
+              "path": "/docs/network/protocol/icmp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "network/protocol/tcp",
+              "path": "/docs/network/protocol/tcp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ops-linux/alias",
+              "path": "/docs/ops-linux/alias",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ops-linux/char",
+              "path": "/docs/ops-linux/char",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ops-linux/cmd",
+              "path": "/docs/ops-linux/cmd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ops-linux/hello",
+              "path": "/docs/ops-linux/hello",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ops-linux/nginx",
+              "path": "/docs/ops-linux/nginx",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ops-linux/test",
+              "path": "/docs/ops-linux/test",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "performance/analysis",
+              "path": "/docs/performance/analysis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "performance/cache",
+              "path": "/docs/performance/cache",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "performance/file",
+              "path": "/docs/performance/file",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "performance/render",
+              "path": "/docs/performance/render",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/index",
+              "path": "/docs/project/bundler/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/rollup",
+              "path": "/docs/project/bundler/rollup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/vite",
+              "path": "/docs/project/bundler/vite",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/compilation/build-module",
+              "path": "/docs/project/bundler/webpack/compilation/build-module",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/compilation/index",
+              "path": "/docs/project/bundler/webpack/compilation/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/compiler",
+              "path": "/docs/project/bundler/webpack/compiler",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/hash",
+              "path": "/docs/project/bundler/webpack/hash",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/hmr",
+              "path": "/docs/project/bundler/webpack/hmr",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/index",
+              "path": "/docs/project/bundler/webpack/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/loader",
+              "path": "/docs/project/bundler/webpack/loader",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/output",
+              "path": "/docs/project/bundler/webpack/output",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/parse",
+              "path": "/docs/project/bundler/webpack/parse",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/plugin",
+              "path": "/docs/project/bundler/webpack/plugin",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/prepare",
+              "path": "/docs/project/bundler/webpack/prepare",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/sourcemap",
+              "path": "/docs/project/bundler/webpack/sourcemap",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/use",
+              "path": "/docs/project/bundler/webpack/use",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/bundler/webpack/webpack-cli",
+              "path": "/docs/project/bundler/webpack/webpack-cli",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/components",
+              "path": "/docs/project/components",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/docs",
+              "path": "/docs/project/docs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/dot-config",
+              "path": "/docs/project/dot-config",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/env/git",
+              "path": "/docs/project/env/git",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/env/index",
+              "path": "/docs/project/env/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/env/node",
+              "path": "/docs/project/env/node",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/env/terminal",
+              "path": "/docs/project/env/terminal",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/env/vscode",
+              "path": "/docs/project/env/vscode",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/index",
+              "path": "/docs/project/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/mock",
+              "path": "/docs/project/mock",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/pkg/deps",
+              "path": "/docs/project/pkg/deps",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/pkg/index",
+              "path": "/docs/project/pkg/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/pkg/npm",
+              "path": "/docs/project/pkg/npm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/pkg/yarn",
+              "path": "/docs/project/pkg/yarn",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/prettier",
+              "path": "/docs/project/prettier",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/scheme/mitt",
+              "path": "/docs/project/scheme/mitt",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/scripts",
+              "path": "/docs/project/scripts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/structure",
+              "path": "/docs/project/structure",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/testing",
+              "path": "/docs/project/testing",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/types",
+              "path": "/docs/project/types",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "project/version",
+              "path": "/docs/project/version",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/cors",
+              "path": "/docs/security/cors",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/csrf",
+              "path": "/docs/security/csrf",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/hello",
+              "path": "/docs/security/hello",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "security/xss",
+              "path": "/docs/security/xss",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "testing/index",
+              "path": "/docs/testing/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/chrome",
+              "path": "/docs/tools/chrome",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/cmd",
+              "path": "/docs/tools/cmd",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/efficient",
+              "path": "/docs/tools/efficient",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/git",
+              "path": "/docs/tools/git",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/github",
+              "path": "/docs/tools/github",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/index",
+              "path": "/docs/tools/index",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/npm",
+              "path": "/docs/tools/npm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/nvm",
+              "path": "/docs/tools/nvm",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/postman",
+              "path": "/docs/tools/postman",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/proxy",
+              "path": "/docs/tools/proxy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tools/terminal",
+              "path": "/docs/tools/terminal",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "TS/convention",
+              "path": "/docs/TS/convention",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "TS/skill",
+              "path": "/docs/TS/skill",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "TS/type",
+              "path": "/docs/TS/type",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "TS/utils",
+              "path": "/docs/TS/utils",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "working/new",
+              "path": "/docs/working/new",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/",
+                "label": "index"
+              }
+            },
+            "frameworks": {
+              "link": {
+                "path": "/docs/frameworks/react/core",
+                "label": "frameworks/react/core"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

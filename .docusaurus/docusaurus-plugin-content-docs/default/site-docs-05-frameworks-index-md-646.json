@@ -1,0 +1,20 @@
+{
+  "unversionedId": "frameworks/index",
+  "id": "frameworks/index",
+  "title": "框架",
+  "description": "",
+  "source": "@site/docs/05-frameworks/index.md",
+  "sourceDirName": "05-frameworks",
+  "slug": "/frameworks/",
+  "permalink": "/docs/frameworks/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "frameworks",
+  "previous": {
+    "title": "Egg",
+    "permalink": "/docs/frameworks/egg"
+  }
+}

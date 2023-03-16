@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tools/webpack/flow",
+  "id": "tools/webpack/flow",
+  "title": "工作流程",
+  "description": "Webpack 的工作流程可以理解为一个事件流机制，每一个事件上可以注册事件处理函数，注册处理函数的方式是插件。",
+  "source": "@site/docs/43-tools/88-webpack/02-flow.md",
+  "sourceDirName": "43-tools/88-webpack",
+  "slug": "/tools/webpack/flow",
+  "permalink": "/docs/tools/webpack/flow",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/88-webpack/02-flow.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Webpack",
+    "permalink": "/docs/tools/webpack/overview"
+  },
+  "next": {
+    "title": "loader",
+    "permalink": "/docs/tools/webpack/loader"
+  }
+}

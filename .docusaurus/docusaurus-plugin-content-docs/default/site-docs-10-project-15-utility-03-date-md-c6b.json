@@ -1,0 +1,25 @@
+{
+  "unversionedId": "project/utility/date",
+  "id": "project/utility/date",
+  "title": "date",
+  "description": "",
+  "source": "@site/docs/10-project/15-utility/03-date.md",
+  "sourceDirName": "10-project/15-utility",
+  "slug": "/project/utility/date",
+  "permalink": "/docs/project/utility/date",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/15-utility/03-date.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "utils",
+    "permalink": "/docs/project/utility/utils"
+  },
+  "next": {
+    "title": "reg",
+    "permalink": "/docs/project/utility/reg"
+  }
+}

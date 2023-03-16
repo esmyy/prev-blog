@@ -1,0 +1,24 @@
+{
+  "unversionedId": "tools/github",
+  "id": "tools/github",
+  "title": "Github",
+  "description": "esmyy.github.io",
+  "source": "@site/docs/43-tools/github.md",
+  "sourceDirName": "43-tools",
+  "slug": "/tools/github",
+  "permalink": "/docs/tools/github",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/43-tools/github.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Git",
+    "permalink": "/docs/tools/git"
+  },
+  "next": {
+    "title": "Node",
+    "permalink": "/docs/tools/nvm"
+  }
+}

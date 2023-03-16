@@ -1,0 +1,25 @@
+{
+  "unversionedId": "HTML/SEO",
+  "id": "HTML/SEO",
+  "title": "SEO",
+  "description": "了解搜索引擎，根据搜索引擎的的要求，提供能够更好的描述自己，更容易让搜索引擎理解的内容。",
+  "source": "@site/docs/01-HTML/21-SEO.md",
+  "sourceDirName": "01-HTML",
+  "slug": "/HTML/SEO",
+  "permalink": "/docs/HTML/SEO",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/01-HTML/21-SEO.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 21,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iframe",
+    "permalink": "/docs/HTML/iframe"
+  },
+  "next": {
+    "title": "基础知识",
+    "permalink": "/docs/CSS/basic"
+  }
+}

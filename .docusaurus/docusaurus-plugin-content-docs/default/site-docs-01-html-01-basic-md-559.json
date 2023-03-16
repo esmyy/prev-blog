@@ -1,0 +1,25 @@
+{
+  "unversionedId": "HTML/basic",
+  "id": "HTML/basic",
+  "title": "base",
+  "description": "Doctype",
+  "source": "@site/docs/01-HTML/01-basic.md",
+  "sourceDirName": "01-HTML",
+  "slug": "/HTML/basic",
+  "permalink": "/docs/HTML/basic",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/01-HTML/01-basic.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Intro",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "SEO",
+    "permalink": "/docs/HTML/SEO"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/var-hoist",
+  "id": "JS/var-hoist",
+  "title": "变量提升",
+  "description": "在只有 var 的年代，对于自定义标识符，可以拆分为 声明 和 赋值 两个步骤去理解。",
+  "source": "@site/docs/03-JS/10-var-hoist.md",
+  "sourceDirName": "03-JS",
+  "slug": "/JS/var-hoist",
+  "permalink": "/docs/JS/var-hoist",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/10-var-hoist.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "闭包",
+    "permalink": "/docs/JS/closure"
+  },
+  "next": {
+    "title": "执行上下文",
+    "permalink": "/docs/JS/context"
+  }
+}

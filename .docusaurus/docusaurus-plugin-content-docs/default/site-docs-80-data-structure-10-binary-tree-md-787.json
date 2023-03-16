@@ -1,0 +1,25 @@
+{
+  "unversionedId": "data-structure/binary-tree",
+  "id": "data-structure/binary-tree",
+  "title": "二叉树",
+  "description": "二叉树，每个节点最多有两个子树的树结构，一般称作左子树，右子树。",
+  "source": "@site/docs/80-data-structure/10-binary-tree.md",
+  "sourceDirName": "80-data-structure",
+  "slug": "/data-structure/binary-tree",
+  "permalink": "/docs/data-structure/binary-tree",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/80-data-structure/10-binary-tree.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "同源与跨域",
+    "permalink": "/docs/security/hello"
+  },
+  "next": {
+    "title": "hello",
+    "permalink": "/docs/algorightm/hello"
+  }
+}

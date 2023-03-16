@@ -1,0 +1,24 @@
+{
+  "unversionedId": "project/testing",
+  "id": "project/testing",
+  "title": "测试",
+  "description": "",
+  "source": "@site/docs/10-project/testing.md",
+  "sourceDirName": "10-project",
+  "slug": "/project/testing",
+  "permalink": "/docs/project/testing",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/testing.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "发布订阅",
+    "permalink": "/docs/project/scheme/mitt"
+  },
+  "next": {
+    "title": "类型管理",
+    "permalink": "/docs/project/types"
+  }
+}

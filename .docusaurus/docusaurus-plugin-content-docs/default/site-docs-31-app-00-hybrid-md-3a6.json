@@ -1,0 +1,25 @@
+{
+  "unversionedId": "app/hybrid",
+  "id": "app/hybrid",
+  "title": "hybrid",
+  "description": "",
+  "source": "@site/docs/31-app/00-hybrid.md",
+  "sourceDirName": "31-app",
+  "slug": "/app/hybrid",
+  "permalink": "/docs/app/hybrid",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/31-app/00-hybrid.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Testing",
+    "permalink": "/docs/testing/"
+  },
+  "next": {
+    "title": "wechat",
+    "permalink": "/docs/app/wechat"
+  }
+}

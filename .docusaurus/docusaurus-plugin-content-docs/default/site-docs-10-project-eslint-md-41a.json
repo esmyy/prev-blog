@@ -1,0 +1,24 @@
+{
+  "unversionedId": "project/eslint",
+  "id": "project/eslint",
+  "title": "eslint",
+  "description": "",
+  "source": "@site/docs/10-project/eslint.md",
+  "sourceDirName": "10-project",
+  "slug": "/project/eslint",
+  "permalink": "/docs/project/eslint",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/eslint.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "docs",
+    "permalink": "/docs/project/docs"
+  },
+  "next": {
+    "title": "mock",
+    "permalink": "/docs/project/mock"
+  }
+}

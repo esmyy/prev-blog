@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue",
+  "id": "frameworks/vue",
+  "title": "vue",
+  "description": "",
+  "source": "@site/docs/05-frameworks/02-vue.md",
+  "sourceDirName": "05-frameworks",
+  "slug": "/frameworks/vue",
+  "permalink": "/docs/frameworks/vue",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/02-vue.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "basic",
+    "permalink": "/docs/frameworks/basic"
+  },
+  "next": {
+    "title": "Hooks",
+    "permalink": "/docs/frameworks/react/hooks"
+  }
+}

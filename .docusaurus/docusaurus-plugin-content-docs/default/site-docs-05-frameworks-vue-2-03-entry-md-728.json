@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/entry",
+  "id": "frameworks/vue2/entry",
+  "title": "编译入口",
+  "description": "说明如何通过构建配置找到编译入口，并对入口层次结构进行总结",
+  "source": "@site/docs/05-frameworks/vue2/03-entry.md",
+  "sourceDirName": "05-frameworks/vue2",
+  "slug": "/frameworks/vue2/entry",
+  "permalink": "/docs/frameworks/vue2/entry",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/03-entry.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "vue2",
+  "previous": {
+    "title": "目录结构",
+    "permalink": "/docs/frameworks/vue2/dir"
+  },
+  "next": {
+    "title": "构造函数",
+    "permalink": "/docs/frameworks/vue2/constructor"
+  }
+}

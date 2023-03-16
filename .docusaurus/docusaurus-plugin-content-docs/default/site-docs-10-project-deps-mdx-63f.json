@@ -1,0 +1,24 @@
+{
+  "unversionedId": "project/deps",
+  "id": "project/deps",
+  "title": "依赖管理",
+  "description": "语义化版本",
+  "source": "@site/docs/10-project/deps.mdx",
+  "sourceDirName": "10-project",
+  "slug": "/project/deps",
+  "permalink": "/docs/project/deps",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/deps.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "构建工具",
+    "permalink": "/docs/project/bundler"
+  },
+  "next": {
+    "title": "Mock",
+    "permalink": "/docs/project/mock"
+  }
+}

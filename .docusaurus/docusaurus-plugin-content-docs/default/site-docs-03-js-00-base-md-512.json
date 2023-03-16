@@ -1,0 +1,25 @@
+{
+  "unversionedId": "JS/base",
+  "id": "JS/base",
+  "title": "变量定义",
+  "description": "基础知识点检查及简要介绍。",
+  "source": "@site/docs/03-JS/00-base.md",
+  "sourceDirName": "03-JS",
+  "slug": "/JS/base",
+  "permalink": "/docs/JS/base",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03-JS/00-base.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 0,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Q & A",
+    "permalink": "/docs/CSS/qa"
+  },
+  "next": {
+    "title": "数据类型",
+    "permalink": "/docs/JS/types/"
+  }
+}

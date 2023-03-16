@@ -1,0 +1,21 @@
+{
+  "unversionedId": "frameworks/react/core",
+  "id": "frameworks/react/core",
+  "title": "core",
+  "description": "",
+  "source": "@site/docs/05-frameworks/01-react/10-core.md",
+  "sourceDirName": "05-frameworks/01-react",
+  "slug": "/frameworks/react/core",
+  "permalink": "/docs/frameworks/react/core",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/01-react/10-core.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "frameworks",
+  "next": {
+    "title": "renderer",
+    "permalink": "/docs/frameworks/react/renderer"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "project/env/editor",
+  "id": "project/env/editor",
+  "title": "编辑器",
+  "description": "我日常使用的编辑器基本就是 VS Code，在本机上 Vim 都用的比较少，只在服务器上才用。",
+  "source": "@site/docs/10-project/01-env/03-editor.md",
+  "sourceDirName": "10-project/01-env",
+  "slug": "/project/env/editor",
+  "permalink": "/docs/project/env/editor",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/01-env/03-editor.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Node",
+    "permalink": "/docs/project/env/node"
+  },
+  "next": {
+    "title": "git",
+    "permalink": "/docs/project/env/git"
+  }
+}

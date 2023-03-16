@@ -1,0 +1,25 @@
+{
+  "unversionedId": "qa/js/array",
+  "id": "qa/js/array",
+  "title": "数组",
+  "description": "扁平化",
+  "source": "@site/docs/99-qa/js/10-array.md",
+  "sourceDirName": "99-qa/js",
+  "slug": "/qa/js/array",
+  "permalink": "/docs/qa/js/array",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/99-qa/js/10-array.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "qa",
+  "previous": {
+    "title": "base",
+    "permalink": "/docs/qa/js/base"
+  },
+  "next": {
+    "title": "Promise",
+    "permalink": "/docs/qa/js/promise"
+  }
+}

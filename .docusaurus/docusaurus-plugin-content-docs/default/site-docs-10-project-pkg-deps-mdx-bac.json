@@ -1,0 +1,24 @@
+{
+  "unversionedId": "project/pkg/deps",
+  "id": "project/pkg/deps",
+  "title": "依赖管理",
+  "description": "语义化版本",
+  "source": "@site/docs/10-project/pkg/deps.mdx",
+  "sourceDirName": "10-project/pkg",
+  "slug": "/project/pkg/deps",
+  "permalink": "/docs/project/pkg/deps",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/10-project/pkg/deps.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "yarn",
+    "permalink": "/docs/project/pkg/yarn"
+  },
+  "next": {
+    "title": "npm",
+    "permalink": "/docs/project/pkg/npm"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "unversionedId": "network/protocol/dns",
+  "id": "network/protocol/dns",
+  "title": "DNS",
+  "description": "解析过程",
+  "source": "@site/docs/51-network/02-protocol/02-dns.md",
+  "sourceDirName": "51-network/02-protocol",
+  "slug": "/network/protocol/dns",
+  "permalink": "/docs/network/protocol/dns",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/51-network/02-protocol/02-dns.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "五层协议",
+    "permalink": "/docs/network/"
+  },
+  "next": {
+    "title": "DHCP",
+    "permalink": "/docs/network/protocol/dhcp"
+  }
+}

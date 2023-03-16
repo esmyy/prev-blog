@@ -1,0 +1,25 @@
+{
+  "unversionedId": "frameworks/vue2/mount",
+  "id": "frameworks/vue2/mount",
+  "title": "mount",
+  "description": "mount",
+  "source": "@site/docs/05-frameworks/vue2/06-mount.md",
+  "sourceDirName": "05-frameworks/vue2",
+  "slug": "/frameworks/vue2/mount",
+  "permalink": "/docs/frameworks/vue2/mount",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/05-frameworks/vue2/06-mount.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {},
+  "sidebar": "vue2",
+  "previous": {
+    "title": "构造函数",
+    "permalink": "/docs/frameworks/vue2/constructor"
+  },
+  "next": {
+    "title": "index",
+    "permalink": "/docs/frameworks/vue2/"
+  }
+}

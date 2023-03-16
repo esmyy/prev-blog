@@ -1,0 +1,25 @@
+{
+  "unversionedId": "network/protocol/icmp",
+  "id": "network/protocol/icmp",
+  "title": "ICMP",
+  "description": "ICMP 因特网消息控制协议，它就像一个侦察兵，快速侦察，向源主机反馈情况，以便源主机决策。",
+  "source": "@site/docs/51-network/01-protocol/04-icmp.md",
+  "sourceDirName": "51-network/01-protocol",
+  "slug": "/network/protocol/icmp",
+  "permalink": "/docs/network/protocol/icmp",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/51-network/01-protocol/04-icmp.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DHCP",
+    "permalink": "/docs/network/protocol/dhcp"
+  },
+  "next": {
+    "title": "HTTP",
+    "permalink": "/docs/network/protocol/http"
+  }
+}
