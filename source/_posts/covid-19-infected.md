@@ -1,7 +1,6 @@
 ---
 title: 感染新冠的这两周
 date: 2022-12-16 11:08:55
-categories: life
 tags: ["北京", "COVID-19"]
 ---
 

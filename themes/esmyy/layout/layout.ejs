@@ -46,8 +46,26 @@ const isPure = page.layout === 'pure'
 ;(() => {
     const firstScreen = document.querySelector('.firstScreen')
     const isHomeFirstPage = document.querySelector('.homeFirstPage')
-    if (!isHomeFirstPage && window.innerWidth > 414) {
+    let visible = isHomeFirstPage && window > 414;
+    if (!isHomeFirstPage || window.innerWidth > 414) {
         firstScreen.classList = Array.from(firstScreen.classList).concat('hidden').join(' ')
+    }
+})();
+
+// 本地图片url处理
+;(() => {
+    function fixImgUrl() {
+        const imgs = document.querySelectorAll('img');
+        imgs.forEach((img) => {
+            const src = img.getAttribute('src');
+            if (!/^(\/blog|http)/.test(src)) {
+                img.setAttribute('src', '/blog' + src)
+            }
+        })
+    }
+
+    if (/localhost/i.test(location.hostname)) {
+        fixImgUrl();
     }
 })();
 </script>

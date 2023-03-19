@@ -1,0 +1,13 @@
+<div class="photosWrapper mt-32">
+    <div id="artitalk_main"></div>
+</div>
+
+
+<script type="text/javascript" src="<%= css_url('/js/artitalk.js', env.env === 'production') %>"></script>
+<!-- 存放说说的容器 -->
+<script>
+new Artitalk({
+    appId: 'HIPSmz3qt9iZF654dkSgfXr2-MdYXbMMI', // Your LeanCloud appId
+    appKey: 'IIZyd4Ee0LH46v96sUQFgo7V' // Your LeanCloud appKey
+})
+</script>

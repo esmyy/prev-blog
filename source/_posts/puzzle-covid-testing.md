@@ -1,7 +1,6 @@
 ---
 title: 关于这两天迷惑的核酸检测
 date: 2022-11-15 23:05:15
-categories: life
 tags: ["COVID-19"]
 ---
 

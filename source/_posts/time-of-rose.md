@@ -1,6 +1,5 @@
 ---
 title: 时间的玫瑰
-category: reading
 date: 2022-11-08 21:59:58
 ---
 

@@ -9,12 +9,6 @@ const lastReading = get_last_of(site, 'reading')
         <iconpark-icon name="speaker-one" class="verticalAlignTextTop pt-2"></iconpark-icon>
       </p>
     </div>
-    <% if (lastReading) {%>
-      <div class="recentCard card readingCard">
-        <p class="cardTitle"><iconpark-icon name="read-book"></iconpark-icon>《<%= lastReading.title %>》</p>
-        <p class="readingCardContent mt-2 ellipse3"><%= get_excerpt(lastReading) %></p>
-      </div>
-    <%}%>
   </div>
   <div class="recentRight">
     <div class="recentCard recentPictureSlider">
