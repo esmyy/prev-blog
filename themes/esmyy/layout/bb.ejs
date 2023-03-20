@@ -1,0 +1,11 @@
+<div id="artitalk_main"></div>
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<script>
+const isPublisher = localStorage.getItem("SHUOSHUO_PUBLISHER");
+if (isPublisher) {
+    new Artitalk({
+        appId: 'HIPSmz3qt9iZF654dkSgfXr2-MdYXbMMI', // Your LeanCloud appId
+        appKey: 'IIZyd4Ee0LH46v96sUQFgo7V' // Your LeanCloud appKey
+    })
+}
+</script>

@@ -5,13 +5,12 @@
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   background-position-y: bottom;
   background-size: cover
-  &.hidden
-    display: none;
-    opacity 0;
-    transition: opacity 1s ease;
-    animation: firstScreenHidden 10s infinite;
+  display: none;
+  opacity: 0;
   &.visible
-    display: block
+    display: block;
+    opacity 1;
+    transition: all 1s ease;
   .lifeCard
     position absolute
     left: 50%

@@ -46,9 +46,10 @@ const isPure = page.layout === 'pure'
 ;(() => {
     const firstScreen = document.querySelector('.firstScreen')
     const isHomeFirstPage = document.querySelector('.homeFirstPage')
-    let visible = isHomeFirstPage && window > 414;
-    if (!isHomeFirstPage || window.innerWidth > 414) {
-        firstScreen.classList = Array.from(firstScreen.classList).concat('hidden').join(' ')
+    const isPhotoes = /photos/.test(location.pathname)
+    const visible = isHomeFirstPage || window <= 414;
+    if (visible) {
+        firstScreen.classList = Array.from(firstScreen.classList).concat('visible').join(' ')
     }
 })();
 
@@ -58,9 +59,9 @@ const isPure = page.layout === 'pure'
         const imgs = document.querySelectorAll('img');
         imgs.forEach((img) => {
             const src = img.getAttribute('src');
-            if (!/^(\/blog|http)/.test(src)) {
-                img.setAttribute('src', '/blog' + src)
-            }
+            // if (!/^(|http)/.test(src)) {
+            //     img.setAttribute('src', '/' + src)
+            // }
         })
     }
 
