@@ -8,7 +8,7 @@ scp -r .imghost/2022 ../imghost
 scp -r .imghost/2023 ../imghost
 rm -rf .imghost
 
-cd ../../imghost
+cd ../imghost
 git add .
 git commit -m "feat: update imgs"
 git push

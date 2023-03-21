@@ -1,6 +1,21 @@
-<div id="artitalk_main"></div>
-<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
-<script>
+<div id="artitalk_main" style="display:block;"></div>
+<div class="bbWrapper">
+    <input type="text" username="username">
+    <input type="password" username="password">
+        <button class="loginBtn">登录</button>
+</div>
+<script src="<%= source_url('/js/artitalk.js', env.env === 'production') %>"></script>
+<script >
+const {
+appId,
+appKey,
+serverUrls
+} = window.hexoHelper.get_leancloud();
+new Artitalk({
+appId,
+appKey,
+serverUrls
+})
 const isPublisher = localStorage.getItem("SHUOSHUO_PUBLISHER");
 if (isPublisher) {
     new Artitalk({

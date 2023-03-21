@@ -1,6 +1,6 @@
-<div class="firstScreen <%= is_home_first_page() ? 'homeFirstPage' : '' %>" id="firstScreen" style="background-image: url(<%= img_url(config.firstScreen.image, env.env === 'production') %>)">
+<div class="firstScreen <%= is_home_first_page() ? 'homeFirstPage' : '' %>" id="firstScreen" style="background-image: url(<%= source_url(config.firstScreen.image, env.env === 'production') %>)">
   <div class="lifeCard">
-    <p>慎思，明辨，笃行</p>
+    <p>慎思笃行</p>
   </div>
   <div class="pictureIntroduction" style="color: <%= config.firstScreen.textColor %>">
     <%- config.firstScreen.description %>

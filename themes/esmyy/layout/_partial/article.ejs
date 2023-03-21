@@ -26,11 +26,12 @@
   </div>
   <div id="vcomments"></div>
 </article>
-<script src="<%= css_url('/js/valine.1.15.1.js', env.env === 'production') %>">
+<script src="<%= source_url('/js/valine.1.15.1.js', env.env === 'production') %>">
 </script>
 <script>
   new Valine({
     el: '#vcomments',
+    serverUrls: 'https://ssapi.esmyy.com',
     appId: 'HIPSmz3qt9iZF654dkSgfXr2-MdYXbMMI', // Your LeanCloud appId
     appKey: 'IIZyd4Ee0LH46v96sUQFgo7V' // Your LeanCloud appKey
   })

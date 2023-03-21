@@ -13,7 +13,7 @@ const lastReading = get_last_of(site, 'reading')
   <div class="recentRight">
     <div class="recentCard recentPictureSlider">
       <% config.recentPicture.forEach(function(p) {%>
-        <div class="picture" title="<%= p.text %>" style="background-image:url(<%= img_url(p.image, env.env === 'production') %>)">
+        <div class="picture" title="<%= p.text %>" style="background-image:url(<%= source_url(p.image, env.env === 'production') %>)">
         </div>
       <%})%>
     </div>

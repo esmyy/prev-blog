@@ -3087,15 +3087,7 @@
                   i = "",
                   a = e.app_id || e.appId,
                   u = e.app_key || e.appKey;
-                if (!e.serverURLs)
-                  switch (a.slice(-9)) {
-                    case "-9Nh9j0Va":
-                      r += "tab.";
-                      break;
-                    case "-MdYXbMMI":
-                      r += "us.";
-                  }
-                (i = "https://hipsmz3q.api.lncldglobal.com"),
+                (i = "https://ssapi.esmyy.com"),
                   AV.init({ appId: a, appKey: u, serverURLs: i }),
                   (o = !0),
                   t && t();

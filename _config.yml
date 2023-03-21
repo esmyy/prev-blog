@@ -10,6 +10,12 @@ language: zh-CN
 timezone: ""
 root: "/"
 
+# leancloud配置
+leancloudApp:
+  appId: "HIPSmz3qt9iZF654dkSgfXr2-MdYXbMMI"
+  appKey: "IIZyd4Ee0LH46v96sUQFgo7V"
+  serverUrls: "https://ssapi.esmyy.com"
+
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://mayueyue.com
 permalink: :year/:month/:day/:title.html

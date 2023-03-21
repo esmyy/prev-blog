@@ -3,6 +3,7 @@
  * Original file: /gh/drew233/cdn@master/at334.js
  *
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ * 基于 artitalk，直接本地写死
  */
 !(function (e, t) {
   "object" == typeof exports && "object" == typeof module
@@ -1305,6 +1306,23 @@
           }
           var y = m++;
           d("request(%d) %s %s %o %o %o", y, t, n, r, i, l);
+          var requestData = {
+            method: t,
+            headers: l,
+            data: i,
+            onprogress: _,
+          };
+          if (window.onLeancloudReady) {
+            window.onLeancloudReady(requestData);
+          } else {
+            window.leancloudRequestData = requestData;
+          }
+
+          if (String.prototype.toUpperCase.call(t) !== "POST") {
+            return Promise.resolve({
+              results: [],
+            });
+          }
           var b = f("request")(n, {
             method: t,
             headers: l,
@@ -4392,8 +4410,9 @@
           n = e.appKey,
           i = e.masterKey,
           s = e.hookKey,
-          u = e.serverURL,
-          g = e.serverURLs,
+          // 手动修改这里
+          u = "https://ssapi.esmyy.com",
+          g = "https://ssapi.esmyy.com",
           _ = void 0 === g ? u : g,
           v = e.disableCurrentUser,
           y = e.production,
@@ -4541,7 +4560,7 @@
                       push: "https://" + t.push_server,
                       stats: "https://" + t.stats_server,
                       engine: "https://" + t.engine_server,
-                      api: "https://" + t.api_server,
+                      api: "https://" + "ssapi.esmyy.com",
                     };
                     return (
                       e.AV._setServerURLs(r, !1),
@@ -15637,12 +15656,12 @@ function atEvery(e) {
 }
 (atEvery.prototype.init = function (e) {
   let t = this;
-  if (((t.config = e), console.log(window.AV), window.AV))
-    return e && t._init(), t;
+  if ((t.config = e)) return e && t._init(), t;
   {
     let n = document.createElement("script");
     n.setAttribute("type", "text/javascript"),
-      (n.src = "https://unpkg.com/leancloud-storage@4.10.0/dist/av-min.js"),
+      (n.src =
+        "https://cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"),
       document.body.appendChild(n),
       (window.ActiveXObject || "ActiveXObject" in window) && n.readyState
         ? (n.onreadystatechange = function () {
@@ -16484,21 +16503,22 @@ function atEvery(e) {
           0 === b &&
             0 === e &&
             (r =
-              '<ul class="cbp_tmtimeline" id="maina"><li><span class="shuoshuo_author_img"><img src="https://fastly.jsdelivr.net/gh/drew233/cdn/logol.png" class="artitalk_avatar gallery-group-img" width="48" height="48"></span><span class="cbp_tmlabel"><p>' +
+              '<ul class="cbp_tmtimeline" id="maina"><li><span class="shuoshuo_author_img"></span><span class="cbp_tmlabel"><p>' +
               d +
               '</p><p class="shuoshuo_time"><span style=""> 由Artitalk发表</span><span style="float:right;"><svg t="1591350675688"  viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="28653" width="10" height="10" style="display: inline"></svg> 2020-04-10 20:35:25</span></p></span></li></ul>'),
           (document.getElementById("ccontent").innerHTML = r),
-          0 !== c &&
-            t.forEach(function (e) {
-              let t = new AV.Query("atComment"),
-                n = e.id;
-              t.equalTo("atId", n),
-                t.descending("createdAt"),
-                t.find().then((e) => {
-                  let t = "coValue" + n;
-                  document.getElementById(t).innerHTML = e.length;
-                });
-            }),
+          // 注释掉，不获取评论
+          // 0 !== c &&
+          //   t.forEach(function (e) {
+          //     let t = new AV.Query("atComment"),
+          //       n = e.id;
+          //     t.equalTo("atId", n),
+          //       t.descending("createdAt"),
+          //       t.find().then((e) => {
+          //         let t = "coValue" + n;
+          //         document.getElementById(t).innerHTML = e.length;
+          //       });
+          //   }),
           (function (e) {
             if (!document.getElementById(e)) return;
             document.getElementById(e).style.display = "none";
@@ -16525,7 +16545,7 @@ function atEvery(e) {
           n.find().then((n) => {
             n.forEach(function (n) {
               let r =
-                '<ul class="cbp_tmtimeline" id="maina"><li><span class="shuoshuo_author_img"><img src="https://fastly.jsdelivr.net/gh/drew233/cdn/logol.png" class="artitalk_avatar gallery-group-img" width="48" height="48"></span><span class="cbp_tmlabel"><p>' +
+                '<ul class="cbp_tmtimeline" id="maina"><li><span class="shuoshuo_author_img"></span><span class="cbp_tmlabel"><p>' +
                 p +
                 '</p><p class="shuoshuo_time"><span style=""> 由Artitalk发表</span><span style="float:right;"><svg t="1591350675688"  viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="28653" width="10" height="10" style="display: inline"></svg> 2020-04-10 20:35:25</span></p></span></li></ul>';
               document.getElementById("ccontent").innerHTML = r;
@@ -16721,13 +16741,7 @@ function atEvery(e) {
               l +
               '"></path></svg> ';
         }
-        if (u) {
-          let e =
-            void 0 === u.attributes.img
-              ? "https://fastly.jsdelivr.net/gh/drew233/cdn/logol.png"
-              : u.attributes.img;
-          i.set("adminAvatar", e), (f = e), (d = u.attributes.username);
-        }
+
         i.set("atId", e),
           i.set("commentContent", s),
           u || i.set("email", p),

@@ -25,7 +25,7 @@ var year = new Date().getFullYear() + 1 + ''
       var poster = get_poster(post)
       %>
       <% if (poster) { %>
-      <img class="poster" src="<%= img_url(poster, env.env === 'production') %>" />
+      <img class="poster" src="<%= source_url(poster, env.env === 'production') %>" />
       <% } %>
     </div>
     <% }) %>

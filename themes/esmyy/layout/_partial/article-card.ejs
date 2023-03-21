@@ -5,7 +5,7 @@ let poster = get_poster(post)
 %>
 <div class="card articleCard">
     <% if (poster) { %>
-        <img class="picture" src="<%= img_url(poster, env.env === 'production') %>"/>
+        <img class="picture" src="<%= source_url(poster, env.env === 'production') %>"/>
     <% } %>
     <div class="articleDetail">
         <div>
