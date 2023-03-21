@@ -19,6 +19,8 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.css" rel="stylesheet">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/esmyy/imghost@main/css/main.css">
+  <script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/helpers.umd.js">
+  </script>
   <script>
     var _hmt = _hmt || [];
   (function() {
@@ -32,12 +34,14 @@
 </head>
 
 <body>
+<div id="leancloudApp" style="display:none;" data-app-id="HIPSmz3qt9iZF654dkSgfXr2-MdYXbMMI" data-app-key="IIZyd4Ee0LH46v96sUQFgo7V" data-server-urls="https://ssapi.esmyy.com">
+</div>
 
 <div id="esmyy">
     
         <div class="firstScreen " id="firstScreen" style="background-image: url(//cdn.jsdelivr.net/gh/esmyy/imghost@main/images/air-beijing-chengdu.jpg)">
   <div class="lifeCard">
-    <p>慎思，明辨，笃行</p>
+    <p>慎思笃行</p>
   </div>
   <div class="pictureIntroduction" style="color: #fff">
     <p></p>
@@ -93,78 +97,32 @@
 </header>
         <main class="mainContent">
             <div class="shuoshuoWrapper mt-32" id="shuoshuoList">
+  <!-- 隐藏掉评论列表，只当做说说展示 -->
 </div>
-<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<div class="loadmoreWrapper loading" id="shoushuoLoadMore">
+  <span class="loading">加载中...</span>
+  <span class="more">加载更多</span>
+  <span class="nomore">没有更多了...</span>
+</div>
+<div id="artitalk_main"></div>
+<script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/artitalk.js"></script>
 <script>
-  const url = 'https://hipsmz3q.api.lncldglobal.com/1.1/classes/shuoshuo'
-  const params = `where=%7B%7D&limit=$limit&order=-createdAt`
-//   fetch(`${url}?${params.replace('$limit', 5).replace('$skip', 5)}`, {
-//     headers: {
-//       'Content-Type': 'application/json;charset=UTF-8',
-//       'x-lc-id': 'HIPSmz3qt9iZF654dkSgfXr2-MdYXbMMI',
-//       'x-lc-session': 'aury8hql9qwingvo2fxdhdk8q',
-//       'x-lc-sign': 'e153fd5a07c1030713514cebeb9e710d,1679291639811',
-//       'x-lc-ua': 'LeanCloud-JS-SDK/4.5.3 (Browser)',
-//     }
-//   }).then((res) => {
-//     console.log('res', res)
-//     return res.json();
-//   }).then((data) => {
+;(function() {
+  let params = {
+    pageSize: 10,
+    pageNum: 1
+  }
 
-//     console.log('data', data)
-//   })
+  function fetchShuoshuo() {
+    const url = `https://ssapi.esmyy.com/1.1/classes/shuoshuo?where=%7B%7D&limit=${params.pageSize}&skip=${(params.pageNum - 1)*params.pageSize}&order=-createdAt`
+    return fetch(url, {
+      headers: params.headers
+    }).then((res) => {
+      return res.json();
+    })
+  }
 
-const data = {
-    "results": [
-        {
-            "updatedAt": "2023-03-20T05:37:23.476Z",
-            "userOs": "Mac",
-            "createdAt": "2023-03-20T05:37:23.476Z",
-            "atContentMd": "test 6",
-            "atContentHtml": "<p>test 6</p>",
-            "avatar": "https://avatars.githubusercontent.com/u/20430185?v=4",
-            "objectId": "6417f113c1fe980a9fa1a91c"
-        },
-        {
-            "updatedAt": "2023-03-20T05:37:19.080Z",
-            "userOs": "Mac",
-            "createdAt": "2023-03-20T05:37:19.080Z",
-            "atContentMd": "test 5",
-            "atContentHtml": "<p>返回北京工作 4 天了，心怀希望，期待用努力创造更美好的生活。 关于春节 在老家的日子还是蛮开心，偶尔体会一下，亲情，友情的不同相处方式。 有时候觉得太快，觉得待在家里陪伴的时间不够。 家是一个充电站，也许无法待得很长，但每次短短的相聚，可以为在外的生活充充</p>",
-            "avatar": "https://avatars.githubusercontent.com/u/20430185?v=4",
-            "objectId": "6417f10fc1fe980a9fa1a91b"
-        },
-        {
-            "updatedAt": "2023-03-20T05:37:13.841Z",
-            "userOs": "Mac",
-            "createdAt": "2023-03-20T05:37:13.841Z",
-            "atContentMd": "test 4",
-            "atContentHtml": "<p>test 4</p>",
-            "avatar": "https://avatars.githubusercontent.com/u/20430185?v=4",
-            "objectId": "6417f109d2fa262c6e1089da"
-        },
-        {
-            "updatedAt": "2023-03-20T05:37:07.814Z",
-            "userOs": "Mac",
-            "createdAt": "2023-03-20T05:37:07.814Z",
-            "atContentMd": "test 3",
-            "atContentHtml": "<p>test 3</p>",
-            "avatar": "https://avatars.githubusercontent.com/u/20430185?v=4",
-            "objectId": "6417f103c1fe980a9fa1a91a"
-        },
-        {
-            "updatedAt": "2023-03-19T12:05:11.276Z",
-            "userOs": "Mac",
-            "createdAt": "2023-03-19T12:05:11.276Z",
-            "atContentMd": "test new artitalk",
-            "atContentHtml": "<p>test new artitalk</p>",
-            "avatar": "https://avatars.githubusercontent.com/u/20430185?v=4",
-            "objectId": "6416fa77d2fa262c6e104f26"
-        }
-    ]
-};
-
-function getTime(createdAt) {
+  function getTime(createdAt) {
     const date = new Date(createdAt);
     const year = date.getFullYear()
     const month = ['0', date.getMonth() + 1].join('').slice(-2);
@@ -173,9 +131,9 @@ function getTime(createdAt) {
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
-}
+  }
 
-function createNode(config) {
+  function createNode(config) {
     const item = document.createElement('div');
     item.classList = ['shuoshuoItem'];
 
@@ -190,29 +148,65 @@ function createNode(config) {
     item.appendChild(time);
     item.appendChild(content)
     return item;
-}
+  }
 
-function renderList(list) {
+  function renderList(list) {
     const shuoshuoList = document.querySelector('#shuoshuoList');
-    const fragment = document.createElement('fragment');
+    const fragment = new DocumentFragment()
     list.forEach((item) => {
-        fragment.appendChild(createNode(item));
+      fragment.appendChild(createNode(item));
     })
     shuoshuoList.appendChild(fragment)
-}
+  }
 
-renderList(data.results)
-</script>
-<script>
-const isPublisher = localStorate.getItem("SHUOSHUO_PUBLISHER");
-if (isPublisher) {
-    
-        <div id="artitalk_main"></div>
-}
-new Artitalk({
-    appId: 'HIPSmz3qt9iZF654dkSgfXr2-MdYXbMMI', // Your LeanCloud appId
-    appKey: 'IIZyd4Ee0LH46v96sUQFgo7V' // Your LeanCloud appKey
-})
+
+  const {
+    appId,
+    appKey,
+    serverUrls
+  } = window.hexoHelper.get_leancloud();
+  new Artitalk({
+    appId,
+    appKey,
+    serverUrls
+  })
+
+
+  const loadmore = document.getElementById('shoushuoLoadMore')
+  function doFetchList() {
+    fetchShuoshuo().then((data) => {
+      const list = data.results || [];
+      if (list.length >= 10) {
+        loadmore.classList.add('more')
+      } else {
+        loadmore.classList.add('nomore')
+      }
+
+      renderList(data.results)
+    })
+  }
+
+  function onReadyToLoad(leancloudRequestData) {
+    params = {
+      ...params,
+      ...leancloudRequestData
+    }
+
+    doFetchList();
+  }
+
+  function registerLoadmoreHandler() {
+    const loadmoreBtn = loadmore.querySelector('.more');
+    loadmoreBtn.addEventListener('click', doFetchList)
+  }
+
+  if (window.leancloudRequestData) {
+    onReadyToLoad(leancloudRequestData)
+  } else {
+    window.onLeancloudReady = onReadyToLoad
+  }
+  registerLoadmoreHandler();
+})()
 </script>
         </main>
         <footer>
