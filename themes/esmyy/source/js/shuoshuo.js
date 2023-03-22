@@ -19,19 +19,17 @@ const artitalkHelper = {
   list: null,
 
   createShuoshuoNode(config) {
+    const time = this.getTime(config.createdAt);
+    const content = config.atContentMd.replace(/(#[^\s]*)/g, function (m) {
+      return `<span class="tag">${m.replace("#", "")}</span>`;
+    });
+
     const item = document.createElement("div");
-    item.classList = ["shuoshuoItem"];
-
-    const content = document.createElement("p");
-    content.classList = ["content"];
-    content.innerHTML = config.atContentHtml;
-
-    const time = document.createElement("p");
-    time.classList = ["time"];
-    time.innerHTML = this.getTime(config.createdAt);
-
-    item.appendChild(time);
-    item.appendChild(content);
+    item.classList.add("shuoshuoItem");
+    item.innerHTML = `
+      <p class="time">${time}</p>
+      <p class="content">${content}</p>
+    `;
     return item;
   },
 
@@ -140,9 +138,11 @@ const artitalkHelper = {
 
     const list = this.list || document.querySelector(this.selector.list);
     const fragment = new DocumentFragment();
-    data.forEach((item) => {
-      fragment.appendChild(this.createShuoshuoNode(item));
-    });
+    data
+      .filter((s) => !!s.atContentMd)
+      .forEach((item) => {
+        fragment.appendChild(this.createShuoshuoNode(item));
+      });
     list.appendChild(fragment);
 
     if (!this.list) {
