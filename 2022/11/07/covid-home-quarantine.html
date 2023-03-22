@@ -13,13 +13,15 @@
   <meta name="author" content="Esmyy">
   <meta name="theme-color" content="#1e2327">
   <link rel="icon" type="image/png" href="//cdn.jsdelivr.net/gh/esmyy/imghost@main/images/favicon.png">
+  <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/esmyy/imghost@main/css/main.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet">
   <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_20170_49.a2eea49a83c8e5f5586d26b3c31b0650.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/esmyy/imghost@main/css/main.css">
-  <script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/helpers.umd.js">
+  <script src="https://cdn.bootcdn.net/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/hexoHelpers.umd.js">
   </script>
   <script>
     var _hmt = _hmt || [];
@@ -54,6 +56,7 @@
     </div>
   </div>
 </div>
+
         
 <header>
   <div class="mainContent headerContent">
@@ -70,24 +73,19 @@
           <span>时间轴</span>
         </a>
       </li>
-      <li class="">
-        <a href="/photos">
-          <iconpark-icon name="camera"></iconpark-icon>
-          <span>照片</span>
-        </a>
-      </li>
-      <li class="">
-        <a href="/shuoshuo">
-          <iconpark-icon name="speaker-one"></iconpark-icon>
-          <span>说说</span>
-        </a>
-      </li>
       <li class="optionalMenuItem ">
         <a href="/tags">
           <iconpark-icon name="tag-one"></iconpark-icon>
           <span>标签</span>
         </a>
       </li>
+      <li class="">
+        <a href="/moments">
+          <iconpark-icon name="speaker-one"></iconpark-icon>
+          <span>说说</span>
+        </a>
+      </li>
+      
     </ul>
   </div>
   <a class="avatar-box" target="_blank" rel="noopener" href="https://github.com/esmyy">
@@ -156,11 +154,7 @@
     <iconpark-icon name="arrow-up" size="18"></iconpark-icon>
   </div>
 </div>
-    
-
-</div>
 <script>
-// 设置”回到顶部“按钮
 ;(() => {
   const backTop = document.querySelector('.backTopWrapper');
   window.addEventListener('scroll', (e) => {
@@ -179,34 +173,9 @@
     $('html,body').animate({scrollTop: '0px'}, 800);
   })
 })();
-
-// 设置首屏图片在手机一直可见
-;(() => {
-    const firstScreen = document.querySelector('.firstScreen')
-    const isHomeFirstPage = document.querySelector('.homeFirstPage')
-    const isPhotoes = /photos/.test(location.pathname)
-    const visible = isHomeFirstPage || window <= 414;
-    if (visible) {
-        firstScreen.classList = Array.from(firstScreen.classList).concat('visible').join(' ')
-    }
-})();
-
-// 本地图片url处理
-;(() => {
-    function fixImgUrl() {
-        const imgs = document.querySelectorAll('img');
-        imgs.forEach((img) => {
-            const src = img.getAttribute('src');
-            // if (!/^(|http)/.test(src)) {
-            //     img.setAttribute('src', '/' + src)
-            // }
-        })
-    }
-
-    if (/localhost/i.test(location.hostname)) {
-        fixImgUrl();
-    }
-})();
 </script>
+
+    
+</div>
 </body>
 </html>

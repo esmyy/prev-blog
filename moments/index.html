@@ -13,13 +13,15 @@
   <meta name="author" content="Esmyy">
   <meta name="theme-color" content="#1e2327">
   <link rel="icon" type="image/png" href="//cdn.jsdelivr.net/gh/esmyy/imghost@main/images/favicon.png">
+  <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/esmyy/imghost@main/css/main.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet">
   <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_20170_49.a2eea49a83c8e5f5586d26b3c31b0650.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/esmyy/imghost@main/css/main.css">
-  <script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/helpers.umd.js">
+  <script src="https://cdn.bootcdn.net/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/hexoHelpers.umd.js">
   </script>
   <script>
     var _hmt = _hmt || [];
@@ -54,6 +56,7 @@
     </div>
   </div>
 </div>
+
         
 <header>
   <div class="mainContent headerContent">
@@ -70,24 +73,19 @@
           <span>时间轴</span>
         </a>
       </li>
-      <li class="">
-        <a href="/photos">
-          <iconpark-icon name="camera"></iconpark-icon>
-          <span>照片</span>
-        </a>
-      </li>
-      <li class="selected">
-        <a href="/shuoshuo">
-          <iconpark-icon name="speaker-one"></iconpark-icon>
-          <span>说说</span>
-        </a>
-      </li>
       <li class="optionalMenuItem ">
         <a href="/tags">
           <iconpark-icon name="tag-one"></iconpark-icon>
           <span>标签</span>
         </a>
       </li>
+      <li class="selected">
+        <a href="/moments">
+          <iconpark-icon name="speaker-one"></iconpark-icon>
+          <span>说说</span>
+        </a>
+      </li>
+      
     </ul>
   </div>
   <a class="avatar-box" target="_blank" rel="noopener" href="https://github.com/esmyy">
@@ -96,118 +94,18 @@
   </a>
 </header>
         <main class="mainContent">
-            <div class="shuoshuoWrapper mt-32" id="shuoshuoList">
+            <div class="momentsWrapper mt-32" id="momentsBox">
   <!-- 隐藏掉评论列表，只当做说说展示 -->
 </div>
-<div class="loadmoreWrapper loading" id="shoushuoLoadMore">
+<div class="loadmoreWrapper loading" id="momentLoadMore">
   <span class="loading">加载中...</span>
   <span class="more">加载更多</span>
   <span class="nomore">没有更多了...</span>
 </div>
 <div id="artitalk_main"></div>
 <script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/artitalk.js"></script>
-<script>
-;(function() {
-  let params = {
-    pageSize: 10,
-    pageNum: 1
-  }
-
-  function fetchShuoshuo() {
-    const url = `https://ssapi.esmyy.com/1.1/classes/shuoshuo?where=%7B%7D&limit=${params.pageSize}&skip=${(params.pageNum - 1)*params.pageSize}&order=-createdAt`
-    return fetch(url, {
-      headers: params.headers
-    }).then((res) => {
-      return res.json();
-    })
-  }
-
-  function getTime(createdAt) {
-    const date = new Date(createdAt);
-    const year = date.getFullYear()
-    const month = ['0', date.getMonth() + 1].join('').slice(-2);
-    const day = ['0', date.getDay() + 1].join('').slice(-2);
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
-    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
-  }
-
-  function createNode(config) {
-    const item = document.createElement('div');
-    item.classList = ['shuoshuoItem'];
-
-    const content = document.createElement('p')
-    content.classList = ['content'];
-    content.innerHTML = config.atContentHtml;
-
-    const time = document.createElement('p');
-    time.classList = ['time'];
-    time.innerHTML = getTime(config.createdAt)
-
-    item.appendChild(time);
-    item.appendChild(content)
-    return item;
-  }
-
-  function renderList(list) {
-    const shuoshuoList = document.querySelector('#shuoshuoList');
-    const fragment = new DocumentFragment()
-    list.forEach((item) => {
-      fragment.appendChild(createNode(item));
-    })
-    shuoshuoList.appendChild(fragment)
-  }
-
-
-  const {
-    appId,
-    appKey,
-    serverUrls
-  } = window.hexoHelper.get_leancloud();
-  new Artitalk({
-    appId,
-    appKey,
-    serverUrls
-  })
-
-
-  const loadmore = document.getElementById('shoushuoLoadMore')
-  function doFetchList() {
-    fetchShuoshuo().then((data) => {
-      const list = data.results || [];
-      if (list.length >= 10) {
-        loadmore.classList.add('more')
-      } else {
-        loadmore.classList.add('nomore')
-      }
-
-      renderList(data.results)
-    })
-  }
-
-  function onReadyToLoad(leancloudRequestData) {
-    params = {
-      ...params,
-      ...leancloudRequestData
-    }
-
-    doFetchList();
-  }
-
-  function registerLoadmoreHandler() {
-    const loadmoreBtn = loadmore.querySelector('.more');
-    loadmoreBtn.addEventListener('click', doFetchList)
-  }
-
-  if (window.leancloudRequestData) {
-    onReadyToLoad(leancloudRequestData)
-  } else {
-    window.onLeancloudReady = onReadyToLoad
-  }
-  registerLoadmoreHandler();
-})()
-</script>
+<script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/artitalkHelper.js"></script>
+<script src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/js/moments.js"></script>
         </main>
         <footer>
     <div class="mainContent footBar">
@@ -224,11 +122,7 @@
     <iconpark-icon name="arrow-up" size="18"></iconpark-icon>
   </div>
 </div>
-    
-
-</div>
 <script>
-// 设置”回到顶部“按钮
 ;(() => {
   const backTop = document.querySelector('.backTopWrapper');
   window.addEventListener('scroll', (e) => {
@@ -247,34 +141,9 @@
     $('html,body').animate({scrollTop: '0px'}, 800);
   })
 })();
-
-// 设置首屏图片在手机一直可见
-;(() => {
-    const firstScreen = document.querySelector('.firstScreen')
-    const isHomeFirstPage = document.querySelector('.homeFirstPage')
-    const isPhotoes = /photos/.test(location.pathname)
-    const visible = isHomeFirstPage || window <= 414;
-    if (visible) {
-        firstScreen.classList = Array.from(firstScreen.classList).concat('visible').join(' ')
-    }
-})();
-
-// 本地图片url处理
-;(() => {
-    function fixImgUrl() {
-        const imgs = document.querySelectorAll('img');
-        imgs.forEach((img) => {
-            const src = img.getAttribute('src');
-            // if (!/^(|http)/.test(src)) {
-            //     img.setAttribute('src', '/' + src)
-            // }
-        })
-    }
-
-    if (/localhost/i.test(location.hostname)) {
-        fixImgUrl();
-    }
-})();
 </script>
+
+    
+</div>
 </body>
 </html>
