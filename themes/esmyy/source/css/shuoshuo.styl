@@ -18,16 +18,30 @@
 }
 
 #shuoshuo_content {
-  display: none}
+  display: none
+}
+
 
 .bbWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .inputLine {
-    
+  margin-top: 120px;
+  &.ready {
+    .loginWrapper {
+      display: none;
+    }
+    .postWrapper {
+      display: flex;
+    }
   }
-  .pwdLine {
+  .loginWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .postWrapper {
+    display: none;
+    flex-direction: column;
   }
   input {
     padding: 0 8px
@@ -38,12 +52,27 @@
     width: 240px;
     box-sizing: border-box;
   }
+  .postBtn,
   .loginBtn {
     background: #6b9ddd;
     padding: 6px 12px;
     border-radius: 6px;
     color: #fff;
     width: 240px
+    cursor: pointer;
+    margin-top 20px
+  }
+  .postBtn {
+     width: 400px;
+     height: 40px
+  }
+  textarea {
+    border-radius: 4px;
+    border: 1px solid;
+     width: 400px;
+     margin-top: 30px;
+    padding: 4px 8px
+    box-sizing: border-box;
 
   }
 }

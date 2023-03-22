@@ -1313,7 +1313,7 @@
             onprogress: _,
           };
           if (window.onLeancloudReady) {
-            window.onLeancloudReady(requestData);
+            window.onLeancloudReady(l);
           } else {
             window.leancloudRequestData = requestData;
           }
@@ -15966,7 +15966,7 @@ function atEvery(e) {
       document.body.append(Y),
       (document.getElementById("operare_artitalk").innerHTML = Z),
       (J = (X = 0 === s ? "" : X) + J),
-      (document.getElementById("artitalk_main").innerHTML = J),
+      document.getElementById("artitalk_main"),
       e.seeContent(0, e.config);
     let ee = document.getElementById("readmore"),
       te = document.getElementById("pubShuo"),
@@ -15985,243 +15985,6 @@ function atEvery(e) {
       fe = document.getElementById("deleteSus"),
       me = document.getElementById("uploadSource"),
       ge = 0;
-    (ee.onclick = function () {
-      (ge += 1), e.seeContent(ge, e.config);
-    }),
-      (te.onclick = function () {
-        AV.User.current()
-          ? "" === document.getElementById("shuoshuo_input").style.display
-            ? W("shuoshuo_input")
-            : V("shuoshuo_input")
-          : ((document.getElementById("logw").innerHTML =
-              "<center><pre><code>" + T + "</code></pre></center>"),
-            Q());
-      }),
-      (ne.onclick = function () {
-        document.getElementById("logw").innerHTML = "";
-        let e = AV.User.current();
-        V("shade"),
-          e
-            ? (V("userinfo"),
-              (document.getElementById("status").innerHTML =
-                k + ":\t" + e.attributes.username),
-              V("tui"))
-            : (V("tui"), V("shuoshuo-modal"), Q());
-      }),
-      (re.onclick = function () {
-        $();
-      }),
-      (ie.onclick = function () {
-        let t = document.getElementById("pwd").value;
-        if (
-          ((document.getElementById("logw").style.color = "black"),
-          (document.getElementById("logw").innerHTML = "loading..."),
-          "" === t)
-        )
-          return (
-            (document.getElementById("logw").style.color = "red"),
-            void (document.getElementById("logw").innerHTML = N)
-          );
-        let n = document.getElementById("username").value;
-        if ("" === n)
-          return (
-            (document.getElementById("logw").style.color = "red"),
-            void (document.getElementById("logw").innerHTML = L)
-          );
-        AV.User.logIn(n, t).then(
-          (t) => {
-            (document.getElementById("ccontent").innerHTML = ""),
-              (document.getElementById("neirong").value = ""),
-              V("lazy"),
-              e.seeContent(0, e.config),
-              $(),
-              g(n);
-          },
-          (e) => {
-            let t = e.message;
-            (document.getElementById("logw").style.color = "red"),
-              -1 != t.indexOf("mismatch")
-                ? (t = U)
-                : -1 != t.indexOf("terminated")
-                ? (t = B)
-                : -1 != t.indexOf("Could not find user.")
-                ? (t = R)
-                : -1 != t.indexOf("Please try later or reset your password.") &&
-                  (t = D),
-              (document.getElementById("logw").innerHTML = t);
-          }
-        );
-      }),
-      (ae.onclick = function () {
-        W("shade"), W("userinfo");
-      }),
-      (oe.onclick = function () {
-        document.getElementById("switch_1").classList.add("zuiliangdezai"),
-          document.getElementById("switch_2").classList.remove("zuiliangdezai"),
-          document.getElementById("switch_3").classList.remove("zuiliangdezai"),
-          document.getElementById("switch_4").classList.remove("zuiliangdezai"),
-          "none" ===
-          document.getElementById("shuoshuo_emojiswitch").style.display
-            ? (V("shuoshuo_emoji_Tieba"),
-              V("shuoshuo_emojiswitch"),
-              (document.getElementById("shuoshuo_emoji_BiliBili").innerHTML =
-                atEmojiB),
-              (document.getElementById("shuoshuo_emoji_Tieba").innerHTML =
-                atEmojiT),
-              (document.getElementById("shuoshuo_emoji_QQ").innerHTML =
-                atEmojiQ),
-              (document.getElementById("shuoshuo_emoji_custom").innerHTML = F),
-              document
-                .getElementById("shuoshuo_emojiswitch")
-                .classList.add("pingjun"))
-            : (W("shuoshuo_emoji_Tieba"),
-              W("shuoshuo_emoji_BiliBili"),
-              W("shuoshuo_emoji_custom"),
-              W("shuoshuo_emoji_QQ"),
-              W("shuoshuo_emojiswitch"),
-              document
-                .getElementById("shuoshuo_emojiswitch")
-                .classList.remove("pingjun"));
-      }),
-      (se.onclick = function () {
-        se.classList.add("zuiliangdezai"),
-          le.classList.remove("zuiliangdezai"),
-          ue.classList.remove("zuiliangdezai"),
-          ce.classList.remove("zuiliangdezai"),
-          V("shuoshuo_emoji_Tieba"),
-          W("shuoshuo_emoji_QQ"),
-          W("shuoshuo_emoji_BiliBili"),
-          W("shuoshuo_emoji_custom");
-      }),
-      (le.onclick = function () {
-        le.classList.add("zuiliangdezai"),
-          se.classList.remove("zuiliangdezai"),
-          ue.classList.remove("zuiliangdezai"),
-          ce.classList.remove("zuiliangdezai"),
-          V("shuoshuo_emoji_QQ"),
-          W("shuoshuo_emoji_Tieba"),
-          W("shuoshuo_emoji_BiliBili"),
-          W("shuoshuo_emoji_custom");
-      }),
-      (ue.onclick = function () {
-        ue.classList.add("zuiliangdezai"),
-          le.classList.remove("zuiliangdezai"),
-          se.classList.remove("zuiliangdezai"),
-          ce.classList.remove("zuiliangdezai"),
-          V("shuoshuo_emoji_BiliBili"),
-          W("shuoshuo_emoji_QQ"),
-          W("shuoshuo_emoji_Tieba"),
-          W("shuoshuo_emoji_custom");
-      }),
-      (ce.onclick = function () {
-        ce.classList.add("zuiliangdezai"),
-          le.classList.remove("zuiliangdezai"),
-          ue.classList.remove("zuiliangdezai"),
-          se.classList.remove("zuiliangdezai"),
-          V("shuoshuo_emoji_custom"),
-          W("shuoshuo_emoji_QQ"),
-          W("shuoshuo_emoji_BiliBili"),
-          W("shuoshuo_emoji_Tieba");
-      }),
-      (he.onclick = function () {
-        let e = document.getElementById("preview");
-        -1 !== e.className.indexOf("preview_now")
-          ? e.classList.remove("preview_now")
-          : e.classList.add("preview_now");
-      }),
-      (pe.onclick = function () {
-        let t = AV.User.current();
-        t || te.click();
-        let n = document.getElementById("neirong").value;
-        if ("" === n) throw "说说内容不能为空";
-        let r = new (AV.Object.extend("shuoshuo"))(),
-          i = n;
-        r.set("atContentMd", i), (n = H(n));
-        let a = new showdown.Converter();
-        a.setOption("strikethrough", 1);
-        let o = a.makeHtml(n),
-          s =
-            void 0 === t.attributes.img
-              ? "https://fastly.jsdelivr.net/gh/drew233/cdn/logol.png"
-              : t.attributes.img,
-          u = new Client().system.name;
-        r.set("atContentHtml", o),
-          r.set("userOs", u),
-          r.set("avatar", s),
-          V("lazy"),
-          r.save().then(function (r) {
-            (document.getElementById("ccontent").innerHTML = ""),
-              (document.getElementById("neirong").value = ""),
-              W("preview"),
-              e.seeContent(0, e.config),
-              W("shuoshuo_input"),
-              _(t.attributes.username, n);
-          });
-      }),
-      (de.onclick = function () {
-        let e = document.getElementById("neirong").value;
-        e = H(e);
-        let t = new showdown.Converter();
-        t.setOption("strikethrough", 1);
-        let n = t.makeHtml(e);
-        document.getElementById("preview").innerHTML = n;
-      }),
-      (fe.onclick = function () {
-        W("shanchu"),
-          W("shade"),
-          V("lazy"),
-          (document.getElementById("ccontent").innerHTML = ""),
-          e.seeContent(0, e.config);
-      }),
-      (me.onclick = function () {
-        if (!AV.User.current())
-          return (
-            (document.getElementById("logw").innerHTML =
-              "<center><pre><code>" + T + "</code></pre></center>"),
-            V("shade"),
-            void V("shuoshuo-modal")
-          );
-        document.getElementById("realUpload").click();
-      }),
-      (atEvery.prototype.delete = function (e) {
-        function t(e) {
-          if (!document.getElementById(e)) return;
-          document.getElementById(e).style.display = "none";
-        }
-        function n(e) {
-          if (!document.getElementById(e)) return;
-          document.getElementById(e).style.display = "";
-        }
-        if (!AV.User.current()) {
-          return void document.getElementById("pubShuo").click();
-        }
-        n("shade"),
-          n("shanchur"),
-          (document.getElementById("delete1").innerHTML =
-            '<input type="button" class="at_button" value="' +
-            j +
-            '" id="Delete"><input type="button" class="at_button" value="' +
-            O +
-            '" id="cancelDelete">');
-        let r = document.getElementById("cancelDelete"),
-          i = document.getElementById("Delete");
-        (r.onclick = function () {
-          t("shade"), t("shanchur");
-        }),
-          (i.onclick = function () {
-            r.click(), n("lazy");
-            AV.Object.createWithoutData("shuoshuo", e)
-              .destroy()
-              .then(
-                function (e) {
-                  n("shade"), n("shanchu");
-                },
-                function (e) {
-                  console.log(e.rawMessage);
-                }
-              );
-          });
-      });
   }),
   (atEvery.prototype.beginUpload = function (file) {
     function Show() {
@@ -16496,7 +16259,7 @@ function atEvery(e) {
               g +
               "'></span></p></span></li>";
           });
-        let r = document.getElementById("ccontent").innerHTML;
+        // let r = document.getElementById("ccontent").innerHTML;
         (r = "" === r ? '<ul class="cbp_tmtimeline" id="maina">' : r),
           (r = r.replace(/(.*)<\/ul>/, "$1 ")),
           (r += n + "</ul>"),
@@ -16506,7 +16269,7 @@ function atEvery(e) {
               '<ul class="cbp_tmtimeline" id="maina"><li><span class="shuoshuo_author_img"></span><span class="cbp_tmlabel"><p>' +
               d +
               '</p><p class="shuoshuo_time"><span style=""> 由Artitalk发表</span><span style="float:right;"><svg t="1591350675688"  viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="28653" width="10" height="10" style="display: inline"></svg> 2020-04-10 20:35:25</span></p></span></li></ul>'),
-          (document.getElementById("ccontent").innerHTML = r),
+          // (document.getElementById("ccontent").innerHTML = r),
           // 注释掉，不获取评论
           // 0 !== c &&
           //   t.forEach(function (e) {

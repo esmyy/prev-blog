@@ -11,12 +11,15 @@
   <meta name="author" content="<%= config.author %>">
   <meta name="theme-color" content="#1e2327">
   <link rel="icon" type="image/png" href="<%= source_url(config.favicon, env.env === 'production') %>">
+  <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="<%= source_url('/css/main.css', env.env === 'production') %>">
+  <link href="https://cdn.bootcdn.net/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet">
   <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_20170_49.a2eea49a83c8e5f5586d26b3c31b0650.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.bootcdn.net/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.11.3/viewer.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="<%= source_url('/css/main.css', env.env === 'production') %>">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
   <script src="<%= source_url('/js/helpers.umd.js', env.env === 'production') %>">
   </script>
   <script>

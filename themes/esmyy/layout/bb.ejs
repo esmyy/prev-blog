@@ -1,26 +1,14 @@
-<div id="artitalk_main" style="display:block;"></div>
-<div class="bbWrapper">
-    <input type="text" username="username">
-    <input type="password" username="password">
-        <button class="loginBtn">登录</button>
+<div class="bbWrapper ready">
+  <div class="loginWrapper">
+    <input class="bbUsername" type="text" name="username">
+    <input type="password" class="bbPassword" name="password">
+    <button class="loginBtn">登录</button>
+  </div>
+  <div class="postWrapper">
+    <textarea class="content" rows="3" type="textarea" name="content" placeholder="输入说说内容"></textarea>
+    <button class="postBtn">发布</button>
+  </div>
+
 </div>
 <script src="<%= source_url('/js/artitalk.js', env.env === 'production') %>"></script>
-<script >
-const {
-appId,
-appKey,
-serverUrls
-} = window.hexoHelper.get_leancloud();
-new Artitalk({
-appId,
-appKey,
-serverUrls
-})
-const isPublisher = localStorage.getItem("SHUOSHUO_PUBLISHER");
-if (isPublisher) {
-    new Artitalk({
-        appId: 'HIPSmz3qt9iZF654dkSgfXr2-MdYXbMMI', // Your LeanCloud appId
-        appKey: 'IIZyd4Ee0LH46v96sUQFgo7V' // Your LeanCloud appKey
-    })
-}
-</script>
+<script src="<%= source_url('/js/bb.js', env.env === 'production') %>"></script>
