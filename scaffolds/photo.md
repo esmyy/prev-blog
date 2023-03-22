@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-category: "photo"
+tags: ["照片"]
 ---
 
 <div class="qrImgWrapper">

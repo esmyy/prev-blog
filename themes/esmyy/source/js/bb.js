@@ -1,17 +1,8 @@
 const bbHelper = {
-  pagination: {
-    pageSize: 10,
-    pageNum: 1,
-  },
-  leancloudRequestData: {},
-  api: {
-    login: "https://ssapi.esmyy.com/1.1/login",
-    post: "https://ssapi.esmyy.com/1.1/classes/shuoshuo",
-  },
-
   storage: {
-    info: "SHUOSHUO_PUBLISHER_INFO",
+    info: "MOMENTS_PUBLISHER_INFO",
   },
+  artitalkHelper: null,
 
   selector: {
     bbWrapper: ".bbWrapper",
@@ -32,65 +23,26 @@ const bbHelper = {
       serverUrls,
     });
 
-    this.listen();
     this.checkStatus();
-  },
-
-  listen() {
-    if (window.leancloudRequestData) {
-      this.onReadyToLoad(leancloudRequestData);
-    } else {
-      window.onLeancloudReady = this.onReadyToLoad.bind(this);
-    }
-  },
-
-  onReadyToLoad(leancloudRequestData) {
-    this.headers = leancloudRequestData;
+    this.artitalkHelper = window.artitalkHelper;
   },
 
   getElement(selector) {
     return document.querySelector(selector);
   },
 
-  login(data) {
-    fetch(this.api.login, {
-      method: "POST",
-      headers: this.headers,
-      body: JSON.stringify(data),
-    })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        if (data.error) {
-          toastr.error(data.error);
-          return;
-        }
-
-        toastr.success("登录成功");
-        localStorage.setItem(this.storage.info, JSON.stringify(data));
-        this.checkStatus();
-      });
+  login(params) {
+    this.artitalkHelper.login(params).then((data) => {
+      toastr.success("登录成功");
+      localStorage.setItem(this.storage.info, JSON.stringify(data));
+      this.checkStatus();
+    });
   },
 
-  post(data) {
-    fetch(this.api.post, {
-      method: "POST",
-      headers: {
-        ...this.headers,
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        if (data.error) {
-          toastr.error(data.error);
-        } else {
-          toastr.success("发布成功");
-        }
-      });
+  post(params) {
+    this.artitalkHelper.postMoment(params).then(() => {
+      toastr.success("发布成功");
+    });
   },
 
   getElement(selector) {

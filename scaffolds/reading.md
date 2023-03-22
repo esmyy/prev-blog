@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-category: "reading"
+tags: ["读书"]
 ---
 
 <div class="qrImgWrapper">

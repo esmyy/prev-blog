@@ -7,7 +7,7 @@ var archivesActive = /archives/.test(pathname)
 var categoriesActicve = /categories\/?$/.test(pathname)
 var tagActive = /tags/.test(pathname)
 var homeActive = /^(\/?index.html)?$/.test(pathname)
-var shuoshuoActive = /shuoshuo/.test(pathname)
+var momentsActive = /moments/.test(pathname)
 var tagExists = tag_exists(site, '照片')
 %>
 <header>
@@ -31,8 +31,8 @@ var tagExists = tag_exists(site, '照片')
           <span>标签</span>
         </a>
       </li>
-      <li class="<%= shuoshuoActive ? 'selected' : '' %>">
-        <a href="<%= url_for('/shuoshuo') %>">
+      <li class="<%= momentsActive ? 'selected' : '' %>">
+        <a href="<%= url_for('/moments') %>">
           <iconpark-icon name="speaker-one"></iconpark-icon>
           <span>说说</span>
         </a>
