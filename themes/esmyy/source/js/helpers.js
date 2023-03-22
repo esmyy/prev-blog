@@ -45,6 +45,11 @@ const helper = {
         )
     );
   },
+  tag_exists(site, name) {
+    site.tags.data.filter((tag) => {
+      return tag.name === name;
+    });
+  },
   get_last_of(site, category) {
     const match = site.categories.data.find((c) => c.name === category);
 

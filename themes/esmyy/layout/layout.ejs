@@ -8,7 +8,7 @@ const isPure = page.layout === 'pure'
 %>
 <div id="esmyy">
     <% if (isPure) {%>
-         <main class="mainContent">
+        <main class="mainContent">
             <%- body %>
         </main>
     <%} else {%>
@@ -20,56 +20,6 @@ const isPure = page.layout === 'pure'
         <%- partial('_partial/footer') %>
         <%- partial('_partial/back-top.ejs') %>
     <%}%>
-
 </div>
-<script>
-// 设置”回到顶部“按钮
-;(() => {
-  const backTop = document.querySelector('.backTopWrapper');
-  window.addEventListener('scroll', (e) => {
-    const list = Array.from(backTop.classList)
-    const isVisible = list.includes('visible')
-    const scrollY = window.scrollY
-    if (scrollY > 100 && !isVisible) {
-        list.push('visible');
-        backTop.classList = list.join(' ')
-    } else if (scrollY < 100 && isVisible) {
-        backTop.classList = list.filter(s => s !== 'visible').join(' ')
-    }
-  })
-
-  backTop?.addEventListener('click', () => {
-    $('html,body').animate({scrollTop: '0px'}, 800);
-  })
-})();
-
-// 设置首屏图片在手机一直可见
-;(() => {
-    const firstScreen = document.querySelector('.firstScreen')
-    const isHomeFirstPage = document.querySelector('.homeFirstPage')
-    const isPhotoes = /photos/.test(location.pathname)
-    const visible = isHomeFirstPage || window <= 414;
-    if (visible) {
-        firstScreen.classList = Array.from(firstScreen.classList).concat('visible').join(' ')
-    }
-})();
-
-// 本地图片url处理
-;(() => {
-    function fixImgUrl() {
-        const imgs = document.querySelectorAll('img');
-        imgs.forEach((img) => {
-            const src = img.getAttribute('src');
-            // if (!/^(|http)/.test(src)) {
-            //     img.setAttribute('src', '/' + src)
-            // }
-        })
-    }
-
-    if (/localhost/i.test(location.hostname)) {
-        fixImgUrl();
-    }
-})();
-</script>
 </body>
 </html>

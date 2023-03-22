@@ -3,3 +3,23 @@
     <iconpark-icon name="arrow-up" size="18"></iconpark-icon>
   </div>
 </div>
+<script>
+;(() => {
+  const backTop = document.querySelector('.backTopWrapper');
+  window.addEventListener('scroll', (e) => {
+    const list = Array.from(backTop.classList)
+    const isVisible = list.includes('visible')
+    const scrollY = window.scrollY
+    if (scrollY > 100 && !isVisible) {
+        list.push('visible');
+        backTop.classList = list.join(' ')
+    } else if (scrollY < 100 && isVisible) {
+        backTop.classList = list.filter(s => s !== 'visible').join(' ')
+    }
+  })
+
+  backTop?.addEventListener('click', () => {
+    $('html,body').animate({scrollTop: '0px'}, 800);
+  })
+})();
+</script>
