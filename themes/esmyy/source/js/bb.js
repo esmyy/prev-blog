@@ -1,6 +1,7 @@
 const bbHelper = {
   storage: {
     info: "MOMENTS_PUBLISHER_INFO",
+    cache: "EDITING_MOMENT_CACHE_KEY",
   },
   artitalkHelper: null,
 
@@ -79,6 +80,14 @@ const bbHelper = {
         atContentMd: value,
         avatar: "https://avatars.githubusercontent.com/u/20430185?v=4",
       });
+    });
+
+    const cacheContent = localStorage.getItem(this.storage.cache);
+    if (cacheContent) {
+      content.value = cacheContent;
+    }
+    content.addEventListener("input", (e) => {
+      localStorage.setItem(this.storage.cache, e.target.value);
     });
   },
   registerLoginHandler(bbWrapper) {
