@@ -5,6 +5,9 @@
   "scripts": {
     "build": "sh ./my-scripts/build.sh",
     "img": "sh ./my-scripts/imghost.sh",
+    "push": "sh ./my-scripts/push.sh",
+    "update": "npm run push",
+    "update2": "npm run push && npm run build && npm run img",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
