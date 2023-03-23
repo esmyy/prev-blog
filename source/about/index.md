@@ -27,7 +27,7 @@ layout: pure
 微信 iamesmyy
 
 <div class="center">
-  <img style="width: 240px;margin-left:-16px" src="//cdn.jsdelivr.net/gh/esmyy/imghost@main/images/wechat-qrcode.jpeg" alt="微信二维码" />
+  <img style="width: 240px;margin-left:-16px" src="//cdn.jsdelivr.net/gh/esmyy/esmyy.github.io@gh-pages/images/wechat-qrcode.jpeg" alt="微信二维码" />
   <p>放个二维码😌假装会有人联系</p>
 </div>
 
