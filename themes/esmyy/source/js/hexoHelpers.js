@@ -13,16 +13,6 @@ const helper = {
       ? `//${jsdelivrCDN.baseUrl}/gh/${jsdelivrCDN.gh_user}/${jsdelivrCDN.gh_repo}@${jsdelivrCDN.gh_branch}${path}`
       : `${path}`;
   },
-  source_url(path, useCDN) {
-    if (!hexo) {
-      return;
-    }
-
-    const jsdelivrCDN = hexo.config.jsdelivr;
-    return jsdelivrCDN.enable && useCDN
-      ? `//${jsdelivrCDN.baseUrl}/gh/${jsdelivrCDN.gh_user}/${jsdelivrCDN.gh_repo}@main${path}`
-      : `${path}`;
-  },
   get_poster(post) {
     let poster = post.poster;
     if (!post.poster) {
