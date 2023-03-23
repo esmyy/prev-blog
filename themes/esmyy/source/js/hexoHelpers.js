@@ -10,7 +10,7 @@ const helper = {
 
     const jsdelivrCDN = hexo.config.jsdelivr;
     return jsdelivrCDN.enable && useCDN
-      ? `//${jsdelivrCDN.baseUrl}/gh/${jsdelivrCDN.gh_user}/${jsdelivrCDN.gh_repo}@main${path}`
+      ? `//${jsdelivrCDN.baseUrl}/gh/${jsdelivrCDN.gh_user}/${jsdelivrCDN.gh_repo}@${jsdelivrCDN.gh_branch}${path}`
       : `${path}`;
   },
   source_url(path, useCDN) {

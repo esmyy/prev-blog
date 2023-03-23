@@ -194,7 +194,8 @@ post_wordcount:
 jsdelivr:
   enable: true
   gh_user: esmyy
-  gh_repo: imghost
+  gh_repo: esmyy.github.io
+  gh_branch: gh-pages
   baseUrl: cdn.jsdelivr.net
 
 minify:

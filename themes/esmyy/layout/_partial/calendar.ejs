@@ -5,7 +5,6 @@ var weekArr = [];
 var posts = site.posts.filter(function (post) {
     return post.date.isAfter(oneYearAgo)
 });
-console.log(site.posts.map((d) => d.date))
 function getCountOfDay(date) {
     return site.posts.filter(d => d.date.isSame(date, 'day')).length
 }
