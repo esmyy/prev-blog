@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import fs from "fs";
+import fs from "fs-extra";
 import path from "path";
 import piexifjs from "piexifjs";
 import shelljs from "shelljs";
@@ -19,13 +19,12 @@ export const imgHelper = {
         chalk.yellowBright("没有设置BLOG_ROOT环境变量，默认使用 ~/esmyy.com")
       );
     }
-    const date = new Date();
-    const destDir = path.resolve(
-      BLOG_ROOT,
-      `beauty/${date.getFullYear()}/${date.getMonth() + 1}`
-    );
 
-    return fs.existsSync(destDir) ? destDir : path.resolve("./");
+    const date = new Date();
+    return path.resolve(
+      BLOG_ROOT,
+      `./beauty/${date.getFullYear()}/${date.getMonth() + 1}`
+    );
   },
   /**
    * 从exif信息中提取拍摄时间
@@ -145,6 +144,10 @@ export const imgHelper = {
     // 文件重命名
     const imgPathArr = imgName.split("/");
     const destDir = this.getDestDir();
+    if (!fs.existsSync(destDir)) {
+      fs.mkdirpSync(destDir);
+    }
+
     const destImgPath =
       destDir +
       "/" +
@@ -162,7 +165,11 @@ export const imgHelper = {
     };
   },
   updateConfig(destImgPath: string) {
-    const targetConfigFile = path.resolve(destImgPath, "../../../photos.json");
+    const BLOG_ROOT = process.env["BLOG_ROOT"] || "";
+    const targetConfigFile = path.resolve(
+      destImgPath,
+      `${BLOG_ROOT}/beauty/photos.json`
+    );
     const data = fs.readFileSync(targetConfigFile, "utf-8");
     const arr = JSON.parse(data);
     const imgName = destImgPath.split("/").pop();
@@ -174,5 +181,3 @@ export const imgHelper = {
     console.log(chalk.greenBright(`照片列表已更新: ${targetConfigFile}`));
   },
 };
-
-// 避免文件太大

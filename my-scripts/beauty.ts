@@ -1,18 +1,12 @@
 #!/usr/bin/env node
 
 // 通过脚本发布一张图片
-import fs from "fs-extra";
 import inquirer from "inquirer";
 import shelljs from "shelljs";
 import { imgHelper } from "./utils/imgHelper.ts";
 
 if (!process.env["BLOG_ROOT"]) {
   shelljs.exec(`npm run install-root`);
-}
-
-const destDir = imgHelper.getDestDir();
-if (!fs.existsSync(destDir)) {
-  fs.mkdirpSync(destDir);
 }
 
 const [sourceImg = "", sourceDescription = ""] = process.argv.slice(2);
