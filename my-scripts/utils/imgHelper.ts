@@ -24,7 +24,8 @@ export const imgHelper = {
       BLOG_ROOT,
       `beauty/${date.getFullYear()}/${date.getMonth() + 1}`
     );
-    return destDir;
+
+    return fs.existsSync(destDir) ? destDir : path.resolve("./");
   },
   /**
    * 从exif信息中提取拍摄时间
@@ -54,7 +55,7 @@ export const imgHelper = {
   /**
    * 读取文件中保存的描述信息
    */
-  getFileInfo(img: string) {
+  getImgInfo(img: string) {
     if (!fs.existsSync(img)) {
       throw new Error("图片未找到");
     }
@@ -134,21 +135,43 @@ export const imgHelper = {
     const newImg = piexifjs
       .insert(exifStr, base64DataWithPrefix)
       .replace(this.base64Prefix, "");
-
-    console.log(exifObj);
+    return {
+      destImg: newImg,
+      captureTime: this.getCaptureTime(exifObj),
+    };
+  },
+  write(options: { imgName: string; destImg: string; captureTime: string }) {
+    const { imgName, destImg, captureTime } = options;
     // 文件重命名
-    const imgCaptureTime = this.getCaptureTime(exifObj);
-    const imgPathArr = img.split("/");
-    const newImgPath =
-      imgPathArr.slice(0, -1).join("/") +
+    const imgPathArr = imgName.split("/");
+    const destDir = this.getDestDir();
+    const destImgPath =
+      destDir +
       "/" +
-      this.formatCaptureTime(imgCaptureTime) +
+      this.formatCaptureTime(captureTime) +
       "-" +
       imgPathArr.slice(-1);
-    fs.writeFileSync(newImgPath, newImg.replace(this.base64Prefix, ""), {
+
+    // 写入到目的文件夹
+    fs.writeFileSync(destImgPath, destImg.replace(this.base64Prefix, ""), {
       encoding: "base64",
     });
-    console.log(chalk.greenBright(`照片添加成功: ${newImgPath}`));
+    console.log(chalk.greenBright(`照片添加成功: ${destImgPath}`));
+    return {
+      destImgPath,
+    };
+  },
+  updateConfig(destImgPath: string) {
+    const targetConfigFile = path.resolve(destImgPath, "../../../photos.json");
+    const data = fs.readFileSync(targetConfigFile, "utf-8");
+    const arr = JSON.parse(data);
+    const imgName = destImgPath.split("/").pop();
+    fs.writeFileSync(
+      targetConfigFile,
+      JSON.stringify([imgName].concat(arr)),
+      "utf-8"
+    );
+    console.log(chalk.greenBright(`照片列表已更新: ${targetConfigFile}`));
   },
 };
 

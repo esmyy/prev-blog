@@ -1,13 +1,10 @@
 #!/usr/bin/env node
 
-import { imgHelper } from "./utils/imgHelper.ts";
 // 通过脚本发布一张图片
-
 import fs from "fs-extra";
 import inquirer from "inquirer";
 import shelljs from "shelljs";
-
-const date = new Date();
+import { imgHelper } from "./utils/imgHelper.ts";
 
 if (!process.env["BLOG_ROOT"]) {
   shelljs.exec(`npm run install-root`);
@@ -50,5 +47,14 @@ inquirer
     const { img = sourceImg, description = sourceDescription } = answer;
     const imgPath = imgHelper.fixImagePath(img);
     const miniImg = imgHelper.minifyJpeg(imgPath);
-    imgHelper.insertDescription(miniImg, description);
+    const { captureTime, destImg } = imgHelper.insertDescription(
+      miniImg,
+      description
+    );
+    const { destImgPath } = imgHelper.write({
+      imgName: img,
+      destImg,
+      captureTime,
+    });
+    imgHelper.updateConfig(destImgPath);
   });
