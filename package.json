@@ -2,6 +2,7 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "sh ./my-scripts/build.sh",
     "upload": "sh ./my-scripts/imghost.sh",
@@ -40,7 +41,11 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-wordcount": "^6.0.1",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
     "inquirer": "^8.2.5",
+    "node-fetch": "^2.6.1",
+    "piexifjs": "^1.0.6",
     "prettier": "^2.7.1",
     "shelljs": "^0.8.5",
     "tesseract.js": "^4.0.2"
@@ -48,6 +53,8 @@
   "devDependencies": {
     "@types/fs-extra": "^11.0.1",
     "@types/inquirer": "^9.0.3",
-    "@types/shelljs": "^0.8.11"
+    "@types/node": "^18.15.7",
+    "@types/shelljs": "^0.8.11",
+    "ts-node": "^10.9.1"
   }
 }

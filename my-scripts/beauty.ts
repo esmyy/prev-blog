@@ -6,6 +6,8 @@ import fs from "fs-extra";
 import inquirer from "inquirer";
 import path from "path";
 import shelljs from "shelljs";
+import { insertImageDescription } from "./exif.ts";
+
 const date = new Date();
 
 if (!process.env["BLOG_ROOT"]) {
@@ -18,38 +20,50 @@ if (!fs.existsSync(destDir)) {
   fs.mkdirpSync(destDir);
 }
 
-const [sourceImg, summary] = process.argv.slice(2);
-async function prompt() {
-  const name = await inquirer
-    .prompt([
-      {
-        type: "input",
-        name: "name",
-        message: "图片: ",
-        default: sourceImg || "",
-        filter(input) {
-          return /^[~\/]/.test(input) ? input : path.resolve(BLOG_ROOT, input);
-        },
-        validate(input, answer) {
-          console.log("wa", input, answer);
-          const done = this.async();
-          return fs.existsSync(input)
-            ? done("", true)
-            : done("图片不存在，请确认", false);
-        },
+const [sourceImg = "", description = ""] = process.argv.slice(2);
+const sourceImgName = sourceImg.split("/").pop();
+inquirer
+  .prompt([
+    {
+      type: "input",
+      name: "name",
+      message: "输入图片地址(jpg/jpeg): ",
+      default: sourceImg || "",
+      when() {
+        return !sourceImg;
       },
-    ])
-    .then(() => {
-      console.log("hhh");
-    });
-  console.log(name);
+      validate(input, answer) {
+        const imgPath = /^[~\/]/.test(input)
+          ? input
+          : path.resolve(BLOG_ROOT, input);
+        return fs.existsSync(imgPath)
+          ? Promise.resolve(true)
+          : Promise.reject("图片不存在");
+      },
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "输入图片描述: ",
+      default: description || sourceImgName || "",
+      when() {
+        return !description;
+      },
+      validate(input, answer) {
+        return input ? Promise.resolve(true) : Promise.reject("描述不能为空");
+      },
+    },
+  ])
+  .then((answer) => {
+    const { name, description } = answer;
+    insertImageDescription(name, description);
+    console.log("hhh", answer);
+  });
 
-  // .then((answer) => {
-  //   console.log("wan", answer);
-  // });
-}
+// .then((answer) => {
+//   console.log("wan", answer);
+// });
 
-prompt();
 // move imgs
 // const sourceImgs = fs.readdirSync(sourceDir);
 // const dateStr = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
@@ -73,7 +87,7 @@ prompt();
 // const latestImg = require(latestFile);
 // latestImg.name =
 // latestImg.date = dateStr;
-// if (!latestImg.summary) {
+// if (!latestImg.description) {
 //   console.log(chalk.greenBright(`可能需要补充图片描述: ${latestFile}`));
 // }
 // console.log(latestImg);
