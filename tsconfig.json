@@ -9,7 +9,8 @@
     "preserveConstEnums": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "types": ["./types/piexifjs.d.ts"],
+    "types": ["./types/piexifjs.d.ts", "node"],
+    "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "allowImportingTsExtensions": true
   }
