@@ -1,6 +1,6 @@
 <%
 var pathname = page.path.replace('index.html', '')
-var photosActive = /photos/.test(pathname)
+var photosActive = /beauty/.test(pathname)
 var talkActive = /categories\/talk/.test(pathname)
 var readingActive = /categories\/reading/.test(pathname)
 var archivesActive = /archives/.test(pathname)
@@ -37,14 +37,12 @@ var tagExists = tag_exists(site, '照片')
           <span>说说</span>
         </a>
       </li>
-      <% if (tagExists) {%>
-        <li class="<%= photosActive ? 'selected' : '' %>">
-          <a href="<%= url_for('/tags/照片') %>">
-            <iconpark-icon name="camera"></iconpark-icon>
-            <span>照片<%= site.tags %></span>
-          </a>
-        </li>
-      <%} %>
+      <li class="<%= photosActive ? 'selected' : '' %>">
+        <a href="<%= url_for('/beauty') %>">
+          <iconpark-icon name="camera"></iconpark-icon>
+          <span>照片</span>
+        </a>
+      </li>
     </ul>
   </div>
   <a class="avatar-box" href="https://github.com/esmyy">
