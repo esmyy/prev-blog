@@ -1,10 +1,7 @@
-<%
-var isPhotosTag = tag_exists(site, '照片')
-%>
 <div class="tagsWrapper mt-32">
   <% if (is_page()) {%>
   <%- partial('_partial/tags.ejs', {tags: site.tags, isPure: false}) %>
-  <%} else if (isPhotosTag) {%>
+  <%} else if (tag_exists(site, '照片')) {%>
   <%- partial('_partial/photos.ejs') %>
   <%} else {%>
   <%- partial('_partial/timeline.ejs') %>

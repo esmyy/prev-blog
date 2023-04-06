@@ -1,4 +1,4 @@
-const helper = require("../source/js/hexoHelpers.umd");
+const helper = require("../source/js/hexoHelpers.umd.js");
 helper.init({ hexo });
 Object.keys(helper).forEach((key) => {
   if (typeof helper[key] === "function") {

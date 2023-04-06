@@ -15,7 +15,7 @@
     "po": "hexo new post",
     "ph": "hexo new photo",
     "r": "hexo new reading",
-    "install": "zsh ./my-scripts/install.sh"
+    "init": "zsh ./my-scripts/install.sh"
   },
   "hexo": {
     "version": "6.3.0"

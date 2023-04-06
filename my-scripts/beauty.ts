@@ -6,7 +6,7 @@ import shelljs from "shelljs";
 import { imgHelper } from "./utils/imgHelper.ts";
 
 if (!process.env["BLOG_ROOT"]) {
-  shelljs.exec(`npm run install-root`);
+  shelljs.exec(`npm run init`);
 }
 
 const [sourceImg = "", sourceDescription = ""] = process.argv.slice(2);
