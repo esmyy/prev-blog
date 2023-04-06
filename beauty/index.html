@@ -6,7 +6,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>
-    esmyy
+    照片 | esmyy
   </title>
   <meta name="description" content="">
   <meta name="keywords" content="esmyy, 马月月, 月月, 冯朋, esmyy的博客, 马月月的博客, 马月月的个人网站">
@@ -73,7 +73,7 @@
           <span>时间轴</span>
         </a>
       </li>
-      <li class="optionalMenuItem selected">
+      <li class="optionalMenuItem ">
         <a href="/tags">
           <iconpark-icon name="tag-one"></iconpark-icon>
           <span>标签</span>
@@ -85,7 +85,7 @@
           <span>说说</span>
         </a>
       </li>
-      <li class="">
+      <li class="selected">
         <a href="/beauty">
           <iconpark-icon name="camera"></iconpark-icon>
           <span>照片</span>
@@ -99,41 +99,15 @@
   </a>
 </header>
         <main class="mainContent">
-            <div class="tagsWrapper mt-32">
-  
-  
-<div class="timelineWrapper">
-  <div class="timeline">
-    
-    
-    
-    <div class="timelineItem year">2022</div>
-    
-
-    <div class="timelineItem">
-      <div class="date">
-        2022-11-07
-      </div>
-      <a href="/2022/11/07/covid-home-quarantine.html" class="title">
-        北京秋日，居家隔离的日子
-      </a>
-      <div class="excerpt ellipse">
-        2022 年 11 月 6 日，北京朝阳，秋意正浓，居家隔离的日子，连房门也不能打开了，只找到一张前些日子拍的秋叶图。 
- 看着朋友圈 秋天金黄的银杏叶落 北京马拉松的消息 要求所有参加北马的人员 6-8 号连续三天核酸的通知 
- 有朋友去了医院，看到患者没法吃饭，医生没有办法，只能“你逼死我吧 我也没...
-      </div>
-
-      
-      
-      <img class="poster" src="//cdn.jsdelivr.net/gh/esmyy/esmyy.github.io@gh-pages/2022/11/07/covid-home-quarantine/autumn.jpeg" />
-      
-    </div>
-    
-  </div>
-  
-</div>
-  
-</div>
+            <script type="module">
+import Lightbox from './photoswipe-lightbox.esm.js';
+const lightbox = new Lightbox({
+  gallery: '#my-gallery',
+  children: 'a',
+  pswpModule: () => import('./photoswipe.esm.js')
+});
+lightbox.init();
+</script>
         </main>
         <footer>
     <div class="mainContent footBar">
