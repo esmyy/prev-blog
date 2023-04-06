@@ -2,7 +2,6 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "sh ./my-scripts/build.sh",
     "upload": "sh ./my-scripts/imghost.sh",
@@ -15,7 +14,7 @@
     "po": "hexo new post",
     "ph": "hexo new photo",
     "r": "hexo new reading",
-    "init": "zsh ./my-scripts/install.sh"
+    "init": "sh ./my-scripts/init.sh"
   },
   "hexo": {
     "version": "6.3.0"
