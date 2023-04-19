@@ -15,7 +15,7 @@ const momentsListUtils = {
   // 需要先加载 hexo 插件
   init() {
     this.addLoadmoreListener();
-    this.dataUrl = window.hexoHelpers.source_url("/json/moments.json", true);
+    this.dataUrl = window.hexoHelpers.source_url("/json/moments.json");
     this.updateStatus.bind(this);
     this.appendMoments.bind(this);
     fetch(this.dataUrl)

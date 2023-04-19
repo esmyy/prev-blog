@@ -8,7 +8,7 @@
     "push": "sh ./my-scripts/push.sh",
     "update": "npm run build",
     "clean": "hexo clean",
-    "deploy": "hexo deploy",
+    "all": "npm run build && npm run upload",
     "server": "hexo server",
     "dev": "hexo server",
     "po": "hexo new post",
