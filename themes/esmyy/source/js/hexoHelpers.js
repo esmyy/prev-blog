@@ -1,16 +1,13 @@
 let hexo = null;
 const helper = {
-  init(options) {
-    hexo = options.hexo;
-  },
+  init() {},
   source_url(path, useCDN) {
-    if (!hexo) {
-      return;
+    if (typeof window !== "undefined") {
+      useCDN = !document.body.getAttribute("data-env") === "development";
     }
 
-    const jsdelivrCDN = hexo.config.jsdelivr;
-    return jsdelivrCDN.enable && useCDN
-      ? `//${jsdelivrCDN.baseUrl}/gh/${jsdelivrCDN.gh_user}/${jsdelivrCDN.gh_repo}@${jsdelivrCDN.gh_branch}${path}`
+    return useCDN
+      ? `//cdn.jsdelivr.net/gh/esmyy/esmyy.github.io@gh-pages${path}`
       : `${path}`;
   },
   get_poster(post) {

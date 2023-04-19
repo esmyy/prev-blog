@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <%- partial('_partial/head') %>
-<body>
+<body data-env="<%= env.env %>">
 <%- partial('_partial/leancloud') %>
 <%
 const isPure = page.layout === 'pure'

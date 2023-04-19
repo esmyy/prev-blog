@@ -1,37 +1,42 @@
 const momentsListUtils = {
-  pagination: {
-    pageSize: 10,
-    pageNum: 1,
-  },
+  pageSize: 10,
+  pageNum: 0,
 
   selector: {
     loadmore: "#momentLoadMore",
     list: "#momentsBox",
   },
 
-  artitalkHelper: null,
   loadmore: null,
   list: null,
+  dataUrl: "",
+  momentList: [],
 
-  // 需要先加载 hexo 插件、artitalk、artitalkHelper
+  // 需要先加载 hexo 插件
   init() {
     this.addLoadmoreListener();
-    this.artitalkHelper = window.artitalkHelper;
-    this.artitalkHelper.register({
-      onReady: this.fetchMoments.bind(this),
-    });
+    this.dataUrl = window.hexoHelpers.source_url("/json/moments.json", true);
+    this.updateStatus.bind(this);
+    this.appendMoments.bind(this);
+    fetch(this.dataUrl)
+      .then((res) => {
+        return res.json();
+      })
+      .then((list) => {
+        this.momentList = list;
+        this.appendMoments();
+        this.updateStatus();
+      });
   },
 
   createNode(config) {
-    const time = this.artitalkHelper.getTime(config.createdAt);
-    const content = config.atContentMd.replace(/(#[^\s]*)/g, function (m) {
+    const content = config.content.replace(/(#[^\s]*)/g, function (m) {
       return `<span class="tag">${m.replace("#", "")}</span>`;
     });
-
     const item = document.createElement("div");
     item.classList.add("momentsItem");
     item.innerHTML = `
-      <p class="time">${time}</p>
+      <p class="time">${config.createAt}</p>
       <p class="content">${content}</p>
     `;
     return item;
@@ -41,59 +46,55 @@ const momentsListUtils = {
     return document.querySelector(selector);
   },
 
+  hasMore() {
+    return this.momentList.length > this.pageNum * this.pageSize;
+  },
+
   addLoadmoreListener() {
     const lm = this.loadmore || this.getElement(this.selector.loadmore);
     const loadmoreBtn = lm.querySelector(this.selector.more);
-    const that = this;
+    const handleLoadmore = () => {
+      if (this.hasMore()) {
+        this.pageNum++;
+        this.appendMoments();
+        this.updateStatus();
+      } else {
+        toastr.info(
+          this.pageNum === 1 ? "暂时还没有数据哦..." : "没有更多数据了..."
+        );
+      }
+    };
+
     if (loadmoreBtn) {
-      loadmoreBtn.addEventListener("click", () => {
-        that.fetchMoments();
-      });
+      loadmoreBtn.addEventListener("click", handleLoadmore);
     }
 
     if (!this.loadmore) {
       this.loadmore = lm;
     }
   },
-
-  fetchMoments() {
-    this.artitalkHelper.getMoments(this.pagination).then((list) => {
-      this.updateStatus(list);
-      this.appendMoments(list);
-      if (!list.length) {
-        toastr.info(
-          this.pagination.pageNum === 1
-            ? "暂时还没有数据哦..."
-            : "没有更多数据了..."
-        );
-      } else {
-        this.pagination.pageNum++;
-      }
-    });
+  appendMoments() {
+    const start = this.pageNum * this.pageSize;
+    const data = this.momentList.slice(start, start + this.pageSize);
+    const list = document.querySelector(this.selector.list);
+    const fragment = new DocumentFragment();
+    data
+      .filter((s) => !!s.content)
+      .forEach((item) => {
+        fragment.appendChild(this.createNode(item));
+      });
+    list.appendChild(fragment);
   },
+  updateStatus() {
+    this.pageNum++;
 
-  updateStatus(data) {
     const lm = this.loadmore || this.getElement(this.selector.loadmore);
-    if (data.length >= this.pagination.pageSize) {
+    if (this.hasMore()) {
       lm.classList.remove("nomore", "loading");
       lm.classList.add("more");
     } else {
       lm.classList.remove("more", "loading");
       lm.classList.add("nomore");
-    }
-  },
-  appendMoments(data) {
-    const list = document.querySelector(this.selector.list);
-    const fragment = new DocumentFragment();
-    data
-      .filter((s) => !!s.atContentMd)
-      .forEach((item) => {
-        fragment.appendChild(this.createNode(item));
-      });
-    list.appendChild(fragment);
-
-    if (!this.list) {
-      this.list = list;
     }
   },
 };
